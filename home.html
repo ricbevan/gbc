@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="uk-height-large uk-inline uk-width-1-1 uk-light" uk-height-viewport>
+    <div class="uk-height-large uk-inline uk-width-1-1 uk-light" id="intro" uk-height-viewport>
       <ul class="gbc-cover-gallery uk-switcher uk-height-1-1">
           <li class="uk-background-cover uk-height-1-1" style="background-image: url(../gbc-images/gallery/wetherspoons-old-unicorn.jpg)">
             <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous></a>
@@ -29,25 +29,55 @@
       <div class="uk-overlay uk-position-center uk-width-4-5 uk-width-3-5@l">
         <img src="images/gbc-logo.png" alt="Garie Bevan Coatings logo" />
       </div>
-      <div class="uk-position-top">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav">
-                    <li><a href="#">Why Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Colours</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+      <div class="uk-position-bottom">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+              <li><a href="#why-us">Why Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#colours">Colours</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-    </div>
-      <div class="uk-overlay uk-position-bottom-center">
+      </div>
+      <div class="uk-overlay uk-position-top-center">
         <ul class="uk-dotnav" uk-switcher="connect: .gbc-cover-gallery; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
         </ul>
+      </div>
+    </div>
+
+    <div class="uk-section uk-section-muted" id="why-us">
+      <div class="uk-container">
+
+      </div>
+    </div>
+
+    <div class="uk-section" id="services">
+      <div class="uk-container">
+
+      </div>
+    </div>
+
+    <div class="uk-section uk-section-muted" id="gallery">
+      <div class="uk-container">
+
+      </div>
+    </div>
+
+    <div class="uk-section" id="colours">
+      <div class="uk-container">
+
+      </div>
+    </div>
+
+    <div class="uk-section uk-section-muted" id="contact">
+      <div class="uk-container">
+
       </div>
     </div>
 

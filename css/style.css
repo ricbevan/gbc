@@ -1,3 +1,19 @@
 #intro .gbc-cover-gallery li { /* vignette style for cover backgrounds */
     box-shadow: inset 0 0 15em 1em #000;
 }
+
+#intro .uk-sticky, #intro .uk-sticky-fixed { /* animation for navbar background colour fading */
+  transition: all 0.5s;
+}
+
+#intro .uk-sticky-fixed { /* navbar background colour when fixed to top */
+  background-color: #f8f8f8;
+}
+
+#intro .uk-sticky-fixed a { /* navbar link text colour when fixed to top */
+  color: #999;
+}
+
+#intro .uk-sticky-fixed li.uk-active a { /* navbar active link text colour when fixed to top */
+  color: #222;
+}
