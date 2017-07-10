@@ -14,8 +14,8 @@
     <div class="uk-height-large uk-inline uk-width-1-1 uk-light" id="intro" uk-height-viewport>
       <ul class="gbc-cover-gallery uk-switcher uk-height-1-1">
           <li class="uk-background-cover uk-height-1-1" style="background-image: url(../gbc-images/gallery/wetherspoons-old-unicorn.jpg)">
-            <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous></a>
-            <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next></a>
+            <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous uk-scrollspy="cls:uk-animation-slide-left-medium"></a>
+            <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next uk-scrollspy="cls:uk-animation-slide-right-medium"></a>
           </li>
           <li class="uk-background-cover uk-height-1-1" style="background-image: url(../gbc-images/gallery/hackney-empire-sign.jpg)">
             <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous></a>
@@ -27,12 +27,12 @@
           </li>
       </ul>
       <div class="uk-overlay uk-position-center uk-width-4-5 uk-width-3-5@l">
-        <img src="images/gbc-logo.png" alt="Garie Bevan Coatings logo" />
+        <img src="images/gbc-logo.png" alt="Garie Bevan Coatings logo" uk-scrollspy="cls:uk-animation-fade" />
       </div>
       <div class="uk-position-bottom">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
           <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80" uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-medium; delay: 150">
               <li><a href="#why-us">Why Us</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#gallery">Gallery</a></li>
@@ -43,7 +43,7 @@
         </nav>
       </div>
       <div class="uk-overlay uk-position-top-center">
-        <ul class="uk-dotnav" uk-switcher="connect: .gbc-cover-gallery; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+        <ul class="uk-dotnav" uk-switcher="connect: .gbc-cover-gallery; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium" uk-scrollspy="target: > li; cls:uk-animation-slide-top-medium; delay: 150">
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
@@ -53,13 +53,131 @@
 
     <div class="uk-section uk-section-muted" id="why-us">
       <div class="uk-container">
-
+        <div class="uk-grid-large uk-flex-middle uk-grid-margin-large uk-grid">
+          <div class="uk-width-xlarge@m" uk-scrollspy="cls:uk-animation-slide-left-medium">
+            <div class="uk-card uk-card-body uk-card-default uk-card-large">
+              <h3 class="uk-text-uppercase uk-text-small uk-card-title uk-text-danger uk-margin-remove-adjacent uk-text-bold">Why Us</h3>
+              <h3 class="uk-margin uk-h1">Free, impartial advice</h3>
+              <div>
+                <p class="uk-margin-remove-bottom uk-text-muted">
+                  Give us a <a href="tel:01457865676">call</a> or <a href="#contact" class="">drop us a message</a> if you have any questions, want a quote or just some advice. We won't try and pressure you into anything.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-expand@m">
+            <div class="uk-margin-medium uk-text-left@s uk-text-center uk-grid-match uk-child-width-1-1 uk-child-width-1-2@s uk-grid uk-text-muted" uk-scrollspy="target: > div; cls:uk-animation-slide-right-medium; delay: 150">
+              <div class="uk-first-column">
+                <div class="uk-panel">
+                  <span uk-icon="icon: paint-bucket; ratio: 1.5"></span>
+                  <h4 class="uk-margin uk-h4 uk-text-muted">Colour Variety</h4>
+                  <p>We offer over 400 <a href="#colours" class="">colours</a> in a variety of finishes.</p>
+                </div>
+              </div>
+              <div class="uk-grid-margin@s">
+                <div class="uk-panel">
+                  <span uk-icon="icon: world; ratio: 1.5"></span>
+                  <h4 class="uk-margin uk-h4 uk-text-muted">Well priced delivery options</h4>
+                  <p>We can deliver to anywhere in U.K. at competative prices.</p>
+                </div>
+              </div>
+              <div class="uk-first-column uk-grid-margin">
+                <div class="uk-panel">
+                  <span uk-icon="icon: future; ratio: 1.5"></span>
+                  <h4 class="uk-margin uk-h4 uk-text-muted">Fast turnaround</h4>
+                  <p>We have a day and night shift, so we can provide a turnaround in as little as 24 hours.</p>
+                </div>
+              </div>
+              <div class="uk-grid-margin">
+                <div class="uk-panel">
+                  <span uk-icon="icon: paint-bucket; ratio: 1.5"></span>
+                  <h4 class="uk-margin uk-h4 uk-text-muted">Colour Variety</h4>
+                  <p>We offer over 400 <a href="#colours" class="">colours</a> in a variety of finishes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="uk-section" id="services">
       <div class="uk-container">
-
+        <h3 class="uk-text-uppercase uk-text-small uk-text-danger uk-text-bold">Services</h3>
+				<div class="uk-grid-margin uk-grid" uk-grid>
+					<div class="uk-width-2-3@m uk-grid-item-match uk-first-column" uk-scrollspy="cls:uk-animation-slide-left-medium">
+						<div class="uk-margin uk-text-left@s uk-text-center uk-card uk-card-default uk-card-large uk-card-hover">
+							<a href="#powder-coating-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-child-width-expand uk-grid-collapse uk-grid-match uk-grid" uk-grid>
+								<div class="uk-card-media-left uk-cover-container">
+									<img src="../gbc-images/services/powder-coating.jpg" alt="" uk-cover>
+									<canvas width="600" height="400"></canvas>
+								</div>
+								<div>
+									<div class="uk-card-body">
+										<h3 class="uk-card-title">Powder Coating</h3>
+										<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m uk-grid-item-match" uk-scrollspy="cls:uk-animation-slide-right-medium">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#blasting-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top">
+								<img src="../gbc-images/services/sand-blasting.jpg" alt="">
+                <!-- <canvas width="600" height="400"></canvas> -->
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Sand/Grit Blasting</h3>
+								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-grid-margin uk-grid" uk-grid uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 150">
+					<div class="uk-width-1-3@m uk-grid-item-match">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#pre-treatment-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top">
+								<img src="../gbc-images/services/sand-blasting.jpg" alt="">
+                <!-- <canvas width="600" height="400"></canvas> -->
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Pre-Treatment</h3>
+								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m uk-grid-item-match">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#transport-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top">
+								<img src="../gbc-images/services/transport.jpg" alt="">
+                <!-- <canvas width="600" height="400"></canvas> -->
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Transport</h3>
+								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m uk-grid-item-match">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#finishing-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top">
+								<img src="../gbc-images/services/sand-blasting.jpg" alt="">
+                <!-- <canvas width="600" height="400"></canvas> -->
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Finishing</h3>
+								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+							</div>
+						</div>
+					</div>
+				</div>
       </div>
     </div>
 
