@@ -17,3 +17,7 @@
 #intro .uk-sticky-fixed li.uk-active a { /* navbar active link text colour when fixed to top */
   color: #222;
 }
+
+#colours .uk-grid-match > div { /* apply a margin to all colours - caused a problem with colour filter otherwise */
+  margin-top: 40px;
+}
