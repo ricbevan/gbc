@@ -21,3 +21,42 @@
 #colours .uk-grid-match > div { /* apply a margin to all colours - caused a problem with colour filter otherwise */
   margin-top: 40px;
 }
+
+#colours .uk-grid-match { /* limit amount of colours shown */
+	max-height: 700px;
+	overflow: hidden;
+	position: relative;
+	transition: max-height 1s ease-in-out;
+}
+
+#colours .uk-grid-match.more-colours { /* don't limit amount of colours shown */
+	max-height: 100000px;
+}
+
+#colours .uk-grid-match:not(.more-colours)::after { /* add a white fade when 'show more colours' button available */
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 15px;
+	background: -webkit-linear-gradient(
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	background-image: -moz-linear-gradient(
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	background-image: -o-linear-gradient(
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	background-image: linear-gradient(
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	background-image: -ms-linear-gradient(
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}

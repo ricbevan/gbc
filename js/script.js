@@ -5,45 +5,61 @@ $( document ).ready(function() {
   });
 
     $('#colours a').on('click', function (e) { // on gallery image click, set the gallery modal image
-      var clickedColour = $(e.target).parent().css('backgroundColor');
-      var clickedColourName = $(e.target).parent().find('span.name').text();
-      var clickedColourCode = $(e.target).parent().find('span.code').text();
+      var colour = $(e.target).parent();
+      var colourModal = $('#colour-modal');
 
-      $('#colour-modal').find('.uk-modal-body').css('backgroundColor', clickedColour);
-      $('#colour-modal').find('.uk-modal-caption').text(clickedColourName + " (" + clickedColourCode + ")");
+      var clickedColour = colour.css('backgroundColor');
+      var clickedColourName = colour.find('span.name').text();
+      var clickedColourCode = colour.find('span.code').text();
+
+      colourModal.find('.uk-modal-body').css('backgroundColor', clickedColour);
+      colourModal.find('.uk-modal-caption').text(clickedColourName + " (" + clickedColourCode + ")");
     });
 
     $('#colour-select li').on('click', function(e) {
+      var colourOption = $(e.target);
+      var colourSelectList = $('#colour-select');
+      var colourSectionHeader = $('#colours h3');
+      var colourList = $('#colours .uk-grid-match');
 
-      if ($(e.target).text() == 'All') { // if all colours are selected
-        $('#colour-select').parent().siblings('button').text('Choose colour');
-        $('#colours h3').text('Colours');
+      if (colourOption.text() == 'All') { // if all colours are selected
+        colourSelectList.parent().siblings('button').text('Choose colour');
+        colourSectionHeader.text('Colours');
       } else { // or if a specific colour is selected
-        $('#colour-select').parent().siblings('button').text('Change colour');
-        $('#colours h3').text('Colours (' + $(e.target).text().replace(/\//g, "s/") + 's)');
+        colourSelectList.parent().siblings('button').text('Change colour');
+        colourSectionHeader.text('Colours (' + $(e.target).text().replace(/\//g, "s/") + 's)'); // add s to all colours e.g. red = reds
       }
 
-      $('#colour-select li').removeClass('uk-active'); // set all colours in the drop-down list as inactive
-      $(e.target).parent().addClass('uk-active'); // set the selected colour in the drop-down list as active
+      colourSelectList.children('li').removeClass('uk-active'); // set all colours in the drop-down list as inactive
+      colourOption.parent().addClass('uk-active'); // set the selected colour in the drop-down list as active
 
-      $('#colours .uk-grid-match').addClass('uk-animation-slide-right-small uk-animation-reverse uk-animation-fast'); // fade colours out right
+      colourList.addClass('uk-animation-slide-right-small uk-animation-reverse uk-animation-fast'); // fade colours out right
 
       setTimeout( function() { // wait 1/2 a second
-        $('#colours .uk-grid-match div').removeClass('uk-hidden'); // set all colours as hidden
+        colourList.children('div').removeClass('uk-hidden'); // set all colours as hidden
 
-        $('#colours .uk-grid-match > div').each(function() {
-          if ((!$(this).hasClass('gbc-' + $(e.target).text().toLowerCase())) && ($(e.target).text() != 'All')) {
+        colourList.children('div').each(function() {
+          var colourOptionFixedText = colourOption.text().replace(/\//g, "-").toLowerCase();
+
+          if ((!$(this).hasClass('gbc-' + colourOptionFixedText)) && (colourOption.text() != 'All')) {
             $(this).addClass('uk-hidden'); // hide all colours that shouldn't be shown
           }
         });
 
         setTimeout( function() { // wait a split second to remove the animation classes (so they can be re-added)
-          $('#colours .uk-grid-match').removeClass('uk-animation-slide-right-small uk-animation-reverse uk-animation-fast');
+          colourList.removeClass('uk-animation-slide-right-small uk-animation-reverse uk-animation-fast');
 
           setTimeout( function() { // wait a split second to add re-animate colours back in
-            $('#colours .uk-grid-match').addClass('uk-animation-slide-left-small uk-animation-fast');
+            colourList.addClass('uk-animation-slide-left-small uk-animation-fast');
           }, 50);
         }, 50);
       }, 100);
+
+      $('#colours button').last().trigger('click'); // show all colours
+    });
+
+    $('#colours button').last().on('click', function() { // show all colours
+      $('#colours .uk-grid-match').addClass('more-colours');
+      $('#colours button').last().addClass('uk-hidden');
     });
 });
