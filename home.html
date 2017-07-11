@@ -18,12 +18,12 @@
             <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next uk-scrollspy="cls:uk-animation-slide-right-medium"></a>
           </li>
           <li class="uk-background-cover uk-height-1-1" style="background-image: url(../gbc-images/gallery/hackney-empire-sign.jpg)">
-            <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous></a>
-            <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next></a>
+            <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous uk-scrollspy="cls:uk-animation-slide-left-medium"></a>
+            <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next uk-scrollspy="cls:uk-animation-slide-right-medium"></a>
           </li>
           <li class="uk-background-cover uk-height-1-1" style="background-image: url(../gbc-images/gallery/virgin-megastore-slide.jpg)">
-            <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous></a>
-            <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next></a>
+            <a class="uk-position-center-left uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="previous" uk-slidenav-previous uk-scrollspy="cls:uk-animation-slide-left-medium"></a>
+            <a class="uk-position-center-right uk-position-small uk-slidenav-large" href="#" <a href="#" uk-switcher-item="next" uk-slidenav-next uk-scrollspy="cls:uk-animation-slide-right-medium"></a>
           </li>
       </ul>
       <div class="uk-overlay uk-position-center uk-width-4-5 uk-width-3-5@l">
@@ -60,7 +60,7 @@
               <h3 class="uk-margin uk-h1">Free, impartial advice</h3>
               <div>
                 <p class="uk-margin-remove-bottom uk-text-muted">
-                  Give us a <a href="tel:01457865676">call</a> or <a href="#contact" class="">drop us a message</a> if you have any questions, want a quote or just some advice. We won't try and pressure you into anything.
+                  Give us a <a href="tel:01457865676">call</a> or <a href="#contact" uk-scroll>drop us a message</a> if you have any questions, want a quote or just some advice. We won't try and pressure you into anything.
                 </p>
               </div>
             </div>
@@ -103,10 +103,10 @@
 
     <div class="uk-section" id="services">
       <div class="uk-container">
-        <h3 class="uk-text-uppercase uk-text-small uk-text-danger uk-text-bold">Services</h3>
-				<div class="uk-grid-margin uk-grid" uk-grid>
-					<div class="uk-width-2-3@m uk-grid-item-match uk-first-column" uk-scrollspy="cls:uk-animation-slide-left-medium">
-						<div class="uk-margin uk-text-left@s uk-text-center uk-card uk-card-default uk-card-large uk-card-hover">
+        <h3 class="uk-text-uppercase uk-text-small uk-text-danger uk-text-bold" uk-scrollspy="cls:uk-animation-fade">Services</h3>
+				<div class="uk-grid-margin uk-grid uk-grid-match" uk-grid>
+					<div class="uk-width-2-3" uk-scrollspy="cls:uk-animation-slide-left-medium">
+						<div class="uk-margin uk-text-left uk-card uk-card-default uk-card-large uk-card-hover">
 							<a href="#powder-coating-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
 							<div class="uk-child-width-expand uk-grid-collapse uk-grid-match uk-grid" uk-grid>
 								<div class="uk-card-media-left uk-cover-container">
@@ -116,64 +116,60 @@
 								<div>
 									<div class="uk-card-body">
 										<h3 class="uk-card-title">Powder Coating</h3>
-										<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+										<div class="uk-margin uk-text-meta">Click for details</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-1-3@m uk-grid-item-match" uk-scrollspy="cls:uk-animation-slide-right-medium">
+					<div class="uk-width-1-3" uk-scrollspy="cls:uk-animation-slide-right-medium">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<a href="#blasting-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
 							<div class="uk-card-media-top">
 								<img src="../gbc-images/services/sand-blasting.jpg" alt="">
-                <!-- <canvas width="600" height="400"></canvas> -->
 							</div>
 							<div class="uk-card-body">
 								<h3 class="uk-card-title">Sand/Grit Blasting</h3>
-								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+								<div class="uk-margin uk-text-meta">Click for details</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="uk-grid-margin uk-grid" uk-grid uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 150">
-					<div class="uk-width-1-3@m uk-grid-item-match">
+				<div class="uk-grid-margin uk-grid uk-grid-match" uk-grid uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 150">
+					<div class="uk-width-1-3">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<a href="#pre-treatment-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
 							<div class="uk-card-media-top">
 								<img src="../gbc-images/services/sand-blasting.jpg" alt="">
-                <!-- <canvas width="600" height="400"></canvas> -->
 							</div>
 							<div class="uk-card-body">
 								<h3 class="uk-card-title">Pre-Treatment</h3>
-								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+								<div class="uk-margin uk-text-meta">Click for details</div>
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-1-3@m uk-grid-item-match">
+					<div class="uk-width-1-3">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<a href="#transport-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
 							<div class="uk-card-media-top">
 								<img src="../gbc-images/services/transport.jpg" alt="">
-                <!-- <canvas width="600" height="400"></canvas> -->
 							</div>
 							<div class="uk-card-body">
 								<h3 class="uk-card-title">Transport</h3>
-								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+								<div class="uk-margin uk-text-meta">Click for details</div>
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-1-3@m uk-grid-item-match">
+					<div class="uk-width-1-3">
 						<div class="uk-card uk-card-default uk-card-hover">
 							<a href="#finishing-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
 							<div class="uk-card-media-top">
 								<img src="../gbc-images/services/sand-blasting.jpg" alt="">
-                <!-- <canvas width="600" height="400"></canvas> -->
 							</div>
 							<div class="uk-card-body">
 								<h3 class="uk-card-title">Finishing</h3>
-								<div class="el-meta uk-margin uk-text-meta">Click for details</div>
+								<div class="uk-margin uk-text-meta">Click for details</div>
 							</div>
 						</div>
 					</div>
@@ -183,21 +179,265 @@
 
     <div class="uk-section uk-section-muted" id="gallery">
       <div class="uk-container">
-
+        <h3 class="uk-text-uppercase uk-text-small uk-text-danger uk-text-bold" uk-scrollspy="cls:uk-animation-fade">Gallery</h3>
+        <div class="uk-grid-margin uk-grid uk-grid-match" uk-grid uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 150">
+					<div class="uk-width-1-3 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/wetherspoons-old-unicorn.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Wetherspoons Old Unicorn Statue</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-6 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-2 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-3 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-3 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/wetherspoons-old-unicorn.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Wetherspoons Old Unicorn Statue</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-3 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-6 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-2 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+					<div class="uk-width-1-6 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/virgin-megastore-slide.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Virgin Megastore Slide</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-6 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/wetherspoons-old-unicorn.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Wetherspoons Old Unicorn Statue</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-6 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/wetherspoons-old-unicorn.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Wetherspoons Old Unicorn Statue</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-6 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/wetherspoons-old-unicorn.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Wetherspoons Old Unicorn Statue</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-2-3 uk-text-center uk-height-small">
+            <div class="uk-transition-toggle uk-cover-container">
+              <img src="../gbc-images/gallery/wetherspoons-old-unicorn.jpg" alt="" uk-cover />
+              <canvas width="1000" height="667"></canvas>
+              <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                <a href="#gallery-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+                <p class="uk-h4 uk-margin-remove">Wetherspoons Old Unicorn Statue</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="uk-section" id="colours">
       <div class="uk-container">
+        <h3 class="uk-text-uppercase uk-text-small uk-text-danger uk-text-bold" uk-scrollspy="cls:uk-animation-fade">Colours</h3>
 
       </div>
     </div>
 
     <div class="uk-section uk-section-muted" id="contact">
       <div class="uk-container">
-
+        <h3 class="uk-text-uppercase uk-text-small uk-text-danger uk-text-bold" uk-scrollspy="cls:uk-animation-fade">Contact</h3>
+        <div class="uk-grid-match" uk-grid uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 150">
+					<div class="uk-width-1-5">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#gallery-image-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top uk-overflow-hidden">
+								<img src="../gbc-images/contact/person.jpg" class="uk-animation-kenburns" alt="">
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Garie Bevan</h3>
+										<div class="el-meta uk-margin uk-text-meta">Managing Director</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-5">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#gallery-image-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top uk-overflow-hidden">
+								<img src="../gbc-images/contact/person.jpg" class="uk-animation-kenburns" alt="">
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Dave Slater</h3>
+										<div class="el-meta uk-margin uk-text-meta">Job Title</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-5">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#gallery-image-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top uk-overflow-hidden">
+								<img src="../gbc-images/contact/person.jpg" class="uk-animation-kenburns" alt="">
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Chris Markie</h3>
+										<div class="el-meta uk-margin uk-text-meta">Job Title</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-5">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#gallery-image-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top uk-overflow-hidden">
+								<img src="../gbc-images/contact/person.jpg" class="uk-animation-kenburns" alt="">
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Janice Bevan</h3>
+										<div class="el-meta uk-margin uk-text-meta">Job Title</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-5">
+						<div class="uk-card uk-card-default uk-card-hover">
+							<a href="#gallery-image-modal" class="uk-position-cover uk-position-z-index uk-margin-remove-adjacent" uk-toggle></a>
+							<div class="uk-card-media-top uk-overflow-hidden">
+								<img src="../gbc-images/contact/person.jpg" class="uk-animation-kenburns" alt="">
+							</div>
+							<div class="uk-card-body">
+								<h3 class="uk-card-title">Ric Bevan</h3>
+								<div class="el-meta uk-margin uk-text-meta">Job Title</div>
+							</div>
+						</div>
+					</div>
+				</div>
       </div>
     </div>
+
+    <div id="powder-coating-modal" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h2 class="uk-modal-title">Powder Coating</h2>
+				<p><span class="uk-text-bold">Size:</span> We can powder coat items up to 750 cm x 300 cm x 220 cm (24'7" x 9'10" x 7'2").</p>
+				<p><span class="uk-text-bold">Weight:</span> We can powder coat items up to 1 tonne (1,000 kg).</p>
+				<p><span class="uk-text-bold">Powders:</span> We mainly powder coat in architectural grade polyester, but also offer pure epoxy, anti microbial powders, plascoat and nylon powders.</p>
+				<p><span class="uk-text-bold">Effects:</span> Incorporated into this range are the special effects powders. These range from metallics, leatherette, hammer finish and fluorescents.</p>
+			</div>
+		</div>
+		<div id="blasting-modal" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h2 class="uk-modal-title">Sand/Grit Blasting</h2>
+				<p><span class="uk-text-bold">Size:</span> We can sand blast items up to 600 cm x 300 cm x 220 cm (19'8" x 9'10" x 7'2").</p>
+				<p><span class="uk-text-bold">Weight:</span> We can sand blast items up to 1 tonne (1,000 kg).</p>
+				<p><span class="uk-text-bold">Sands:</span> We blast in chilled iron (for aggressive cleaning) or glass/sand (for gentler cleaning).</p>
+			</div>
+		</div>
+		<div id="pre-treatment-modal" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h2 class="uk-modal-title">Pre-Treatment</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div id="transport-modal" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h2 class="uk-modal-title">Transport</h2>
+				<p><span class="uk-text-bold">Weight:</span> We have several vehicles suitable of transporting up to 7.5 tonnes (7,500 kg) offering collection and/or delivery.</p>
+				<p><span class="uk-text-bold">Coverage:</span> We can collect and deliver to anywhere in Great Britain.</p>
+			</div>
+		</div>
+		<div id="finishing-modal" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h2 class="uk-modal-title">Finishing</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+    <div id="gallery-modal" uk-modal="center: true">
+			<div class="uk-modal-dialog">
+				<button class="uk-modal-close-outside" type="button" uk-close></button>
+				<img src="" />
+			</div>
+		</div>
 
   </body>
 </html>
