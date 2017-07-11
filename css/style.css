@@ -1,3 +1,7 @@
+#intro .uk-sticky-fixed li.uk-active a { /* red links for navbar */
+  color: #f0506e !important;
+}
+
 #intro .gbc-cover-gallery li { /* vignette style for cover backgrounds */
     box-shadow: inset 0 0 15em 1em #000;
 }

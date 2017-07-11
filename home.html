@@ -56,7 +56,7 @@
       <div class="uk-position-bottom">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
           <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80" uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-medium; delay: 150">
+            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80; overflow: false" uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-medium; delay: 150">
               <li><a href="#why-us">Why Us</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#wheels">Wheels</a></li>
@@ -79,23 +79,41 @@
     <div class="uk-section" id="clients">
       <div class="uk-container">
         <h3 class="uk-text-uppercase uk-text-small uk-card-title uk-text-danger uk-margin-remove-adjacent uk-text-bold">Clients</h3>
-        <div class="uk-child-width-1-5 uk-flex-middle uk-height-small" uk-grid>
-          <div>
-            <img src="../gbc-images/clients/aa.png" alt="AA Logo" />
-          </div>
-          <div>
-            <img src="../gbc-images/clients/airbus.png" alt="Airbus Logo" />
-          </div>
-          <div>
-            <img src="../gbc-images/clients/asda.gif" alt="Asda Logo" />
-          </div>
-          <div>
-            <img src="../gbc-images/clients/bae-systems.png" alt="BAE Systems Logo" />
-          </div>
-          <div>
-            <img src="../gbc-images/clients/stagecoach.gif" alt="Stagecoach Logo" />
-          </div>
-        </div>
+        <ul class="uk-switcher uk-margin gbc-clients">
+          <li>
+            <div class="uk-child-width-1-5 uk-flex-middle uk-height-small" uk-grid uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+              <div><img src="../gbc-images/clients/aa.png" alt="AA Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/airbus.png" alt="Airbus Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/asda.gif" alt="Asda Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/bae-systems.png" alt="BAE Systems Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/stagecoach.gif" alt="Stagecoach Logo" class="uk-align-center" /></div>
+            </div>
+          </li>
+          <li>
+            <div class="uk-child-width-1-5 uk-flex-middle uk-height-small" uk-grid uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+              <div><img src="../gbc-images/clients/aa.png" alt="AA Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/airbus.png" alt="Airbus Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/asda.gif" alt="Asda Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/bae-systems.png" alt="BAE Systems Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/stagecoach.gif" alt="Stagecoach Logo" class="uk-align-center" /></div>
+            </div>
+          </li>
+          <li>
+            <div class="uk-child-width-1-5 uk-flex-middle uk-height-small" uk-grid uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100">
+              <div><img src="../gbc-images/clients/aa.png" alt="AA Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/airbus.png" alt="Airbus Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/asda.gif" alt="Asda Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/bae-systems.png" alt="BAE Systems Logo" class="uk-align-center" /></div>
+              <div><img src="../gbc-images/clients/stagecoach.gif" alt="Stagecoach Logo" class="uk-align-center" /></div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="uk-dotnav uk-flex uk-flex-center" uk-switcher="connect: .gbc-clients; animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium" uk-scrollspy="target: > li; cls:uk-animation-slide-top-medium; delay: 150">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
       </div>
     </div>
 
@@ -119,7 +137,7 @@
                 <div class="uk-panel">
                   <span uk-icon="icon: paint-bucket; ratio: 1.5"></span>
                   <h4 class="uk-margin uk-h4 uk-text-muted">Colour Variety</h4>
-                  <p>We offer over 400 <a href="#colours" class="">colours</a> in a variety of finishes.</p>
+                  <p>We offer over 400 <a href="#colours" uk-scroll>colours</a> in a variety of finishes.</p>
                 </div>
               </div>
               <div class="uk-grid-margin@s">
@@ -140,7 +158,7 @@
                 <div class="uk-panel">
                   <span uk-icon="icon: paint-bucket; ratio: 1.5"></span>
                   <h4 class="uk-margin uk-h4 uk-text-muted">Colour Variety</h4>
-                  <p>We offer over 400 <a href="#colours" class="">colours</a> in a variety of finishes.</p>
+                  <p>We offer over 400 <a href="#colours" uk-scroll>colours</a> in a variety of finishes.</p>
                 </div>
               </div>
             </div>
@@ -843,7 +861,11 @@
                 <span itemprop="addressRegion">Derbyshire</span>,
                 <span itemprop="postalCode">SK13 8LF</span>
               </a>
-              <p class="uk-text-small">Monday - Friday: 08:00 am - 5:00 pm. Saturday and Sunday: closed.</p>
+              <p class="uk-text-small">
+                <span itemprop="openingHours" content="Mo-Th08:00-17:00">Monday - Thursday: 08:00 am - 5:00 pm.</span>
+                <span itemprop="openingHours" content="Fr08:00-12:30">Friday 08:00 am - 12:30 pm.</span>
+                Saturday and Sunday (and bank holidays): closed.
+              </p>
             </div>
           </div>
         </div>
@@ -1057,7 +1079,12 @@
 			<div class="uk-modal-dialog uk-modal-body">
 				<button class="uk-modal-close-default" type="button" uk-close></button>
 				<h2 class="uk-modal-title">Pre-Treatment</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p><span class="uk-text-bold">Degreasing:</span> The process of removing grease and oils from metal which was applied during the construction process.</p>
+				<p><span class="uk-text-bold">'T-Washing':</span>- A pre-treatment for galvanised steel to ensure the subsequent adhesion of powder.</p>
+				<p><span class="uk-text-bold">'Etching':</span> A layer of acid eats into metal and creates a rough area which is more ideal to coat on.</p>
+				<p><span class="uk-text-bold">'Tak Ragging':</span> The removal of small dust particles from the metal.</p>
+				<p><span class="uk-text-bold">De-Gassing:</span> A method used to drive out gas trapped within galvanised steel (alternatively we have powders which do not allow gassing to occur).</p>
+				<p><span class="uk-text-bold">Sand Blasting:</span> If a product we receive has paint, rust or any other coating which prevents us from producing a perfect finish then sometimes blasting is used.</p>
 			</div>
 		</div>
 		<div id="transport-modal" uk-modal="center: true">
@@ -1071,7 +1098,7 @@
 		<div id="finishing-modal" uk-modal="center: true">
 			<div class="uk-modal-dialog uk-modal-body">
 				<button class="uk-modal-close-default" type="button" uk-close></button>
-				<h2 class="uk-modal-title">Finishing</h2>
+				<h2 class="uk-modal-title">Finishing/Quality Control</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
