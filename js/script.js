@@ -83,4 +83,8 @@ $( document ).ready(function() {
 
     $('#quote-price').html('&pound;' + (quantityAmount * (colourAmount + lacquerAmount)) + '.00');
   });
+
+  setInterval (function() {
+    $("a[uk-switcher-item='next']", "#intro ul").trigger('click')
+  }, 3000)
 });
