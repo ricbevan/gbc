@@ -10,6 +10,10 @@
   transition: all 0.5s;
 }
 
+#intro .uk-navbar-nav > li > a {
+  font-size: 1rem;
+}
+
 #intro .uk-sticky-fixed { /* navbar background colour when fixed to top */
   background-color: #f8f8f8;
 }
