@@ -86,5 +86,5 @@ $( document ).ready(function() {
 
   setInterval (function() {
     $("a[uk-switcher-item='next']", "#intro ul").trigger('click')
-  }, 3000);
+  }, 8000);
 });
