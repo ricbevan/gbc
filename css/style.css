@@ -68,3 +68,14 @@
 		rgba(255, 255, 255, 1) 100%
 	);
 }
+
+@media (max-width: 959px) {
+  .uk-scrollspy-inview {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    visibility: visible !important;
+  }
+}
