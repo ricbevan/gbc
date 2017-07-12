@@ -62,4 +62,25 @@ $( document ).ready(function() {
       $('#colours .uk-grid-match').addClass('more-colours');
       $('#colours button').last().addClass('uk-hidden');
     });
+
+    $('#wheels-quote select, #wheels-quote input').on('change', function() {
+      var quantity = $('#wheels-quote select');
+      var colour = $('input[name="colour"]:checked');
+      var lacquer = $('input[name="lacquer"]:checked');
+
+      if (colour.val() !== undefined) {
+        if (colour.parent().text() == ' Chrome & Candy Lacquer') {
+          $('.gbc-finish > div').addClass('uk-hidden').last().removeClass('uk-hidden');
+          $('input[name="lacquer"]').prop('checked', false);
+        } else {
+          $('.gbc-finish > div').removeClass('uk-hidden').last().addClass('uk-hidden');
+        }
+      }
+
+      var quantityAmount = parseInt(quantity.val());
+      var colourAmount = ((colour.val() === undefined) ? 0 : parseInt(colour.val()));
+      var lacquerAmount = ((lacquer.val() === undefined) ? 0 : parseInt(lacquer.val()));
+
+      $('#quote-price').html('&pound;' + (quantityAmount * (colourAmount + lacquerAmount)) + '.00');
+    });
 });
