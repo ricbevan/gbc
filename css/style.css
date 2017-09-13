@@ -1,81 +1,92 @@
-#intro .uk-sticky-fixed li.uk-active a { /* red links for navbar */
-  color: #f0506e !important;
+ /* new font, and new base font size */
+html, .uk-h1,.uk-h2,.uk-h3,.uk-h4,.uk-h5,.uk-h6,h1,h2,h3,h4,h5,h6, .uk-navbar-toggle, .uk-logo {
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
-#intro .gbc-cover-gallery li { /* vignette style for cover backgrounds */
-    box-shadow: inset 0 0 15em 1em #000;
+html, .uk-tooltip, .uk-logo {
+  font-size: 18px;
 }
 
-#intro .uk-sticky, #intro .uk-sticky-fixed { /* animation for navbar background colour fading */
-  transition: all 0.5s;
+
+
+/* rainbow section colours ===================================================== START */
+nav .why-us a, #why-us h2, #why-us h3, #why-us .uk-icon { color: #F44336 !important; }
+#why-us .uk-divider-small::after { border-top: 1px solid #F44336; }
+
+nav .services a, #services h2, #services .uk-icon { color: #FF9800 !important; }
+#services .uk-divider-small::after { border-top: 1px solid #FF9800; }
+#services .uk-tab>.uk-active>a { /* the right border for active tab in the services section */
+  border-color: #FF9800;
 }
 
-#intro .uk-navbar-nav > li > a {
-  font-size: 1rem;
+nav .gallery a, #gallery h2, #gallery .uk-icon { color: #FFEB3B !important; }
+#gallery .uk-divider-small::after { border-top: 1px solid #FFEB3B; }
+
+nav .wheels a, #wheels h2, #wheels .uk-icon { color: #8BC34A !important; }
+#wheels .uk-divider-small::after { border-top: 1px solid #8BC34A; }
+
+nav .colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
+#colours .uk-divider-small::after { border-top: 1px solid #2297F3; }
+#colours .uk-tab>.uk-active>a {
+  color: rgba(255, 255, 255, 1);
+  border-color: #2297F3;
 }
 
-#intro .uk-sticky-fixed { /* navbar background colour when fixed to top */
-  background-color: #f8f8f8;
+nav .contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
+#contact .uk-divider-small::after { border-top: 1px solid #9D27B0; }
+/* rainbow section colours ===================================================== END */
+
+
+
+/* extra styles not available in ui-kit ======================================== START */
+.gbc-text-white {
+  color: #ffffff;
 }
 
-#intro .uk-sticky-fixed a { /* navbar link text colour when fixed to top */
-  color: #999;
+.gbc-text-shadow {
+  text-shadow: 1px 2px 3px #666;
 }
 
-#intro .uk-sticky-fixed li.uk-active a { /* navbar active link text colour when fixed to top */
-  color: #222;
+.gbc-height-x-large { /* a custom height, as ui-kit's isn't quite big enough */
+  height: 700px;
+  max-height: 60vh;
 }
+/* extra styles not available in ui-kit ======================================== END */
 
-#colours .uk-grid-match > div { /* apply a margin to all colours - caused a problem with colour filter otherwise */
+
+
+/* specific styles ============================================================= START */
+#colour-grid>div { /* give a specific height not available in ui-kit, and set margin-top for all (including top row) so filtering works nicely */
+  height: 100px;
   margin-top: 40px;
 }
 
-#colours .uk-grid-match { /* limit amount of colours shown */
-	max-height: 700px;
-	overflow: hidden;
-	position: relative;
-	transition: max-height 1s ease-in-out;
+#colour-grid>div>div { /* make colours have the pointer cursor so it's obvious they can be clicked on */
+  cursor: pointer;
 }
 
-#colours .uk-grid-match.more-colours { /* don't limit amount of colours shown */
-	max-height: 100000px;
+html .uk-background-default { /* when a white background has a dark parent background it inherits white text without this */
+  color: #666;
 }
 
-#colours .uk-grid-match:not(.more-colours)::after { /* add a white fade when 'show more colours' button available */
-	content: '';
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 15px;
-	background: -webkit-linear-gradient(
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
-	background-image: -moz-linear-gradient(
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
-	background-image: -o-linear-gradient(
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
-	background-image: linear-gradient(
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
-	background-image: -ms-linear-gradient(
-		rgba(255, 255, 255, 0) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
+html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* change dark background text */
+  color: rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width: 959px) {
-  .uk-scrollspy-inview {
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    visibility: visible !important;
-  }
+.gbc-fade-bottom:after { /* the fade out colour at the bottom of the cover */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  bottom: 0;
+  background: -webkit-linear-gradient(transparent, #222) left repeat;
+  background: linear-gradient(transparent, #222) left repeat;
 }
+
+nav a { /* needed as styles to increase font size are always superceded  */
+  font-size: 1.5rem !important;
+}
+
+#why-us #facebook.uk-icon { color: #3B5998 !important; } /* facebook icon colour */
+/* specific styles ============================================================= END */

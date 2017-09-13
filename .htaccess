@@ -1,2 +1,2 @@
-#Alternate default index page
-DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^([^\.]+)$ index.html [L]
