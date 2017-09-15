@@ -3,7 +3,7 @@ $( document ).ready(function() {
     filterColour($(this).children('a').data('filter'));
   });
 
-  $('#colour-grid > div').on('click', function() {
+  $('#colour-grid > div > div').on('click', function() {
     displayColourModal($(this));
   })
 
@@ -21,10 +21,10 @@ function filterColour(colour) {
 function displayColourModal(colour) {
   var colourModal = $('#colour-modal');
 
-  var colourGroup = colour.data('filter-colour-group').slice(4).toUpperCase(); // remove gbc-
-  var colourName = colour.children('div').data('colour-name');
-  var colourCode = colour.children('div').data('colour-code');
-  var colourHex = colour.children('div').css('background-color');
+  var colourGroup = colour.parent().data('filter-colour-group').slice(4).toUpperCase(); // remove gbc-
+  var colourName = colour.data('colour-name');
+  var colourCode = colour.data('colour-code');
+  var colourHex = colour.css('background-color');
 
   var colourTitle = colourName + " (" + colourGroup + " " + colourCode + ")";
 
