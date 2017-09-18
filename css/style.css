@@ -7,6 +7,15 @@ html, .uk-tooltip, .uk-logo {
   font-size: 18px;
 }
 
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
 
 
 /* rainbow section colours ===================================================== START */
