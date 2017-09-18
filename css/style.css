@@ -56,6 +56,22 @@ nav .contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
 
 
 /* specific styles ============================================================= START */
+#cover {
+  background-image: url("/gbc/images/background-640.jpg");
+}
+
+@media (min-width: 640px) {
+  #cover {
+    background-image: url("/gbc/images/background-960.jpg");
+  }
+}
+
+@media (min-width: 960px) {
+  #cover {
+    background-image: url("/gbc/images/background.jpg");
+  }
+}
+
 #colour-grid>div { /* give a specific height not available in ui-kit, and set margin-top for all (including top row) so filtering works nicely */
   height: 100px;
   margin-top: 40px;
