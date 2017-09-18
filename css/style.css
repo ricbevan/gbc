@@ -7,13 +7,17 @@ html, .uk-tooltip, .uk-logo {
   font-size: 18px;
 }
 
-img {
+img { /* lazy loading images */
   opacity: 1;
   transition: opacity 0.3s;
 }
 
 img[data-src] {
   opacity: 0;
+}
+
+a { /* made anchor colour slightly darker to meet accessibility recommendations */
+  color: #0e6ecd;
 }
 
 
