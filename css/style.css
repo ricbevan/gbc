@@ -11,6 +11,10 @@ a, .uk-text-meta a { /* made anchor colour slightly darker to meet accessibility
   color: #0e6ecd;
 }
 
+a[href^="tel"] {
+  color:inherit;
+}
+
 
 
 /* rainbow section colours ===================================================== START */
@@ -64,6 +68,10 @@ nav .contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
   background-image: url("/gbc/images/background-640.jpg");
 }
 
+#cover > div {
+  z-index: 2;
+}
+
 @media (min-width: 640px) {
   #cover {
     background-image: url("/gbc/images/background-960.jpg");
@@ -102,6 +110,7 @@ html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* chan
   bottom: 0;
   background: -webkit-linear-gradient(transparent, #222) left repeat;
   background: linear-gradient(transparent, #222) left repeat;
+  z-index: 1;
 }
 
 nav a { /* needed as styles to increase font size are always superceded  */
