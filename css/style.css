@@ -7,7 +7,7 @@ img[data-src] {
   opacity: 0;
 }
 
-a { /* made anchor colour slightly darker to meet accessibility recommendations */
+a, .uk-text-meta a { /* made anchor colour slightly darker to meet accessibility recommendations */
   color: #0e6ecd;
 }
 

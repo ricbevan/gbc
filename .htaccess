@@ -1,2 +1,7 @@
 #Alternate default index page
 DirectoryIndex index.html
+
+# One month for most static assets
+<filesMatch ".(css|js|jpg|svg|png|gif|ico)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
