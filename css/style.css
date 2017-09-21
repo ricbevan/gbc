@@ -18,29 +18,29 @@ a[href^="tel"] {
 
 
 /* rainbow section colours ===================================================== START */
-nav .why-us a, #why-us h2, #why-us h3, #why-us .uk-icon { color: #F44336 !important; }
+.why-us a, #why-us h2, #why-us h3, #why-us .uk-icon { color: #F44336 !important; }
 #why-us .uk-divider-small::after { border-top: 1px solid #F44336; }
 
-nav .services a, #services h2, #services .uk-icon { color: #FF9800 !important; }
+.services a, #services h2, #services .uk-icon { color: #FF9800 !important; }
 #services .uk-divider-small::after { border-top: 1px solid #FF9800; }
 #services .uk-tab>.uk-active>a { /* the right border for active tab in the services section */
   border-color: #FF9800;
 }
 
-nav .gallery a, #gallery h2, #gallery .uk-icon { color: #FFEB3B !important; }
+.gallery a, #gallery h2, #gallery .uk-icon { color: #FFEB3B !important; }
 #gallery .uk-divider-small::after { border-top: 1px solid #FFEB3B; }
 
-nav .wheels a, #wheels h2, #wheels .uk-icon { color: #8BC34A !important; }
+.wheels a, #wheels h2, #wheels .uk-icon { color: #8BC34A !important; }
 #wheels .uk-divider-small::after { border-top: 1px solid #8BC34A; }
 
-nav .colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
+.colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
 #colours .uk-divider-small::after { border-top: 1px solid #2297F3; }
 #colours .uk-tab>.uk-active>a {
   color: rgba(255, 255, 255, 1);
   border-color: #2297F3;
 }
 
-nav .contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
+.contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
 #contact .uk-divider-small::after { border-top: 1px solid #9D27B0; }
 /* rainbow section colours ===================================================== END */
 
@@ -101,9 +101,10 @@ html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* chan
   z-index: 1;
 }
 
-nav a { /* needed as styles to increase font size are always superceded  */
+nav a, .uk-nav-default { /* needed as styles to increase font size are always superceded  */
   font-size: 1.5rem !important;
 }
 
 #why-us #facebook.uk-icon { color: #3B5998 !important; } /* facebook icon colour */
+#why-us #google-plus.uk-icon { color: #DD4B39 !important; } /* google plus icon colour */
 /* specific styles ============================================================= END */
