@@ -68,12 +68,18 @@
               <div class="uk-background-default uk-padding-large">
                 <h3>Free, impartial advice</h3>
                 <p><a href="#contact" uk-scroll="offset: 75;">Give us a call or drop us a message</a> if you have any questions, want a quote or just some advice. We won't try and pressure you into anything.</p>
-                <a href="https://www.facebook.com/gariebevancoatingsltd" target="_blank" rel="noopener" title="Garie Bevan Coatings' Facebook page">
-                  <span id="facebook" class="uk-icon-button" uk-icon="icon: facebook;"></span>
-                </a>
-                <a href="https://plus.google.com/114999049616731481289" target="_blank" rel="noopener" title="Garie Bevan Coatings' Google+ page">
-                  <span id="google-plus" class="uk-icon-button" uk-icon="icon: google-plus;"></span>
-                </a>
+                <div class="uk-flex-inline uk-grid-small" uk-grid>
+                  <div>
+                    <a href="https://www.facebook.com/gariebevancoatingsltd" target="_blank" rel="noopener" title="Garie Bevan Coatings' Facebook page">
+                      <span id="facebook" class="uk-icon-button" uk-icon="icon: facebook;"></span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://plus.google.com/114999049616731481289" target="_blank" rel="noopener" title="Garie Bevan Coatings' Google+ page">
+                      <span id="google-plus" class="uk-icon-button" uk-icon="icon: google-plus;"></span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div>
@@ -729,8 +735,10 @@
           </div>
           <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-text-center uk-grid-match uk-grid-divider uk-text-large" uk-grid>
             <div uk-scrollspy="cls:uk-animation-slide-left-small">
-              <span uk-icon="icon: phone; ratio: 2;"></span>
-              <p><a href="tel:01457865676">01457 865676</a></p>
+              <a href="tel:01457865676">
+                <span uk-icon="icon: phone; ratio: 2;"></span>
+                <p>01457 865676</p>
+              </a>
             </div>
             <div class="uk-text-break" uk-scrollspy="cls:uk-animation-slide-right-small">
               <a href="mailto:enquiries@gariebevancoatings.co.uk">
