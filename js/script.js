@@ -9,6 +9,9 @@ $( document ).ready(function() {
 
   $('#colour-filter li').first().trigger('click'); // trigger red select
 
+  var theYear = new Date().getFullYear(); // set copyright year in footer
+  $('#year').html(' 1995 - ' + theYear);
+
   // lazy load images
   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
     img.setAttribute('src', img.getAttribute('data-src'));

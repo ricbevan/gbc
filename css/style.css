@@ -105,6 +105,6 @@ nav a, .uk-nav-default { /* needed as styles to increase font size are always su
   font-size: 1.5rem !important;
 }
 
-#why-us #facebook.uk-icon { color: #3B5998 !important; } /* facebook icon colour */
-#why-us #google-plus.uk-icon { color: #DD4B39 !important; } /* google plus icon colour */
+.facebook-icon svg { color: #3B5998 !important; } /* facebook icon colour */
+.google-plus-icon svg { color: #DD4B39 !important; } /* google plus icon colour */
 /* specific styles ============================================================= END */
