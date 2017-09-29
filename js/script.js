@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
   $('#colour-grid > div > div').on('click', function() {
     displayColourModal($(this));
-  })
+  });
 
   $('#colour-filter li').first().trigger('click'); // trigger red select
 
