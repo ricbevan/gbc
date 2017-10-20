@@ -11,6 +11,11 @@ a, .uk-text-meta a { /* made anchor colour slightly darker to meet accessibility
   color: #0e6ecd;
 }
 
+.uk-text-meta a:hover { /* for the google street view link */
+  color: #0e6ecd;
+  text-decoration: underline;
+}
+
 a[href^="tel"] {
   color:inherit;
 }
