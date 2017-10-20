@@ -33,16 +33,27 @@ function highlightOpeningTimes() {
   today = dd + '/' + mm + '/' + yyyy;
 
   var bankHolidays = [
-    '25/12/2017',
-    '26/12/2017',
-    '1/1/2017',
-    '30/3/2017',
-    '2/4/2017',
-    '7/5/2017',
-    '28/5/2017',
-    '27/8/2017',
-    '25/12/2017',
-    '26/12/2017'
+    // 2017
+    '25/12/2017', // christmas
+    '26/12/2017', // boxing day
+    // 2018
+    '1/1/2018', // new year
+    '30/3/2018', // good friday
+    '2/4/2018', // easter monday
+    '7/5/2018', // may day
+    '28/5/2018', // late may
+    '27/8/2018', // august
+    '25/12/2018', // christmas
+    '26/12/2018', // boxing day
+    // 2019
+    '1/1/2019', // new year
+    '19/4/2019', // good friday
+    '22/4/2019', // easter monday
+    '6/5/2019', // may day
+    '27/5/2019', // late may
+    '26/8/2019', // august
+    '25/12/2019', // christmas
+    '26/12/2019' // boxing day
   ];
 
   if (bankHolidays.indexOf(today) >= 1)
