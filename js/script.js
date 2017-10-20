@@ -7,7 +7,7 @@ $( document ).ready(function() {
     displayColourModal($(this));
   });
 
-  $('#colour-filter li').first().trigger('click'); // trigger red select
+  hideColours('gbc-red'); // start by showing red
 
   var theYear = new Date().getFullYear(); // set copyright year in footer
   $('#year').html(' 1995 - ' + theYear);
@@ -22,6 +22,20 @@ $( document ).ready(function() {
 });
 
 function filterColour(colour) {
+  var colourGrid = $('#colour-grid');
+
+  colourGrid.removeClass('uk-animation-slide-left-small')
+    .addClass('uk-animation-slide-right-small uk-animation-reverse uk-animation-fast');
+
+  setTimeout(function() {
+    hideColours(colour);
+
+    colourGrid.removeClass('uk-animation-slide-right-small uk-animation-reverse')
+      .addClass('uk-animation-slide-left-small');
+  }, 100);
+}
+
+function hideColours(colour) {
   $('#colour-grid').children('div').removeAttr('hidden').each(function() {
     if ($(this).data('filter-colour').search(colour)) {
       $(this).attr('hidden', '');
