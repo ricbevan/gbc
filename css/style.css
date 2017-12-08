@@ -70,7 +70,7 @@ a[href^="tel"] {
 
 /* specific styles ============================================================= START */
 #cover {
-  background-image: url("/gbc/images/background.jpg");
+  background-image: url("/images/background.jpg");
 }
 
 #cover > div {
