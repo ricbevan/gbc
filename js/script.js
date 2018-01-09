@@ -33,9 +33,6 @@ function highlightOpeningTimes() {
   today = dd + '/' + mm + '/' + yyyy;
 
   var bankHolidays = [
-    // 2017
-    '25/12/2017', // christmas
-    '26/12/2017', // boxing day
     // 2018
     '1/1/2018', // new year
     '30/3/2018', // good friday
@@ -56,7 +53,7 @@ function highlightOpeningTimes() {
     '26/12/2019' // boxing day
   ];
 
-  if (bankHolidays.indexOf(today) >= 1)
+  if (bankHolidays.includes(today))
     day = 0;
 
   if (day == 5)
@@ -92,7 +89,7 @@ function hideColours(colour) {
 function displayColourModal(colour) {
   var colourModal = $('#colour-modal');
 
-  var colourGroup = colour.parent().data('filter-colour-group').slice(4).toUpperCase(); // remove gbc-
+  var colourGroup = colour.data('colour-group');
   var colourName = colour.data('colour-name');
   var colourCode = colour.data('colour-code');
   var colourHex = colour.css('background-color');
