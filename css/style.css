@@ -40,7 +40,7 @@ a[href^="tel"] {
 
 .colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
 #colours .uk-divider-small::after { border-top: 1px solid #2297F3; }
-#colours .uk-tab>.uk-active>a {
+#colours .uk-tab>.uk-active>a, #colours .uk-search-input {
   color: rgba(255, 255, 255, 1);
   border-color: #2297F3;
 }

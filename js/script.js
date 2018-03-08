@@ -1,13 +1,16 @@
+var lastFilteredColour = 'gbc-red';
+
 $( document ).ready(function() {
   $('#colour-filter li').on('click', function() {
-    filterColour($(this).children('a').data('filter'));
+    lastFilteredColour = $(this).children('a').data('filter'); // save this so when search is cleared we go back to last filtered colour
+    filterColour(lastFilteredColour);
   });
 
   $('#colour-grid > div > div').on('click', function() {
     displayColourModal($(this));
   });
 
-  hideColours('gbc-red'); // start by showing red
+  hideColours(lastFilteredColour); // start by showing red
 
   var theYear = new Date().getFullYear(); // set copyright year in footer
   $('#year').html(' 1995 - ' + theYear);
@@ -21,6 +24,20 @@ $( document ).ready(function() {
   });
 
   highlightOpeningTimes();
+
+  $('#colour-search').on('keyup', function() {
+    var searchFor = $(this).val();
+    $('#colour-filter li').removeAttr('hidden'); // show all filter tabs (hide some later)
+
+    if (searchFor.length == 0) {
+      filterColour(lastFilteredColour);
+      $('#colour-filter li:last-child').attr('hidden', ''); // hide search filter tabs
+    } else {
+      filterColour(searchFor);
+      $('#colour-filter li:last-child').addClass('uk-active'); // set search filter tab as active
+      $('#colour-filter li:not(:last-child)').attr('hidden', ''); // hide all filter tabs apart from search
+    }
+  });
 });
 
 function highlightOpeningTimes() {
@@ -65,6 +82,8 @@ function highlightOpeningTimes() {
 }
 
 function filterColour(colour) {
+
+  colour = colour.toLowerCase();
   var colourGrid = $('#colour-grid');
 
   colourGrid.removeClass('uk-animation-slide-left-small')
@@ -80,7 +99,13 @@ function filterColour(colour) {
 
 function hideColours(colour) {
   $('#colour-grid').children('div').removeAttr('hidden').each(function() {
-    if ($(this).data('filter-colour').search(colour)) {
+    var colourName = $(this).data('filter-colour').toString().toLowerCase();
+    var colourCode = $(this).children('div').data('colour-code').toString().toLowerCase();
+
+    console.log(colourCode.search(colour));
+    console.log(colourCode + '=' + colour);
+
+    if ((colourName.search(colour) < 0) && (colourCode.search(colour) < 0)) {
       $(this).attr('hidden', '');
     }
   });
