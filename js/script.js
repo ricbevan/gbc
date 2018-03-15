@@ -23,6 +23,13 @@ $( document ).ready(function() {
     };
   });
 
+  $('a[data-mailto]').each(function() { // set mailto links
+    var contact = $(this);
+    contact.attr('href', 'mailto:' + contact.data('mailto') + '@gariebevancoatings.co.uk');
+  });
+
+  $('#enquiries-email-address').text('enquiries@gariebevancoatings.co.uk')
+
   highlightOpeningTimes();
 
   $('#colour-search').on('keyup', function() {
@@ -101,11 +108,9 @@ function hideColours(colour) {
   $('#colour-grid').children('div').removeAttr('hidden').each(function() {
     var colourName = $(this).data('filter-colour').toString().toLowerCase();
     var colourCode = $(this).children('div').data('colour-code').toString().toLowerCase();
+    var colourDescription = $(this).children('div').data('colour-name').toString().toLowerCase();
 
-    console.log(colourCode.search(colour));
-    console.log(colourCode + '=' + colour);
-
-    if ((colourName.search(colour) < 0) && (colourCode.search(colour) < 0)) {
+    if ((colourName.search(colour) < 0) && (colourCode.search(colour) < 0) && (colourDescription.search(colour) < 0)) {
       $(this).attr('hidden', '');
     }
   });
