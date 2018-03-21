@@ -77,6 +77,15 @@ a[href^="tel"] {
   z-index: 2;
 }
 
+#colour-search { /* stop search text going over close button */
+  padding-right: 35px;
+}
+
+#clear-colour-search { /* vertically align clear search button */
+  top: 0px;
+  bottom: 0px;
+}
+
 #colour-grid>div { /* give a specific height not available in ui-kit, and set margin-top for all (including top row) so filtering works nicely */
   height: 100px;
   margin-top: 40px;

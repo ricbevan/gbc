@@ -32,18 +32,24 @@ $( document ).ready(function() {
 
   highlightOpeningTimes();
 
-  $('#colour-search').on('keyup', function() {
+  $('#colour-search').on('keyup', function(e) {
+    e.preventDefault;
+    
     var searchFor = $(this).val();
-    $('#colour-filter li').removeAttr('hidden'); // show all filter tabs (hide some later)
+    $('#colour-filter li, #clear-colour-search').removeAttr('hidden'); // show all filter tabs and clear search button (hide some later)
 
     if (searchFor.length == 0) {
       filterColour(lastFilteredColour);
-      $('#colour-filter li:last-child').attr('hidden', ''); // hide search filter tabs
+      $('#colour-filter li:last-child, #clear-colour-search').attr('hidden', ''); // hide search filter tabs and clear search button
     } else {
       filterColour(searchFor);
       $('#colour-filter li:last-child').addClass('uk-active'); // set search filter tab as active
       $('#colour-filter li:not(:last-child)').attr('hidden', ''); // hide all filter tabs apart from search
     }
+  });
+
+  $('#clear-colour-search').on('click', function() {
+    $('#colour-search').val('').trigger('keyup');
   });
 });
 
