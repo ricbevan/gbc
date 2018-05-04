@@ -23,7 +23,7 @@ a[href^="tel"] {
 
 
 /* rainbow section colours ===================================================== START */
-.why-us a, #why-us h2, #why-us h3, #why-us .uk-icon:not(.facebook-icon):not(.google-plus-icon) { color: #F44336 !important; }
+.why-us a, #why-us h2, #why-us h3, #why-us .uk-icon:not(.social-icon) { color: #F44336 !important; }
 #why-us .uk-divider-small::after { border-top: 1px solid #F44336; }
 
 .services a, #services h2, #services .uk-icon { color: #FF9800 !important; }
@@ -121,5 +121,7 @@ nav a, .uk-nav-default { /* needed as styles to increase font size are always su
 }
 
 .facebook-icon { color: #3B5998 !important; } /* facebook icon colour */
-.google-plus-icon { color: #DD4B39 !important; } /* google plus icon colour */
+.instagram-icon { color: #517FA4 !important; } /* instagram icon colour */
+.twitter-icon { color: #00aced !important; } /* twitter icon colour */
+.google-icon { color: #DD4B39 !important; } /* google plus icon colour */
 /* specific styles ============================================================= END */
