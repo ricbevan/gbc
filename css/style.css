@@ -60,6 +60,10 @@ a[href^="tel"] {
   text-shadow: 1px 2px 3px #666;
 }
 
+.uk-sticky-below {
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+}
+
 .gbc-height-x-large { /* a custom height, as ui-kit's isn't quite big enough */
   height: 700px;
   max-height: 60vh;
