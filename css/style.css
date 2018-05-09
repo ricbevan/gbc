@@ -65,8 +65,7 @@ a[href^="tel"] {
 }
 
 .gbc-height-x-large { /* a custom height, as ui-kit's isn't quite big enough */
-  height: 700px;
-  max-height: 60vh;
+  height: calc(100vh - 80px);
 }
 /* extra styles not available in ui-kit ======================================== END */
 
