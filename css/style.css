@@ -70,10 +70,12 @@ a[href^="tel"] {
 
 /* specific styles ============================================================= START */
 #cover {
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/gallery/randox-grand-national-sign.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-#cover > div {
+#cover > div { /* stop things appearing behind the cover */
   z-index: 2;
 }
 
