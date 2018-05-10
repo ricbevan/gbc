@@ -134,6 +134,7 @@ nav a, .uk-nav-default { /* needed as styles to increase font size are always su
 /* popular colour ribbon ============================================================= START */
 .gbc-colour {
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .gbc-popular {
   position: absolute;
@@ -164,18 +165,18 @@ nav a, .uk-nav-default { /* needed as styles to increase font size are always su
   content: "";
   position: absolute; left: 0px; top: 100%;
   z-index: -1;
-  border-left: 3px solid #1e5799;
+  border-left: 2px solid #1e5799;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #1e5799;
+  border-top: 2px solid #1e5799;
 }
 .gbc-popular span::after {
   content: "";
   position: absolute; right: 0px; top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
-  border-right: 3px solid #1e5799;
+  border-right: 2px solid #1e5799;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #1e5799;
+  border-top: 2px solid #1e5799;
 }
 /* popular colour ribbon ============================================================= END */
