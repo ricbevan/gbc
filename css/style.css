@@ -47,6 +47,22 @@ a[href^="tel"] {
 
 .contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
 #contact .uk-divider-small::after { border-top: 1px solid #9D27B0; }
+#contact .uk-input, #contact .uk-textarea {
+  border-color: #9D27B0;
+}
+#contact .uk-button {
+  background-color: #9D27B0;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px 30px;
+  font-size: 1rem;
+}
+#contact .uk-icon-image {
+  float: right;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+}
 /* rainbow section colours ===================================================== END */
 
 
