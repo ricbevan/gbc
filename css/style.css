@@ -32,11 +32,11 @@ a[href^="tel"] {
   border-color: #FF9800;
 }
 
-.gallery a, #gallery h2, #gallery .uk-icon { color: #FFEB3B !important; }
-#gallery .uk-divider-small::after { border-top: 1px solid #FFEB3B; }
+.commercial a, #commercial h2, #commercial .uk-icon { color: #FFEB3B !important; }
+#commercial .uk-divider-small::after { border-top: 1px solid #FFEB3B; }
 
-.wheels a, #wheels h2, #wheels .uk-icon { color: #8BC34A !important; }
-#wheels .uk-divider-small::after { border-top: 1px solid #8BC34A; }
+.domestic a, #domestic h2, #domestic .uk-icon { color: #8BC34A !important; }
+#domestic .uk-divider-small::after { border-top: 1px solid #8BC34A; }
 
 .colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
 #colours .uk-divider-small::after { border-top: 1px solid #2297F3; }
