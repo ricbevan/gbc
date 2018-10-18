@@ -1,4 +1,4 @@
-var lastFilteredColour = 'gbc-red';
+var lastFilteredColour = 'gbc-popular';
 
 $( document ).ready(function() {
   $('#colour-filter li').on('click', function() {
@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
   $('#colour-search').on('keyup', function(e) {
     e.preventDefault;
-    
+
     var searchFor = $(this).val();
     $('#colour-filter li, #clear-colour-search').removeAttr('hidden'); // show all filter tabs and clear search button (hide some later)
 
