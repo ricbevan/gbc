@@ -87,6 +87,10 @@ a[href^="tel"] {
 .gbc-height-x-large { /* a custom height, as ui-kit's isn't quite big enough */
   height: calc(100vh - 120px);
 }
+
+.uk-nav>li>a {
+  padding: 10px;
+}
 /* extra styles not available in ui-kit ======================================== END */
 
 
