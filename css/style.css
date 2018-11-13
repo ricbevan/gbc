@@ -88,6 +88,10 @@ a[href^="tel"] {
   height: calc(100vh - 120px);
 }
 
+.uk-navbar-nav .uk-active, .uk-nav .uk-active {
+  background: rgba(255,255,255,0.1);
+}
+
 .uk-nav>li>a {
   padding: 10px;
 }
