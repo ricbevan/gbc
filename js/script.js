@@ -140,7 +140,7 @@ function highlightOpeningTimes() {
     '26/12/2019' // boxing day
   ];
 
-  if (bankHolidays.includes(today))
+  if (bankHolidays.indexOf(today) >= 0)
     day = 0;
 
   if (day == 5)
