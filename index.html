@@ -130,7 +130,7 @@
             <h2 class="uk-text-uppercase uk-h3">Services</h2>
             <hr class="uk-divider-small uk-margin-large-bottom">
           </div>
-          <div uk-grid>
+          <div class="uk-margin-medium-bottom" uk-grid>
             <div class="uk-width-auto@m">
               <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade" uk-scrollspy="target: > li; cls:uk-animation-slide-left-small; delay: 100">
                 <li><a href="#">Powder Coating</a></li>
@@ -193,6 +193,28 @@
                   </ul>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div>
+            <div class="uk-transition-toggle uk-cover-container uk-width-large uk-align-center uk-margin-remove-bottom uk-border-rounded" uk-scrollspy="cls:uk-animation-scale-up">
+              <img data-src="media/images/factory.png" alt="Factory walkthrough videos" uk-cover uk-img />
+              <canvas width="374" height="200"></canvas>
+              <div class="uk-position-cover uk-position-small uk-overlay uk-flex uk-flex-center uk-flex-middle">
+                <span uk-icon="icon: play-circle; ratio: 3;"></span>
+              </div>
+              <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-visible@m uk-border-rounded">
+                <p class="uk-h4 uk-margin-remove uk-text-center">Take a look around our factory</p>
+              </div>
+              <a class="uk-position-cover" href="#factory-video" data-caption="Factory Walkthrough" uk-toggle></a>
+            </div>
+            <div id="factory-video" uk-modal>
+              <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <video controls playsinline uk-video>
+                  <source src="media/videos/factory.mp4" type="video/mp4">
+                  <source src="media/videos/factory.webm" type="video/webm">
+                </video>
+              </div>
             </div>
           </div>
         </div>
