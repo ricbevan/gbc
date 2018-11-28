@@ -101,7 +101,7 @@ a[href^="tel"] {
 
 /* specific styles ============================================================= START */
 #cover {
-  background-image: url("../images/gallery/randox-grand-national-sign.jpg");
+  background-image: url("../media/images/gallery/randox-grand-national-sign.jpg");
   background-size: cover;
   background-position: center;
 }
