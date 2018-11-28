@@ -1,59 +1,116 @@
 var lastFilteredColour = 'gbc-popular';
 
-$( document ).ready(function() {
-  $('#colour-filter li').on('click', function() {
-    lastFilteredColour = $(this).children('a').data('filter'); // save this so when search is cleared we go back to last filtered colour
-    filterColour(lastFilteredColour);
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  filterColours(lastFilteredColour);
+
+  // filter colours
+  gbc('#colour-filter li').on('click', function() {
+    lastFilteredColour = this.children[0].getAttribute('data-filter');
+    filterColourAnimation(lastFilteredColour);
   });
 
-  $('#colour-grid > div > div').on('click', function() {
-    displayColourModal($(this));
+  // show colour modal
+  gbc('#colour-grid > div > div').on('click', function(colourBox) {
+    displayColourModal(colourBox.target);
   });
 
-  hideColours(lastFilteredColour); // start by showing red
-
+  // set copyright year
   var theYear = new Date().getFullYear(); // set copyright year in footer
-  $('#year').html(' 1995 - ' + theYear);
+  gbc('#year').text(' 1995 - ' + theYear + '.');
 
-  // lazy load images
-  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function() {
-      img.removeAttribute('data-src');
-    };
+  // set mailto links
+  gbc('a[data-mailto]').each(function(mailToLink) {
+    mailToLink.setAttribute('href', 'mailto:' + mailToLink.getAttribute('data-mailto') + '@gariebevancoatings.co.uk');
   });
 
-  $('a[data-mailto]').each(function() { // set mailto links
-    var contact = $(this);
-    contact.attr('href', 'mailto:' + contact.data('mailto') + '@gariebevancoatings.co.uk');
-  });
-
-  $('#enquiries-email-address').text('enquiries@gariebevancoatings.co.uk')
+  // set enquiries link text
+  gbc('#enquiries-email-address').text('enquiries@gariebevancoatings.co.uk');
 
   highlightOpeningTimes();
 
-  $('#colour-search').on('keyup', function(e) {
+  // search for colours by word
+  gbc('#colour-search').on('keyup', function(e) {
     e.preventDefault;
 
-    var searchFor = $(this).val();
-    $('#colour-filter li, #clear-colour-search').removeAttr('hidden'); // show all filter tabs and clear search button (hide some later)
+    var searchFor = e.target.value;
+
+    gbc('#colour-filter li, #clear-colour-search').hide();
 
     if (searchFor.length == 0) {
-      filterColour(lastFilteredColour);
-      $('#colour-filter li:last-child, #clear-colour-search').attr('hidden', ''); // hide search filter tabs and clear search button
+      filterColourAnimation(lastFilteredColour);
+      gbc('#colour-filter li:not(:last-child)').show();
+      gbc('#clear-colour-search').hide();
     } else {
-      filterColour(searchFor);
-      $('#colour-filter li:last-child').addClass('uk-active'); // set search filter tab as active
-      $('#colour-filter li:not(:last-child)').attr('hidden', ''); // hide all filter tabs apart from search
+      filterColourAnimation(searchFor);
+      gbc('#colour-filter-search, #clear-colour-search').show();
+      gbc('#colour-filter-search').addClass('uk-active');
     }
   });
 
-  $('#clear-colour-search').on('click', function() {
-    $('#colour-search').val('').trigger('keyup');
+  // clear colour search button
+  gbc('#clear-colour-search').on('click', function() {
+    gbc('#colour-search').val('').trigger('keyup');
   });
+
+  // trigger colour search
+  gbc('#colour-search').trigger('keyup');
+
 });
 
+function displayColourModal(colour) {
+
+  var colourGroup = colour.getAttribute('data-colour-group');
+  var colourName = colour.getAttribute('data-colour-name');
+  var colourCode = colour.getAttribute('data-colour-code');
+  var colourHex = colour.style.backgroundColor;
+
+  var colourTitle = colourName + " (" + colourGroup + " " + colourCode + ")";
+
+  gbc('#colour-modal .uk-modal-body').css('backgroundColor', colourHex);
+  gbc('#colour-modal .uk-modal-title').text(colourTitle);
+
+  UIkit.modal('#colour-modal').show();
+
+}
+
+// handles the animation when colours are filtered
+function filterColourAnimation(colour) {
+
+  colour = colour.toLowerCase();
+  var colourGrid = gbc('#colour-grid');
+
+  colourGrid.removeClass('uk-animation-slide-left-small').addClass('uk-animation-slide-right-small')
+    .addClass('uk-animation-reverse').addClass('uk-animation-fast');
+
+  setTimeout(function() {
+    filterColours(colour);
+
+    colourGrid.removeClass('uk-animation-slide-right-small').removeClass('uk-animation-reverse')
+      .addClass('uk-animation-slide-left-small');
+  }, 100);
+
+}
+
+// filter colours to only show matching colours - can be keyword, colour, code, description
+function filterColours(colour) {
+
+  colourGrid = gbc('#colour-grid > div').each(function(colourPreview) {
+    colourPreview.removeAttribute('hidden');
+    var colourName = colourPreview.getAttribute('data-filter-colour').toString().toLowerCase();
+    var colourCode = colourPreview.children[0].getAttribute('data-colour-code').toString().toLowerCase();
+    var colourDescription = colourPreview.children[0].getAttribute('data-colour-name').toString().toLowerCase();
+
+    if ((colourName.search(colour) < 0) && (colourCode.search(colour) < 0) && (colourDescription.search(colour) < 0)) {
+      colourPreview.setAttribute('hidden', '');
+    }
+  });
+
+}
+
+// highlight the relevant opening time day
 function highlightOpeningTimes() {
+
   var today = new Date();
   var day = today.getDay();
   var dd = today.getDate();
@@ -87,53 +144,10 @@ function highlightOpeningTimes() {
     day = 0;
 
   if (day == 5)
-    $('#fri-opening-times').addClass('uk-text-bold');
+    gbc('#fri-opening-times').addClass('uk-text-bold');
   else if ((day >= 1) && (day <= 5))
-    $('#mon-thur-opening-times').addClass('uk-text-bold');
+    gbc('#mon-thur-opening-times').addClass('uk-text-bold');
   else
-    $('#sat-sun-opening-times').addClass('uk-text-bold');
-}
+    gbc('#sat-sun-opening-times').addClass('uk-text-bold');
 
-function filterColour(colour) {
-
-  colour = colour.toLowerCase();
-  var colourGrid = $('#colour-grid');
-
-  colourGrid.removeClass('uk-animation-slide-left-small')
-    .addClass('uk-animation-slide-right-small uk-animation-reverse uk-animation-fast');
-
-  setTimeout(function() {
-    hideColours(colour);
-
-    colourGrid.removeClass('uk-animation-slide-right-small uk-animation-reverse')
-      .addClass('uk-animation-slide-left-small');
-  }, 100);
-}
-
-function hideColours(colour) {
-  $('#colour-grid').children('div').removeAttr('hidden').each(function() {
-    var colourName = $(this).data('filter-colour').toString().toLowerCase();
-    var colourCode = $(this).children('div').data('colour-code').toString().toLowerCase();
-    var colourDescription = $(this).children('div').data('colour-name').toString().toLowerCase();
-
-    if ((colourName.search(colour) < 0) && (colourCode.search(colour) < 0) && (colourDescription.search(colour) < 0)) {
-      $(this).attr('hidden', '');
-    }
-  });
-}
-
-function displayColourModal(colour) {
-  var colourModal = $('#colour-modal');
-
-  var colourGroup = colour.data('colour-group');
-  var colourName = colour.data('colour-name');
-  var colourCode = colour.data('colour-code');
-  var colourHex = colour.css('background-color');
-
-  var colourTitle = colourName + " (" + colourGroup + " " + colourCode + ")";
-
-  colourModal.find('.uk-modal-body').css('background-color', colourHex);
-  colourModal.find('.uk-modal-title').text(colourTitle);
-
-  UIkit.modal('#colour-modal').show();
 }
