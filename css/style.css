@@ -162,6 +162,7 @@ nav a, .uk-nav-default { /* needed as styles to increase font size are always su
   overflow: hidden;
   width: 75px; height: 75px;
   text-align: right;
+  pointer-events: none; /* ignore clicks on this - 'pass' the click through to the colour */
 }
 .gbc-popular span {
   font-size: 10px;
