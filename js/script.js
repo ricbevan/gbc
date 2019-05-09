@@ -64,12 +64,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function displayColourModal(colour) {
 
-  var colourGroup = colour.getAttribute('data-colour-group');
   var colourName = colour.getAttribute('data-colour-name');
   var colourCode = colour.getAttribute('data-colour-code');
   var colourHex = colour.style.backgroundColor;
 
-  var colourTitle = colourName + " (" + colourGroup + " " + colourCode + ")";
+  var colourTitle = colourName + " (" + colourCode + ")";
 
   gbc('#colour-modal .uk-modal-body').css('backgroundColor', colourHex);
   gbc('#colour-modal .uk-modal-title').text(colourTitle);
