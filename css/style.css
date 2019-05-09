@@ -95,7 +95,11 @@ a[href^="tel"] {
   left: 0; /* IE fix */
 }
 
-.uk-sticky-below {
+.uk-navbar-nav li { /* active navigation button background animation */
+  transition: all 0.3s ease-in;
+}
+
+.uk-sticky-below { /* shadow under navigation menu when locked on page */
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
 }
 
