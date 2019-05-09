@@ -8,75 +8,40 @@
   src: url('Montserrat-Medium.ttf');
 }
 
+/* rainbow section colours ===================================================== START */
+.why-us a, #why-us .uk-h3 { color: #F44336 !important; }
+#why-us .uk-divider-small::after { border-color: #F44336; }
+
+.services a, #services .uk-h3, #services .uk-icon { color: #FF9800 !important; }
+#services .uk-divider-small::after { border-color: #FF9800; }
+
+.commercial a, #commercial .uk-h3 { color: #FFEB3B !important; }
+#commercial .uk-divider-small::after { border-color: #FFEB3B; }
+
+.domestic a, #domestic .uk-h3 { color: #8BC34A !important; }
+#domestic .uk-divider-small::after { border-color: #8BC34A; }
+
+.colours a, #colours .uk-h3, #colours .uk-icon { color: #2297F3 !important; }
+#colours .uk-divider-small::after, #colours .uk-tab>.uk-active>a, #colours .uk-search-input { border-color: #2297F3; }
+
+.contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
+#contact .uk-divider-small::after, #contact .uk-input, #contact .uk-textarea { border-color: #9D27B0; }
+#contact .uk-button { background-color: #9D27B0; }
+/* rainbow section colours ===================================================== END */
+
 html {
   font-family: MontserratLight;
 }
 
-.uk-h1,.uk-h2,.uk-h3,.uk-h4,.uk-h5,.uk-h6,h1,h2,h3,h4,h5,h6, .uk-navbar-item,.uk-navbar-nav>li>a,.uk-navbar-toggle {
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
   font-family: MontserratMedium;
 }
 
-a, .uk-text-meta a { /* made anchor colour slightly darker to meet accessibility recommendations */
+a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darker to meet accessibility recommendations */
   color: #0e6ecd;
 }
 
-.uk-text-meta a:hover { /* for the google street view link */
-  color: #0e6ecd;
-  text-decoration: underline;
-}
-
-a[href^="tel"] {
-  color:inherit;
-}
-
-
-
-/* rainbow section colours ===================================================== START */
-.why-us a, #why-us h2, #why-us h3, #why-us .uk-icon:not(.social-icon) { color: #F44336 !important; }
-#why-us .uk-divider-small::after { border-top: 1px solid #F44336; }
-
-.services a, #services h2, #services h3, #services .uk-icon { color: #FF9800 !important; }
-#services .uk-divider-small::after { border-top: 1px solid #FF9800; }
-#services .uk-tab>.uk-active>a { /* the right border for active tab in the services section */
-  border-color: #FF9800;
-}
-
-.commercial a, #commercial h2, #commercial .uk-icon { color: #FFEB3B !important; }
-#commercial .uk-divider-small::after { border-top: 1px solid #FFEB3B; }
-
-.domestic a, #domestic h2, #domestic .uk-icon { color: #8BC34A !important; }
-#domestic .uk-divider-small::after { border-top: 1px solid #8BC34A; }
-
-.colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
-#colours .uk-divider-small::after { border-top: 1px solid #2297F3; }
-#colours .uk-tab>.uk-active>a, #colours .uk-search-input {
-  border-color: #2297F3;
-}
-
-.contact a, #contact h2, #contact .uk-icon { color: #9D27B0 !important; }
-#contact .uk-divider-small::after { border-top: 1px solid #9D27B0; }
-#contact .uk-input, #contact .uk-textarea {
-  border-color: #9D27B0;
-}
-#contact .uk-button {
-  background-color: #9D27B0;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 5px 30px;
-  font-size: 1rem;
-}
-#contact .uk-icon-image {
-  float: right;
-  margin-top: 8px;
-  margin-left: 8px;
-  width: 24px;
-  height: 24px;
-}
-/* rainbow section colours ===================================================== END */
-
-
-
-/* ui-kit modifications ======================================== START */
-#cover h1, #cover p {
+#cover * { /* text in cover */
   color: #ffffff;
   text-shadow: 1px 2px 3px #666;
 }
@@ -104,7 +69,7 @@ a[href^="tel"] {
   margin-top: 15px;
 }
 
-#colours .uk-tab>.uk-active>a { /* active filter button style */
+#colours .uk-tab > .uk-active > a { /* active filter button style */
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
 }
@@ -118,104 +83,62 @@ a[href^="tel"] {
   bottom: 0px;
 }
 
+#contact .uk-icon-image { /* send icon in contact form */
+  float: right;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+#contact .uk-button { /* send button in contact form */
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px 30px;
+  font-size: 1rem;
+}
+
+.uk-accordion-title::before, .uk-open > .uk-accordion-title::before { /* hide +/- from acordian */
+  background-image: none;
+}
+
+.uk-background-default { /* when a white background has a dark parent background it inherits white text without this */
+  color: #666;
+}
+
+.uk-background-secondary { /* slightly darker background and lighter text */
+  background-color: #241E21 !important;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.uk-divider-small::after { /* border for divider under section header */
+  border: 1px 0px 0px 0px;
+}
+
+.uk-navbar a, .uk-nav-default { /* needed as styles to increase font size are always superceded  */
+  font-size: 1.5rem !important;
+}
+
 .uk-navbar-nav li { /* active navigation button background animation */
   transition: all 0.3s ease-in;
-}
-
-.uk-sticky-below { /* shadow under navigation menu when locked on page */
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-}
-
-.uk-background-secondary { /* slightly darker background */
-  background-color: #241E21 !important;
-}
-
-.uk-textarea { /* stop text area being resizable */
-  resize: none;
 }
 
 .uk-navbar-nav .uk-active { /* highlight active navigation button */
   background: rgba(255,255,255,0.1);
 }
 
-.uk-accordion-title::before, .uk-open>.uk-accordion-title::before { /* hide +/- from acordian */
-  background-image: none;
-}
-/* extra styles not available in ui-kit ======================================== END */
-
-
-
-/* specific styles ============================================================= START */
-
-
-
-
-
-html .uk-background-default { /* when a white background has a dark parent background it inherits white text without this */
-  color: #666;
+.uk-sticky-below { /* shadow under navigation menu when locked on page */
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
 }
 
-html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* change dark background text */
-  color: rgba(255, 255, 255, 0.7);
+.uk-text-meta a:hover { /* for the google street view link */
+  text-decoration: underline;
 }
 
-nav a, .uk-nav-default { /* needed as styles to increase font size are always superceded  */
-  font-size: 1.5rem !important;
+.uk-textarea { /* stop text area being resizable */
+  resize: none;
 }
 
 .facebook-icon { color: #3B5998 !important; } /* facebook icon colour */
 .instagram-icon { color: #517FA4 !important; } /* instagram icon colour */
 .twitter-icon { color: #00aced !important; } /* twitter icon colour */
 .google-icon { color: #DD4B39 !important; } /* google plus icon colour */
-/* specific styles ============================================================= END */
-
-/* popular colour ribbon ============================================================= START */
-.gbc-colour {
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.gbc-popular {
-  position: absolute;
-  right: -5px; top: -5px;
-  z-index: 1;
-  overflow: hidden;
-  width: 75px; height: 75px;
-  text-align: right;
-  pointer-events: none; /* ignore clicks on this - 'pass' the click through to the colour */
-}
-.gbc-popular span {
-  font-size: 10px;
-  font-weight: bold;
-  color: #FFF;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  background: #2297F3;
-  background: linear-gradient(#2297F3 0%, #1e5799 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px; right: -21px;
-}
-.gbc-popular span::before {
-  content: "";
-  position: absolute; left: 0px; top: 100%;
-  z-index: -1;
-  border-left: 2px solid #1e5799;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 2px solid #1e5799;
-}
-.gbc-popular span::after {
-  content: "";
-  position: absolute; right: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 2px solid #1e5799;
-  border-bottom: 3px solid transparent;
-  border-top: 2px solid #1e5799;
-}
-/* popular colour ribbon ============================================================= END */
