@@ -34,14 +34,19 @@
   </head>
   <body>
 
-    <div id="cover" class="uk-cover-container gbc-height-x-large uk-panel uk-flex uk-flex-center uk-flex-middle uk-flex-column gbc-fade-bottom">
-      <!-- <video autoplay loop muted playsinline uk-cover>
-        <source src="media/videos/randox.mp4" type="video/mp4">
-      </video> -->
-      <div class="uk-padding-small uk-text-left uk-text-center@m">
-        <img src="media/images/gbc-logo.png" alt="Garie Bevan Coatings logo" uk-scrollspy="cls:uk-animation-slide-top-small" />
-        <h1 class="uk-text-lead gbc-text-white gbc-text-shadow" uk-scrollspy-nav="cls:uk-animation-slide-top-small">Powder Coating and Sand Blasting specialists</h1>
-        <p class="uk-text-lead gbc-text-white gbc-text-shadow" uk-scrollspy-nav="cls:uk-animation-slide-top-small"><a href="tel:01457865676">01457 865 676</a></p>
+    <div class="uk-section uk-padding-remove" id="cover">
+      <div class="uk-visible-toggle" tabindex="-1" uk-slideshow="autoplay: true; autoplay-interval: 3000; animation: fade">
+        <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 80px">
+          <li><img src="media/images/header/radiator.png" alt="Cast iron radiator" uk-cover></li>
+          <li><img src="media/images/header/old-unicorn.jpg" alt="Wetherspoons Old Unicorn sculpture" uk-cover></li>
+          <li><img src="media/images/header/randox-grand-national-sign.jpg" alt="Grand National sculpture" uk-cover></li>
+          <li><img src="media/images/header/hackney-empire-sign.jpg" alt="Hackney Empire sign" uk-cover></li>
+        </ul>
+        <div class="uk-position-center uk-text-left uk-text-center@m">
+          <img src="media/images/gbc-logo.png" alt="Garie Bevan Coatings logo" uk-scrollspy="cls:uk-animation-slide-top-small" />
+          <h1 class="uk-text-lead">Powder Coating and Sand Blasting specialists</h1>
+          <p class="uk-text-lead">01457 865 676</p>
+        </div>
       </div>
     </div>
 

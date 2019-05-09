@@ -77,12 +77,22 @@ a[href^="tel"] {
 
 
 /* extra styles not available in ui-kit ======================================== START */
-.gbc-text-white {
+#cover h1, #cover p {
   color: #ffffff;
+  text-shadow: 1px 2px 3px #666;
 }
 
-.gbc-text-shadow {
-  text-shadow: 1px 2px 3px #666;
+#cover ul:after { /* the fade out colour at the bottom of the cover */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  bottom: 0;
+  background: -webkit-linear-gradient(transparent, #241E21) left repeat;
+  background: linear-gradient(transparent, #241E21) left repeat;
+  z-index: 1;
+  left: 0; /* IE fix */
 }
 
 .uk-sticky-below {
@@ -109,16 +119,6 @@ a[href^="tel"] {
 
 
 /* specific styles ============================================================= START */
-#cover {
-  background-image: url("../media/images/gallery/randox-grand-national-sign.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#cover > div { /* stop things appearing behind the cover */
-  z-index: 2;
-}
-
 #colour-search { /* stop search text going over close button */
   padding-right: 35px;
 }
@@ -147,19 +147,6 @@ html .uk-background-secondary {
 
 html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* change dark background text */
   color: rgba(255, 255, 255, 0.7);
-}
-
-.gbc-fade-bottom:after { /* the fade out colour at the bottom of the cover */
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 55%;
-  bottom: 0;
-  background: -webkit-linear-gradient(transparent, #241E21) left repeat;
-  background: linear-gradient(transparent, #241E21) left repeat;
-  z-index: 1;
-  left: 0; /* IE fix */
 }
 
 nav a, .uk-nav-default { /* needed as styles to increase font size are always superceded  */
