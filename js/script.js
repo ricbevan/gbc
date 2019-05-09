@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // show colour modal
-  gbc('#colour-grid > li').on('click', function(colourBox) {
+  gbc('#colour-grid > li > div').on('click', function(colourBox) {
     displayColourModal(colourBox.target);
   });
 
@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // trigger colour search
   gbc('#colour-search').trigger('keyup');
+
+  if(window.location.hash) { // open colour modal if hash provided
+    gbc('div[data-colour-code="' + window.location.hash.substring(1) + '"]').trigger('click');
+  }
 
 });
 
