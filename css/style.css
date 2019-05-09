@@ -76,7 +76,7 @@ a[href^="tel"] {
 
 
 
-/* extra styles not available in ui-kit ======================================== START */
+/* ui-kit modifications ======================================== START */
 #cover h1, #cover p {
   color: #ffffff;
   text-shadow: 1px 2px 3px #666;
@@ -103,15 +103,15 @@ a[href^="tel"] {
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
 }
 
-.uk-textarea {
+.uk-background-secondary { /* slightly darker background */
+  background-color: #241E21 !important;
+}
+
+.uk-textarea { /* stop text area being resizable */
   resize: none;
 }
 
-.gbc-height-x-large { /* a custom height, as ui-kit's isn't quite big enough */
-  height: calc(100vh - 120px);
-}
-
-.uk-navbar-nav .uk-active, .uk-nav .uk-active {
+.uk-navbar-nav .uk-active { /* highlight active navigation button */
   background: rgba(255,255,255,0.1);
 }
 
@@ -123,6 +123,7 @@ a[href^="tel"] {
 
 
 /* specific styles ============================================================= START */
+
 #colour-search { /* stop search text going over close button */
   padding-right: 35px;
 }
