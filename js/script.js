@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // show colour modal
-  gbc('#colour-grid > div > div').on('click', function(colourBox) {
+  gbc('#colour-grid > li').on('click', function(colourBox) {
     displayColourModal(colourBox.target);
   });
 
@@ -95,7 +95,7 @@ function filterColourAnimation(colour) {
 // filter colours to only show matching colours - can be keyword, colour, code, description
 function filterColours(colour) {
 
-  colourGrid = gbc('#colour-grid > div').each(function(colourPreview) {
+  colourGrid = gbc('#colour-grid > li').each(function(colourPreview) {
     colourPreview.removeAttribute('hidden');
     var colourName = colourPreview.getAttribute('data-filter-colour').toString().toLowerCase();
     var colourCode = colourPreview.children[0].getAttribute('data-colour-code').toString().toLowerCase();

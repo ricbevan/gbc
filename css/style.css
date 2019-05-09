@@ -50,7 +50,6 @@ a[href^="tel"] {
 .colours a, #colours h2, #colours .uk-icon { color: #2297F3 !important; }
 #colours .uk-divider-small::after { border-top: 1px solid #2297F3; }
 #colours .uk-tab>.uk-active>a, #colours .uk-search-input {
-  color: rgba(255, 255, 255, 1);
   border-color: #2297F3;
 }
 
@@ -95,6 +94,30 @@ a[href^="tel"] {
   left: 0; /* IE fix */
 }
 
+#colours #colour-grid li div { /* styling for colour thumbnails */
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 100px;
+}
+
+#colours #colour-grid li { /* give all colours a margin, otherwise the top row isn't aligned when filtering */
+  margin-top: 15px;
+}
+
+#colours .uk-tab>.uk-active>a { /* active filter button style */
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+#colour-search { /* stop search text going over close button */
+  padding-right: 35px;
+}
+
+#clear-colour-search { /* vertically align clear search button */
+  top: 0px;
+  bottom: 0px;
+}
+
 .uk-navbar-nav li { /* active navigation button background animation */
   transition: all 0.3s ease-in;
 }
@@ -124,23 +147,9 @@ a[href^="tel"] {
 
 /* specific styles ============================================================= START */
 
-#colour-search { /* stop search text going over close button */
-  padding-right: 35px;
-}
 
-#clear-colour-search { /* vertically align clear search button */
-  top: 0px;
-  bottom: 0px;
-}
 
-#colour-grid>div { /* give a specific height not available in ui-kit, and set margin-top for all (including top row) so filtering works nicely */
-  height: 100px;
-  margin-top: 40px;
-}
 
-#colour-grid>div>div { /* make colours have the pointer cursor so it's obvious they can be clicked on */
-  cursor: pointer;
-}
 
 html .uk-background-default { /* when a white background has a dark parent background it inherits white text without this */
   color: #666;
