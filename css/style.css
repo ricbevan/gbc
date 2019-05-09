@@ -1,3 +1,21 @@
+@font-face {
+  font-family: MontserratLight;
+  src: url('Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url('Montserrat-Medium.ttf');
+}
+
+html {
+  font-family: MontserratLight;
+}
+
+.uk-h1,.uk-h2,.uk-h3,.uk-h4,.uk-h5,.uk-h6,h1,h2,h3,h4,h5,h6, .uk-navbar-item,.uk-navbar-nav>li>a,.uk-navbar-toggle {
+  font-family: MontserratMedium;
+}
+
 a, .uk-text-meta a { /* made anchor colour slightly darker to meet accessibility recommendations */
   color: #0e6ecd;
 }
@@ -123,6 +141,10 @@ html .uk-background-default { /* when a white background has a dark parent backg
   color: #666;
 }
 
+html .uk-background-secondary {
+  background-color: #241E21 !important;
+}
+
 html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* change dark background text */
   color: rgba(255, 255, 255, 0.7);
 }
@@ -134,8 +156,8 @@ html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* chan
   width: 100%;
   height: 55%;
   bottom: 0;
-  background: -webkit-linear-gradient(transparent, #222) left repeat;
-  background: linear-gradient(transparent, #222) left repeat;
+  background: -webkit-linear-gradient(transparent, #241E21) left repeat;
+  background: linear-gradient(transparent, #241E21) left repeat;
   z-index: 1;
   left: 0; /* IE fix */
 }
