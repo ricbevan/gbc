@@ -146,10 +146,6 @@ html .uk-background-default { /* when a white background has a dark parent backg
   color: #666;
 }
 
-html .uk-background-secondary {
-  background-color: #241E21 !important;
-}
-
 html .uk-background-secondary, html .uk-background-secondary .uk-tab a { /* change dark background text */
   color: rgba(255, 255, 255, 0.7);
 }
