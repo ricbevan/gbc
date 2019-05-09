@@ -35,7 +35,7 @@ a[href^="tel"] {
 .why-us a, #why-us h2, #why-us h3, #why-us .uk-icon:not(.social-icon) { color: #F44336 !important; }
 #why-us .uk-divider-small::after { border-top: 1px solid #F44336; }
 
-.services a, #services h2, #services .uk-icon { color: #FF9800 !important; }
+.services a, #services h2, #services h3, #services .uk-icon { color: #FF9800 !important; }
 #services .uk-divider-small::after { border-top: 1px solid #FF9800; }
 #services .uk-tab>.uk-active>a { /* the right border for active tab in the services section */
   border-color: #FF9800;
@@ -115,8 +115,8 @@ a[href^="tel"] {
   background: rgba(255,255,255,0.1);
 }
 
-.uk-nav>li>a {
-  padding: 10px;
+.uk-accordion-title::before, .uk-open>.uk-accordion-title::before { /* hide +/- from acordian */
+  background-image: none;
 }
 /* extra styles not available in ui-kit ======================================== END */
 
