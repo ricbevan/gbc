@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // set mailto links
   gbc('a[data-mailto]').each(function(mailToLink) {
-    mailToLink.setAttribute('href', 'mailto:' + mailToLink.getAttribute('data-mailto') + '@gariebevancoatings.co.uk');
+    mailToLink.setAttribute('href', 'mailto:' + mailToLink.getAttribute('data-mailto') + '@gbc.uk');
   });
 
   // set enquiries link text
-  gbc('#enquiries-email-address').text('enquiries@gariebevancoatings.co.uk');
+  gbc('#enquiries-email-address').text('enquiries@gbc.uk');
 
   highlightOpeningTimes();
 
