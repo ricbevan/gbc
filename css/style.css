@@ -97,6 +97,10 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   font-size: 1rem;
 }
 
+.uk-accordion-title {
+  color: #0f6ecd;
+}
+
 .uk-accordion-title::before, .uk-open > .uk-accordion-title::before { /* hide +/- from acordian */
   background-image: none;
 }
