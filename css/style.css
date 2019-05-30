@@ -59,28 +59,28 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   left: 0; /* IE fix */
 }
 
-#colours #colour-grid li div { /* styling for colour thumbnails */
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  height: 100px;
-}
-
-#colours #colour-grid li { /* give all colours a margin, otherwise the top row isn't aligned when filtering */
+#colours .uk-accordion-content { /* fix for different grid/accordion padding */
   margin-top: 15px;
 }
 
-#colours .uk-tab > .uk-active > a { /* active filter button style */
-  font-weight: bold;
-  color: rgba(255, 255, 255, 1);
+#colours .colour-grid li div { /* styling for colour thumbnails */
+  cursor: pointer;
+  height: 75px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in;
+  font-family: MontserratMedium; /* make text a little bolder */
 }
 
-#colour-search { /* stop search text going over close button */
-  padding-right: 35px;
+#colours .colour-grid li div:hover { /* styling for colour thumbnails text hover */
+  color: rgba(255, 255, 255, 0.9);
 }
 
-#clear-colour-search { /* vertically align clear search button */
-  top: 0px;
-  bottom: 0px;
+#colours .colour-grid li div.dark { /* styling for colour thumbnails dark text */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#colours .colour-grid li div.dark:hover { /* styling for colour thumbnails dark text hover */
+  color: rgba(0, 0, 0, 0.9);
 }
 
 #contact .uk-icon-image { /* send icon in contact form */

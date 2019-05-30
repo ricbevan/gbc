@@ -1,17 +1,7 @@
-var lastFilteredColour = 'gbc-popular';
-
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  filterColours(lastFilteredColour);
-
-  // filter colours
-  gbc('#colour-filter li').on('click', function() {
-    lastFilteredColour = this.children[0].getAttribute('data-filter');
-    filterColourAnimation(lastFilteredColour);
-  });
-
   // show colour modal
-  gbc('#colour-grid > li > div').on('click', function(colourBox) {
+  gbc('.colour-grid > li > div').on('click', function(colourBox) {
     displayColourModal(colourBox.target);
   });
 
@@ -29,43 +19,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   highlightOpeningTimes();
 
-  // search for colours by word
-  gbc('#colour-search').on('keyup', function(e) {
-    e.preventDefault;
-
-    var searchFor = e.target.value;
-
-    gbc('#colour-filter li, #clear-colour-search').hide();
-
-    if (searchFor.length == 0) {
-      filterColourAnimation(lastFilteredColour);
-      gbc('#colour-filter li:not(:last-child)').show();
-      gbc('#clear-colour-search').hide();
-    } else {
-      filterColourAnimation(searchFor);
-      gbc('#colour-filter-search, #clear-colour-search').show();
-      gbc('#colour-filter-search').addClass('uk-active');
-    }
-  });
-
-  // clear colour search button
-  gbc('#clear-colour-search').on('click', function() {
-    gbc('#colour-search').val('').trigger('keyup');
-  });
-
-  // trigger colour search
-  gbc('#colour-search').trigger('keyup');
-
   if(window.location.hash) { // open colour modal if hash provided
-    gbc('div[data-colour-code="' + window.location.hash.substring(1) + '"]').trigger('click');
+    Array.from(
+      document.querySelectorAll('.colour-grid li div'))
+        .find(
+          el => el.textContent === window.location.hash.substring(1)
+        )
+      .dispatchEvent(new Event('click')
+    );
   }
-
 });
 
 function displayColourModal(colour) {
 
   var colourName = colour.getAttribute('data-colour-name');
-  var colourCode = colour.getAttribute('data-colour-code');
+  var colourCode = colour.innerHTML;
   var colourHex = colour.style.backgroundColor;
 
   var colourTitle = colourName + " (" + colourCode + ")";
@@ -74,40 +42,6 @@ function displayColourModal(colour) {
   gbc('#colour-modal .uk-modal-title').text(colourTitle);
 
   UIkit.modal('#colour-modal').show();
-
-}
-
-// handles the animation when colours are filtered
-function filterColourAnimation(colour) {
-
-  colour = colour.toLowerCase();
-  var colourGrid = gbc('#colour-grid');
-
-  colourGrid.removeClass('uk-animation-slide-left-small').addClass('uk-animation-slide-right-small')
-    .addClass('uk-animation-reverse').addClass('uk-animation-fast');
-
-  setTimeout(function() {
-    filterColours(colour);
-
-    colourGrid.removeClass('uk-animation-slide-right-small').removeClass('uk-animation-reverse')
-      .addClass('uk-animation-slide-left-small');
-  }, 100);
-
-}
-
-// filter colours to only show matching colours - can be keyword, colour, code, description
-function filterColours(colour) {
-
-  colourGrid = gbc('#colour-grid > li').each(function(colourPreview) {
-    colourPreview.removeAttribute('hidden');
-    var colourName = colourPreview.getAttribute('data-filter-colour').toString().toLowerCase();
-    var colourCode = colourPreview.children[0].getAttribute('data-colour-code').toString().toLowerCase();
-    var colourDescription = colourPreview.children[0].getAttribute('data-colour-name').toString().toLowerCase();
-
-    if ((colourName.search(colour) < 0) && (colourCode.search(colour) < 0) && (colourDescription.search(colour) < 0)) {
-      colourPreview.setAttribute('hidden', '');
-    }
-  });
 
 }
 

@@ -380,458 +380,548 @@
       <div class="uk-container">
         <div uk-scrollspy="target: > *; cls:uk-animation-slide-bottom-medium; delay: 300">
           <div uk-grid>
-            <div class="uk-width-2-3@s">
+            <div class="uk-width-expand@s">
               <h2 class="uk-text-uppercase uk-h3">Colours</h2>
               <hr class="uk-divider-small uk-margin-large-bottom">
             </div>
-            <div class="uk-width-1-3@s uk-margin-remove-top" uk-grid>
-              <div class="uk-width-expand">
-                <div class="uk-search uk-search-default uk-margin-small-right uk-width-1-1 uk-padding-remove">
-                  <span uk-search-icon></span>
-                  <input class="uk-search-input" type="search" placeholder="Search colours..." id="colour-search">
-                  <button class="uk-alert-close" type="button" id="clear-colour-search" uk-close hidden></button>
-                </div>
-              </div>
-              <div class="uk-width-auto">
+            <div class="uk-width-auto@s uk-margin-remove-top" uk-grid>
+              <div>
                 <span uk-icon="icon: question; ratio: 2;" title="The colours depicted on the following chart are for guidance only. The displayed colour will depend on your monitor and browser and pearl or metallic colours cannot be shown adequately." uk-tooltip="pos: bottom-right"></span>
               </div>
             </div>
           </div>
         </div>
-        <ul id="colour-filter" class="uk-margin-remove-bottom" uk-tab uk-scrollspy="target: > li; cls:uk-animation-slide-top-small; delay: 100">
-          <li class="uk-active"><a href="#" data-filter="gbc-popular">Popular</a></li>
-          <li><a href="#" data-filter="gbc-red">Red</a></li>
-          <li><a href="#" data-filter="gbc-orange">Orange</a></li>
-          <li><a href="#" data-filter="gbc-yellow">Yellow</a></li>
-          <li><a href="#" data-filter="gbc-green">Green</a></li>
-          <li><a href="#" data-filter="gbc-blue">Blue</a></li>
-          <li><a href="#" data-filter="gbc-pink-purple">Pink/Purple</a></li>
-          <li><a href="#" data-filter="gbc-cream-beige-brown">Cream/Beige/Brown</a></li>
-          <li><a href="#" data-filter="gbc-white-grey-black">White/Grey/Black</a></li>
-          <li id="colour-filter-search"><a href="#">Search</a></li>
-        </ul>
-        <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small" id="colour-grid" uk-grid uk-scrollspy="cls:uk-animation-fade">
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #FFFFFF" data-colour-name="Pure white" data-colour-code="9010"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-popular"><div style="background-color: #EDFF21" data-colour-name="Sulfur yellow" data-colour-code="1016"></div></li>
-          <li data-filter-colour="gbc-yellow"><div style="background-color: #FFFF00" data-colour-name="Luminous yellow" data-colour-code="1026"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #FFA420" data-colour-name="Luminous bright orange" data-colour-code="2007"></div></li>
-          <li data-filter-colour="gbc-orange"><div style="background-color: #FF7514" data-colour-name="Pastel orange" data-colour-code="2003"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #FF2301" data-colour-name="Luminous orange" data-colour-code="2005"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #FE0000" data-colour-name="Luminous bright red" data-colour-code="3026"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown gbc-popular"><div style="background-color: #FDF4E3" data-colour-name="Cream" data-colour-code="9001"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #FAB878" data-colour-name="Mellow apricot / Apricot" data-colour-code="06E50"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-popular"><div style="background-color: #FAD201" data-colour-name="Traffic yellow" data-colour-code="1023"></div></li>
-          <li data-filter-colour="gbc-orange"><div style="background-color: #F99814" data-colour-name="Orange" data-colour-code="08E55"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown gbc-popular"><div style="background-color: #F8F32B" data-colour-name="Zinc yellow" data-colour-code="1018"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #F8BB00" data-colour-name="Bold yellow" data-colour-code="363"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #F80000" data-colour-name="Luminous red" data-colour-code="3024"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #F75E25" data-colour-name="Bright red orange" data-colour-code="2008"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #F6F6F6" data-colour-name="Traffic white" data-colour-code="9016"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #F5DBD4" data-colour-name="Rose pink / Petal" data-colour-code="04E49"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #F5D033" data-colour-name="Saffron yellow" data-colour-code="1017"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #F5C418" data-colour-name="Canary Yellow" data-colour-code="10E55"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #F54021" data-colour-name="Traffic orange" data-colour-code="2009"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #F4F4F4" data-colour-name="Signal white" data-colour-code="9003"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #F4E7E0" data-colour-name="Pink" data-colour-code="04C31"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #F4A900" data-colour-name="Melon yellow" data-colour-code="1028"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange gbc-popular"><div style="background-color: #F44611" data-colour-name="Pure orange" data-colour-code="2004"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #F3C977" data-colour-name="Deep cream" data-colour-code="353"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-popular"><div style="background-color: #F3DA0B" data-colour-name="Rape yellow" data-colour-code="1021"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #F39F18" data-colour-name="Sun yellow" data-colour-code="1037"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #F3A505" data-colour-name="Dahlia yellow" data-colour-code="1033"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #F1F2EA" data-colour-name="White" data-colour-code="00E55"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #F2E8D7" data-colour-name="Magnolia" data-colour-code="08B15"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #F2A600" data-colour-name="Golden yellow" data-colour-code="356"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #F1E9D7" data-colour-name="Creamy white / Ivory / Gardenia" data-colour-code="10B15"></div></li>
-          <li data-filter-colour="gbc-orange"><div style="background-color: #F18F59" data-colour-name="Mandarin orange / Clementine / Calendula" data-colour-code="06E51"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #F0E0C6" data-colour-name="Honeysuckle cream / Blush stone" data-colour-code="08C31"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #F0D168" data-colour-name="Light grapefruit / Forsythia" data-colour-code="10E50"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #EFA94A" data-colour-name="Pastel yellow" data-colour-code="1034"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #EEE1C0" data-colour-name="Ivory / Champagne / Buttermilk" data-colour-code="10C31"></div></li>
-          <li data-filter-colour="gbc-yellow"><div style="background-color: #EDD06A" data-colour-name="Grapefruit" data-colour-code="315"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #EDB212" data-colour-name="Lemon" data-colour-code="355"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #ED760E" data-colour-name="Yellow orange" data-colour-code="2000"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #BDECB6" data-colour-name="Pastel green" data-colour-code="6019"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown gbc-popular"><div style="background-color: #ECA20C" data-colour-name="Golden yellow / Amber / Goldcup" data-colour-code="08E51"></div></li>
-          <li data-filter-colour="gbc-orange"><div style="background-color: #EC7C26" data-colour-name="Deep orange" data-colour-code="2011"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #E7EBDA" data-colour-name="Grey white" data-colour-code="9002"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #EBCAA0" data-colour-name="Biscuit" data-colour-code="369"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #EBBF85" data-colour-name="Yellow" data-colour-code="08D41"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #EADDD6" data-colour-name="Rosepetal / Pastel pink / Dawn pink" data-colour-code="04B15"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #EAE6CA" data-colour-name="Oyster white" data-colour-code="1013"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #EA899A" data-colour-name="Light pink" data-colour-code="3015"></div></li>
-          <li data-filter-colour="gbc-yellow"><div style="background-color: #EAC40A" data-colour-name="Canary yellow" data-colour-code="309"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #D0E9D6" data-colour-name="Light green" data-colour-code="14E49"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #E9C100" data-colour-name="Sunflower yellow / Canary / Aztec" data-colour-code="10E53"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #E4E8E1" data-colour-name="Ice blue / Spindrift" data-colour-code="18C31"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #E8E0A6" data-colour-name="Pale primrose / Pale lemon / Jonquil" data-colour-code="10E49"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #E7BDB4" data-colour-name="Orchid pink / Parisian pink / Shell" data-colour-code="04C33"></div></li>
-          <li data-filter-colour="gbc-yellow"><div style="background-color: #E7D367" data-colour-name="Primrose" data-colour-code="310"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #D4E6E2" data-colour-name="Crystal blue / Astral blue / Pinefrost" data-colour-code="18E49"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #D9E6D7" data-colour-name="Glacial green / Alpine" data-colour-code="14C31"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown gbc-popular"><div style="background-color: #E6D690" data-colour-name="Light ivory" data-colour-code="1015"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #E63244" data-colour-name="Rose" data-colour-code="3017"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #E5E4D0" data-colour-name="Sea foam / Seafoam" data-colour-code="12B15"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-white-grey-black"><div style="background-color: #E5E5BF" data-colour-name="Light yellow" data-colour-code="12C31"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #E5D1AE" data-colour-name="Manilla" data-colour-code="367"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow"><div style="background-color: #E5BE01" data-colour-name="Signal yellow" data-colour-code="1003"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #E55137" data-colour-name="Salmon range" data-colour-code="2012"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #E4C0C4" data-colour-name="Lupin pink / Candy floss / Pink wafer" data-colour-code="02C33"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #E4D29C" data-colour-name="Vanilla / Pollen" data-colour-code="10C33"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #E4A010" data-colour-name="Maize yellow" data-colour-code="1006"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #E3E3DF" data-colour-name="Pearl grey / Swansdown" data-colour-code="22B15"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #E3CA8E" data-colour-name="Pale cream" data-colour-code="352"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #E37363" data-colour-name="Salmon red / Lobster / Azalea" data-colour-code="04E51"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #E2C19F" data-colour-name="Peach / Cameo" data-colour-code="06C33"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #E1CC4F" data-colour-name="Ivory" data-colour-code="1014"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #DEC497" data-colour-name="Light beige" data-colour-code="366"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red"><div style="background-color: #DE4C8A" data-colour-name="Heather violet" data-colour-code="4003"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #DDC5C3" data-colour-name="Shell pink" data-colour-code="453"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #DCC09B" data-colour-name="Beige" data-colour-code="08C33"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #DCA47F" data-colour-name="Light orange" data-colour-code="06C35"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #DCAC6D" data-colour-name="Light buff" data-colour-code="358"></div></li>
-          <li data-filter-colour="gbc-orange"><div style="background-color: #DC842A" data-colour-name="Apricot" data-colour-code="568"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #DC9D00" data-colour-name="Daffodil yellow" data-colour-code="1007"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #BBCDDB" data-colour-name="Porcelain blue / Pompadour" data-colour-code="20C33"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #ADD4DA" data-colour-name="Ribbon blue / Cirrus" data-colour-code="18E50"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #DA9F86" data-colour-name="Salmon pink" data-colour-code="447"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #D95030" data-colour-name="Salmon pink" data-colour-code="3022"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #D8C9B6" data-colour-name="Honey beige / Fawn / Sandstone" data-colour-code="08B17"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #D8CEAD" data-colour-name="Vellum" data-colour-code="365"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #D84B20" data-colour-name="Signal orange" data-colour-code="2010"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #D7D7D7" data-colour-name="Light grey" data-colour-code="7035"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #D7D7D7" data-colour-name="Papyrus white" data-colour-code="9018"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #D7C4BD" data-colour-name="Dusty pink / Tea rose / Tearose" data-colour-code="04B17"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #9ED7D0" data-colour-name="Turquoise" data-colour-code="16E50"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #AFD7B9" data-colour-name="Green" data-colour-code="14E50"></div></li>
-          <li data-filter-colour="gbc-orange"><div style="background-color: #D77131" data-colour-name="Light orange" data-colour-code="557"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #D6C39A" data-colour-name="Light straw" data-colour-code="384"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #D6AE01" data-colour-name="Broom yellow" data-colour-code="1032"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #D5D4CE" data-colour-name="Ash grey / Oyster grey / Portland" data-colour-code="00A01"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #D53032" data-colour-name="Strawberry red" data-colour-code="3018"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #B0B2D4" data-colour-name="Purple" data-colour-code="22D41"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #9EB9D4" data-colour-name="Powder blue" data-colour-code="20D41"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #6CA4D3" data-colour-name="Cornflower blue / Corfu / Cornflower" data-colour-code="20E51"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #D36E70" data-colour-name="Antique pink" data-colour-code="3014"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #98B6D2" data-colour-name="Pale roundel blue" data-colour-code="172"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red gbc-white-grey-black"><div style="background-color: #D1C2CD" data-colour-name="Pale lilac / Mallow" data-colour-code="24C33"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #D1C9AC" data-colour-name="Oatmeal / Greystone / Hopsack" data-colour-code="10B17"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #D0D0D0" data-colour-name="Telegrey 4" data-colour-code="7047"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #CFB58E" data-colour-name="Beige" data-colour-code="388"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #CFA671" data-colour-name="Fudge / Butterscotch / Bamboo" data-colour-code="08C35"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red"><div style="background-color: #CF3476" data-colour-name="Telemagenta" data-colour-code="4010"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #C5CDCB" data-colour-name="Blue mink / Silver haze / Heron" data-colour-code="18B17"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue gbc-white-grey-black"><div style="background-color: #B5CDC8" data-colour-name="Duckegg / Duck egg blue" data-colour-code="16C33"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #CBCD7A" data-colour-name="Green" data-colour-code="12D41"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown gbc-popular"><div style="background-color: #CDA434" data-colour-name="Golden yellow" data-colour-code="1004"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #CC0605" data-colour-name="Traffic red" data-colour-code="3020"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #C6C5CB" data-colour-name="Pale lavender / Haze / Dove" data-colour-code="22B17"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #CB4734" data-colour-name="Rail red / Azo orange" data-colour-code="593"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #CB3234" data-colour-name="Pure red" data-colour-code="3028"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #CB2821" data-colour-name="Vermilion" data-colour-code="2002"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #CACAAC" data-colour-name="Green Mist / Willow" data-colour-code="12B17"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #CAC4B0" data-colour-name="Silk grey" data-colour-code="7044"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #C8CA94" data-colour-name="Green haze / Catkin" data-colour-code="12C33"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #C9C7BF" data-colour-name="Dawn grey / Sink grey / Flake grey" data-colour-code="10A03"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #C93C20" data-colour-name="Red orange" data-colour-code="2001"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #C89092" data-colour-name="Pale roundel red" data-colour-code="454"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-green"><div style="background-color: #C8C83E" data-colour-name="Pale lime / Citrine" data-colour-code="12E51"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #C7B446" data-colour-name="Lemon yellow" data-colour-code="1012"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #C6A664" data-colour-name="Sand yellow" data-colour-code="1002"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #C68446" data-colour-name="Mid tan / Kalahari / Cinnamon" data-colour-code="06D43"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #C54937" data-colour-name="Red" data-colour-code="04E55"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #C51D34" data-colour-name="Raspberry red" data-colour-code="3027"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #C4A336" data-colour-name="Golden maize / Banana / Capricorn" data-colour-code="10D43"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #C44E33" data-colour-name="International orange" data-colour-code="592"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #84C3BE" data-colour-name="Light green" data-colour-code="6027"></div></li>
-          <li data-filter-colour="gbc-red gbc-orange"><div style="background-color: #C35831" data-colour-name="Pearl orange" data-colour-code="2013"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #C2B078" data-colour-name="Beige" data-colour-code="1001"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #C1AA69" data-colour-name="Wheat / Golden bronze / Savannah" data-colour-code="10C35"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #C1876B" data-colour-name="Beige red" data-colour-code="3012"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #BEBD7F" data-colour-name="Green beige" data-colour-code="1000"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #BE9E73" data-colour-name="Light stone" data-colour-code="361"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #4DA6BE" data-colour-name="Delphinium Blue / Mermaid / Larkspur" data-colour-code="18E51"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #BE443B" data-colour-name="Poppy / Carnival red" data-colour-code="04E53"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #A8BDBA" data-colour-name="Light admiralty grey" data-colour-code="697"></div></li>
-          <li data-filter-colour="gbc-blue gbc-popular"><div style="background-color: #3B83BD" data-colour-name="Light blue" data-colour-code="5012"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #AE9EBB" data-colour-name="Light violet" data-colour-code="797"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #00BB2D" data-colour-name="Luminous green" data-colour-code="6038"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #99B1BA" data-colour-name="Corvette blue / Pigeon" data-colour-code="18C35"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #B5B8B1" data-colour-name="Agate grey" data-colour-code="7038"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #B8B799" data-colour-name="Pebble grey" data-colour-code="7032"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #A5B884" data-colour-name="Eau de Nil" data-colour-code="216"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #B73D37" data-colour-name="Signal red" data-colour-code="537"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #4E83B6" data-colour-name="Light French blue" data-colour-code="175"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #B63A35" data-colour-name="Bold red" data-colour-code="564"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #7FB5B5" data-colour-name="Pastel turquoise" data-colour-code="6034"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #B56835" data-colour-name="Maori brown / Nectarine" data-colour-code="06E56"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #A0B4A3" data-colour-name="Iceplant green / Braemar" data-colour-code="14C35"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #B44C43" data-colour-name="Pearl pink" data-colour-code="3033"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #67A4B3" data-colour-name="Arctic blue / Fiesta Blue" data-colour-code="112"></div></li>
-          <li data-filter-colour="gbc-blue gbc-popular"><div style="background-color: #2271B3" data-colour-name="Sky blue" data-colour-code="5015"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #B32428" data-colour-name="Orient red" data-colour-code="3031"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #B32821" data-colour-name="Coral red" data-colour-code="3016"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #B1B0AE" data-colour-name="Goose grey / Sea mist / Goosewing" data-colour-code="00A05"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #B0B1AA" data-colour-name="Light aircraft grey" data-colour-code="627"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #B13C3C" data-colour-name="Carnival red" data-colour-code="04E56"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #99B03F" data-colour-name="Linden green / Linden" data-colour-code="12E53"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #ADAF97" data-colour-name="Sky" data-colour-code="210"></div></li>
-          <li data-filter-colour="gbc-red gbc-popular"><div style="background-color: #AF2B1E" data-colour-name="Flame red" data-colour-code="3000"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #AEA04B" data-colour-name="Ochre yellow" data-colour-code="1024"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #5DAD73" data-colour-name="Bright green / Goblin / Garland" data-colour-code="14E51"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #9FA9AC" data-colour-name="Light weatherwork grey" data-colour-code="676"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #AC9281" data-colour-name="Camouflage desert sand" data-colour-code="380"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #89AC76" data-colour-name="Pale green" data-colour-code="6021"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3876AB" data-colour-name="Blue" data-colour-code="20E53"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #9DA1AA" data-colour-name="Window grey" data-colour-code="7040"></div></li>
-          <li data-filter-colour="gbc-orange gbc-yellow gbc-cream-beige-brown"><div style="background-color: #A98307" data-colour-name="Honey yellow" data-colour-code="1005"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #A9393A" data-colour-name="Currant red" data-colour-code="539"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #A8938C" data-colour-name="Sable / Sierra" data-colour-code="04B21"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #83A89B" data-colour-name="Sky blue" data-colour-code="101"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #A87456" data-colour-name="Leather brown / Brownstone" data-colour-code="06C37"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #A66F67" data-colour-name="Autumn brown / Rosevale" data-colour-code="04C37"></div></li>
-          <li data-filter-colour="gbc-green gbc-popular"><div style="background-color: #57A639" data-colour-name="Yellow green" data-colour-code="6018"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #A65E2E" data-colour-name="Orange brown" data-colour-code="8023"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #A5A5A5" data-colour-name="White aluminium" data-colour-code="9006"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #4467A5" data-colour-name="French blue" data-colour-code="166"></div></li>
-          <li data-filter-colour="gbc-red gbc-popular"><div style="background-color: #A52019" data-colour-name="Signal red" data-colour-code="3001"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #A49587" data-colour-name="Antelope" data-colour-code="08B21"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red"><div style="background-color: #A4717F" data-colour-name="Clover pink / Corinth / Fontana" data-colour-code="02C37"></div></li>
-          <li data-filter-colour="gbc-red gbc-popular"><div style="background-color: #A2231D" data-colour-name="Carmine red" data-colour-code="3002"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #A18594" data-colour-name="Pastel violet" data-colour-code="4009"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #8673A1" data-colour-name="Pearl violet" data-colour-code="4011"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #A1514D" data-colour-name="Misty red / Tawny" data-colour-code="04D44"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #A12312" data-colour-name="Tomato red" data-colour-code="3013"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #6D87A0" data-colour-name="Larkspur blue / Viking" data-colour-code="20C37"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #8AA061" data-colour-name="Sea green" data-colour-code="217"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #7BA044" data-colour-name="Green" data-colour-code="12E55"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red"><div style="background-color: #A03472" data-colour-name="Traffic purple" data-colour-code="4006"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #007A9F" data-colour-name="Tartan blue / Cobalt blue / Regatta" data-colour-code="18E53"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #969D9E" data-colour-name="Camouflage grey" data-colour-code="626"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #9E9680" data-colour-name="Camouflage beige" data-colour-code="389"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #9E9764" data-colour-name="Grey beige" data-colour-code="1019"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #9E7545" data-colour-name="Caramel / Bracken" data-colour-code="08C37"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #999D8D" data-colour-name="French grey" data-colour-code="630"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #9D9101" data-colour-name="Curry" data-colour-code="1027"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #9D383A" data-colour-name="Post office red / Cherry" data-colour-code="538"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #9C9C9C" data-colour-name="Pearl light grey" data-colour-code="9022"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #949C9C" data-colour-name="Squirrel grey / Tideway" data-colour-code="18B21"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #35769C" data-colour-name="Strong blue" data-colour-code="107"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #929B94" data-colour-name="Light grey" data-colour-code="631"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #5D9B9B" data-colour-name="Pastel blue" data-colour-code="5024"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #7D7A9B" data-colour-name="Purple heather / Heather" data-colour-code="22C37"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #9B111E" data-colour-name="Ruby red" data-colour-code="3003"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #999A80" data-colour-name="Mineral green / Opaline / Moorland" data-colour-code="12B21"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #969992" data-colour-name="Signal grey" data-colour-code="7004"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #738C99" data-colour-name="Smoke grey" data-colour-code="692"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #998170" data-colour-name="Dk camouflage desert sand" data-colour-code="420"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-cream-beige-brown"><div style="background-color: #999950" data-colour-name="Olive yellow" data-colour-code="1020"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #99633A" data-colour-name="Golden brown" data-colour-code="414"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #8A9597" data-colour-name="Silver grey" data-colour-code="7001"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #90953E" data-colour-name="Greengage / Sapling / Springleaf" data-colour-code="12D43"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #5B9571" data-colour-name="Verdigris green" data-colour-code="280"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #955F20" data-colour-name="Ochre brown" data-colour-code="8001"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #899194" data-colour-name="Medium sea grey" data-colour-code="637"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #8D948D" data-colour-name="Traffic grey A" data-colour-code="7042"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #946B44" data-colour-name="Light brown" data-colour-code="320"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #1E948F" data-colour-name="Aquamarine / Seafarer / Lido" data-colour-code="16E53"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #2B9368" data-colour-name="Irish green / Avarice / Verona" data-colour-code="14E53"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #924E7D" data-colour-name="Signal violet" data-colour-code="4008"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #266492" data-colour-name="Blue" data-colour-code="20E56"></div></li>
-          <li data-filter-colour="gbc-red gbc-pink-purple"><div style="background-color: #922B3E" data-colour-name="Red violet" data-colour-code="4002"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #4C9141" data-colour-name="May green" data-colour-code="6017"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #909090" data-colour-name="Telegrey 1" data-colour-code="7045"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #8F8F8F" data-colour-name="Grey aluminium" data-colour-code="9007"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #82898F" data-colour-name="Telegrey 2" data-colour-code="7046"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #8F8B66" data-colour-name="Yellow grey" data-colour-code="7034"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #895F8F" data-colour-name="Purple" data-colour-code="24E53"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #3F888F" data-colour-name="Turquoise blue" data-colour-code="5018"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #8F5B3F" data-colour-name="Teak / Mace" data-colour-code="06D45"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #8F5B3F" data-colour-name="French mustard / Florida" data-colour-code="10D45"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #008F39" data-colour-name="Pure green" data-colour-code="6037"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #8A8E88" data-colour-name="Dove grey" data-colour-code="694"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #8E402A" data-colour-name="Copper brown" data-colour-code="8004"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #49678D" data-colour-name="Distant blue" data-colour-code="5023"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #8B8C7A" data-colour-name="Stone grey" data-colour-code="7030"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #606E8C" data-colour-name="Pigeon blue" data-colour-code="5014"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #78858B" data-colour-name="Squirrel grey" data-colour-code="7000"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #8A6642" data-colour-name="Brown beige" data-colour-code="1011"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3E5F8A" data-colour-name="Brillant blue" data-colour-code="5007"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #898176" data-colour-name="Pearl mouse grey" data-colour-code="7048"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue gbc-white-grey-black"><div style="background-color: #5C8986" data-colour-name="Reef green / Orion" data-colour-code="16C37"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #2F885B" data-colour-name="Bold green" data-colour-code="262"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #873F3D" data-colour-name="Dark cherry / Russet / Monarch" data-colour-code="04D45"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #828385" data-colour-name="Flint grey / Flint" data-colour-code="00A09"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #7F8582" data-colour-name="Aircraft grey" data-colour-code="693"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #5C5385" data-colour-name="Deep purple / Pageant" data-colour-code="22D45"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #7D8471" data-colour-name="Cement grey" data-colour-code="7033"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3F5F84" data-colour-name="Sapphire blue / Maritime / Trafalgar" data-colour-code="20D45"></div></li>
-          <li data-filter-colour="gbc-green gbc-popular"><div style="background-color: #308446" data-colour-name="Traffic green" data-colour-code="6024"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #1B5583" data-colour-name="Capri blue" data-colour-code="5019"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #828282" data-colour-name="Pearl dark grey" data-colour-code="9023"></div></li>
-          <li data-filter-colour="gbc-moderate"><div style="background-color: #826C34" data-colour-name="Green brown" data-colour-code="8000"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #31825F" data-colour-name="Emerald green / Viridian" data-colour-code="228"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #75816B" data-colour-name="Aircraft grey green" data-colour-code="283"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #813F5A" data-colour-name="Ruby" data-colour-code="542"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #737A80" data-colour-name="Dark camouflage grey" data-colour-code="629"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #7B8044" data-colour-name="Green" data-colour-code="12C37"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #7D7F7D" data-colour-name="Dusty grey" data-colour-code="7037"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #7F7679" data-colour-name="Platinum grey" data-colour-code="7036"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #7F473C" data-colour-name="Venetian red" data-colour-code="445"></div></li>
-          <li data-filter-colour="gbc-green gbc-popular"><div style="background-color: #317F43" data-colour-name="Signal green" data-colour-code="6032"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #7E7B52" data-colour-name="Olive grey" data-colour-code="7002"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #497E76" data-colour-name="Mint turquoise" data-colour-code="6033"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #5A7E44" data-colour-name="Grass green" data-colour-code="218"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #2E607C" data-colour-name="Middle blue / Anchusa" data-colour-code="109"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #256D7B" data-colour-name="Water blue" data-colour-code="5021"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #7B4945" data-colour-name="Brick red / Copperbeech" data-colour-code="04C39"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #79553D" data-colour-name="Beige brown" data-colour-code="8024"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3B5679" data-colour-name="Azure blue" data-colour-code="104"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #2A6478" data-colour-name="Pearl gentian blue" data-colour-code="5025"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #781F19" data-colour-name="Brown red" data-colour-code="3011"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #77685D" data-colour-name="Beaver brown / Beaver" data-colour-code="08B25"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #764A57" data-colour-name="Victoria plum / Aubergine / Plum" data-colour-code="02C39"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3C4876" data-colour-name="Aircraft blue" data-colour-code="108"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #763C28" data-colour-name="Pearl copper" data-colour-code="8029"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #6C4675" data-colour-name="Blue lilac" data-colour-code="4005"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #755C48" data-colour-name="Pale brown" data-colour-code="8025"></div></li>
-          <li data-filter-colour="gbc-red"><div style="background-color: #75151E" data-colour-name="Purple red" data-colour-code="3004"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #687074" data-colour-name="Dark admiralty grey / Merlin" data-colour-code="18B25"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #686D74" data-colour-name="Dark weatherwork grey" data-colour-code="677"></div></li>
-          <li data-filter-colour="gbc-blue gbc-pink-purple gbc-white-grey-black"><div style="background-color: #6C6874" data-colour-name="Pearl black berry" data-colour-code="4012"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #6B4F74" data-colour-name="Dark violet" data-colour-code="796"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3C6774" data-colour-name="Deep saxe blue" data-colour-code="113"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #736C5A" data-colour-name="Turtle green / Turtle" data-colour-code="10B25"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #354D73" data-colour-name="Violet blue" data-colour-code="5000"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #734222" data-colour-name="Clay brown" data-colour-code="8003"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #3A6A72" data-colour-name="Peacock blue" data-colour-code="103"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #587246" data-colour-name="Reseda green" data-colour-code="6011"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #72523C" data-colour-name="Middle brown" data-colour-code="411"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #72503B" data-colour-name="Saddle brown / Saddle" data-colour-code="06C39"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #404A72" data-colour-name="Roundel blue" data-colour-code="110"></div></li>
-          <li data-filter-colour="gbc-green gbc-popular"><div style="background-color: #287233" data-colour-name="Emerald green" data-colour-code="6001"></div></li>
-          <li data-filter-colour="gbc-red gbc-pink-purple"><div style="background-color: #721422" data-colour-name="Pearl ruby red" data-colour-code="3032"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #686E71" data-colour-name="Dark admiralty grey" data-colour-code="632"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #686C71" data-colour-name="Dark sea grey" data-colour-code="638"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #6C7156" data-colour-name="Reed green" data-colour-code="6013"></div></li>
-          <li data-filter-colour="gbc-blue gbc-popular"><div style="background-color: #063971" data-colour-name="Traffic blue" data-colour-code="5017"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #6C7059" data-colour-name="Moss grey" data-colour-code="7003"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #497041" data-colour-name="Brilliant green" data-colour-code="221"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #705335" data-colour-name="Pearl gold" data-colour-code="1036"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #6F4F28" data-colour-name="Olive brown" data-colour-code="8008"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #6A4F6E" data-colour-name="Regal violet / Regalia" data-colour-code="24C39"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #6D6552" data-colour-name="Beige grey" data-colour-code="7006"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red"><div style="background-color: #6D3F5B" data-colour-name="Red lilac" data-colour-code="4001"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #6C6960" data-colour-name="Quartz grey" data-colour-code="7039"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #6B6C5B" data-colour-name="Spruce green" data-colour-code="284"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #686C5E" data-colour-name="Concrete grey" data-colour-code="7023"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #6A6C3C" data-colour-name="Dark laurel / Tundra / Sherwood" data-colour-code="12D45"></div></li>
-          <li data-filter-colour="gbc-orange gbc-cream-beige-brown"><div style="background-color: #6C3B2A" data-colour-name="Signal brown" data-colour-code="8002"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #6B6966" data-colour-name="Charcoal grey / Storm / Rhino" data-colour-code="10A11"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #646B63" data-colour-name="Mouse grey" data-colour-code="7005"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #696A59" data-colour-name="Spruce green / Thyme / Chive" data-colour-code="12B25"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #6A5D4D" data-colour-name="Pearl beige" data-colour-code="1035"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #6A5F31" data-colour-name="Khaki grey" data-colour-code="7008"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #6A4348" data-colour-name="Purple" data-colour-code="04E58"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #3D5C69" data-colour-name="Fathom blue / Deep river / Dolphin" data-colour-code="18C39"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #025669" data-colour-name="Azure blue" data-colour-code="5009"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #35682D" data-colour-name="Grass green" data-colour-code="6010"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #316650" data-colour-name="Patina green" data-colour-code="6000"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #3D642D" data-colour-name="Fern green" data-colour-code="6025"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-red"><div style="background-color: #641C34" data-colour-name="Claret violet" data-colour-code="4004"></div></li>
-          <li data-filter-colour="gbc-red gbc-pink-purple"><div style="background-color: #642424" data-colour-name="Oxide red" data-colour-code="3009"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #42634E" data-colour-name="Deep chrome green / Traffic green" data-colour-code="267"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #46633E" data-colour-name="Light Brunswick green" data-colour-code="225"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #633A34" data-colour-name="Chestnut brown" data-colour-code="8015"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #62553E" data-colour-name="Dark olive / Saluki / Seaweed / Riverbed" data-colour-code="10C39"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #20615E" data-colour-name="Dark jade / Scarab" data-colour-code="16D45"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #20603D" data-colour-name="Mint green" data-colour-code="6029"></div></li>
-          <li data-filter-colour="gbc-blue gbc-popular"><div style="background-color: #1E2460" data-colour-name="Signal blue" data-colour-code="5005"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #425E4F" data-colour-name="Holly green / Hollybush" data-colour-code="14C39"></div></li>
-          <li data-filter-colour="gbc-red gbc-pink-purple"><div style="background-color: #5E2129" data-colour-name="Wine red" data-colour-code="3005"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #015D52" data-colour-name="Opal green" data-colour-code="6026"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #5C4742" data-colour-name="Brown" data-colour-code="06C40"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #5C453D" data-colour-name="Dark brown" data-colour-code="412"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #5A5A5B" data-colour-name="Storm grey / Greyfriar" data-colour-code="00A13"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown gbc-popular"><div style="background-color: #5B3A29" data-colour-name="Nut brown" data-colour-code="8011"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #39425A" data-colour-name="Oxford blue" data-colour-code="105"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #594B41" data-colour-name="Service brown" data-colour-code="499"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #1E5945" data-colour-name="Turquoise green" data-colour-code="6016"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #59351F" data-colour-name="Fawn brown" data-colour-code="8007"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown"><div style="background-color: #592321" data-colour-name="Red brown" data-colour-code="8012"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #54583D" data-colour-name="Ivy green / Orchard" data-colour-code="12C39"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #4E5754" data-colour-name="Basalt grey" data-colour-code="7012"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #57564A" data-colour-name="NATo green" data-colour-code="285"></div></li>
-          <li data-filter-colour="gbc-pink-purple gbc-white-grey-black"><div style="background-color: #57434B" data-colour-name="Deep plum / Loganberry" data-colour-code="02C40"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #2D572C" data-colour-name="Leaf green" data-colour-code="6002"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #56564B" data-colour-name="Dark green" data-colour-code="241"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #564C47" data-colour-name="Dark camouflage brown" data-colour-code="436"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #4D5645" data-colour-name="Green grey" data-colour-code="7009"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #4E563C" data-colour-name="Olive green" data-colour-code="220"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #555148" data-colour-name="Very dark drab" data-colour-code="337"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #3B4455" data-colour-name="Duchess blue / Midnight" data-colour-code="20C40"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #2C5545" data-colour-name="Pine green" data-colour-code="6028"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #4E5452" data-colour-name="Traffic grey B" data-colour-code="7043"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #1C542D" data-colour-name="Pearl green" data-colour-code="6035"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #102C54" data-colour-name="Pearl night blue" data-colour-code="5026"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #3A5341" data-colour-name="Mid Brunswick green" data-colour-code="226"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #524943" data-colour-name="Bitter chocolate / Vandyke" data-colour-code="08B29"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #4C514A" data-colour-name="Tarpaulin grey" data-colour-code="7010"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-white-grey-black"><div style="background-color: #515041" data-colour-name="Olive drab" data-colour-code="298"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #474A51" data-colour-name="Graphite grey" data-colour-code="7024"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #4E5140" data-colour-name="Middle bronze green" data-colour-code="223"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #434750" data-colour-name="Slate grey" data-colour-code="7015"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #252850" data-colour-name="Night blue" data-colour-code="5022"></div></li>
-          <li data-filter-colour="gbc-blue gbc-popular"><div style="background-color: #20214F" data-colour-name="Ultramarine blue" data-colour-code="5002"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #474B4E" data-colour-name="Blue grey" data-colour-code="7031"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #4E3B31" data-colour-name="Terra brown" data-colour-code="8028"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #434B4D" data-colour-name="Iron grey" data-colour-code="7011"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #4C3B3C" data-colour-name="Maroon" data-colour-code="541"></div></li>
-          <li data-filter-colour="gbc-red gbc-cream-beige-brown gbc-popular"><div style="background-color: #4C2F27" data-colour-name="Mahogany brown" data-colour-code="8016"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #43474B" data-colour-name="Raven" data-colour-code="18B29"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #394B40" data-colour-name="Deep Brunswick green" data-colour-code="227"></div></li>
-          <li data-filter-colour="gbc-blue gbc-popular"><div style="background-color: #0E294B" data-colour-name="Gentian blue" data-colour-code="5010"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #4A4742" data-colour-name="Vandyke brown / Ironstone" data-colour-code="10B29"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #414A45" data-colour-name="Moss green / Conifer" data-colour-code="14C40"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #1D334A" data-colour-name="Ocean blue" data-colour-code="5020"></div></li>
-          <li data-filter-colour="gbc-pink-purple"><div style="background-color: #4A192C" data-colour-name="Purple violet" data-colour-code="4007"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #45493E" data-colour-name="Deep bronze green" data-colour-code="224"></div></li>
-          <li data-filter-colour="gbc-yellow gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #47402E" data-colour-name="Yellow olive" data-colour-code="6014"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #464531" data-colour-name="Brown grey" data-colour-code="7013"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #424632" data-colour-name="Olive green" data-colour-code="6003"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black gbc-popular"><div style="background-color: #2F4538" data-colour-name="Moss green" data-colour-code="6005"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #45322E" data-colour-name="Chocolate brown" data-colour-code="8017"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #383941" data-colour-name="Royal blue" data-colour-code="106"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black"><div style="background-color: #412227" data-colour-name="Black red" data-colour-code="3007"></div></li>
-          <li data-filter-colour="gbc-red gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #403A3A" data-colour-name="Grey brown" data-colour-code="8019"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #343E40" data-colour-name="Black green" data-colour-code="6012"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #3E3F3F" data-colour-name="Night" data-colour-code="642"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #3E3B32" data-colour-name="Grey olive" data-colour-code="6006"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue gbc-white-grey-black"><div style="background-color: #1F3A3D" data-colour-name="Blue green" data-colour-code="6004"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #1E213D" data-colour-name="Cobalt blue" data-colour-code="5013"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #3B3C36" data-colour-name="Black olive" data-colour-code="6015"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #2F353B" data-colour-name="Granite grey" data-colour-code="7026"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black"><div style="background-color: #343B29" data-colour-name="Bottle green" data-colour-code="6007"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #2E3A23" data-colour-name="Chrome green" data-colour-code="6020"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #39352A" data-colour-name="Brown green" data-colour-code="6008"></div></li>
-          <li data-filter-colour="gbc-green gbc-blue"><div style="background-color: #1F3438" data-colour-name="Green blue" data-colour-code="5001"></div></li>
-          <li data-filter-colour="gbc-cream-beige-brown"><div style="background-color: #382C1E" data-colour-name="Sepia brown" data-colour-code="8014"></div></li>
-          <li data-filter-colour="gbc-green gbc-white-grey-black gbc-popular"><div style="background-color: #31372B" data-colour-name="Fir green" data-colour-code="6009"></div></li>
-          <li data-filter-colour="gbc-green"><div style="background-color: #193737" data-colour-name="Pearl opal green" data-colour-code="6036"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #332F2C" data-colour-name="Umbra grey" data-colour-code="7022"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #293133" data-colour-name="Anthracite grey" data-colour-code="7016"></div></li>
-          <li data-filter-colour="gbc-blue"><div style="background-color: #1D1E33" data-colour-name="Saphire blue" data-colour-code="5003"></div></li>
-          <li data-filter-colour="gbc-white-grey-black"><div style="background-color: #2F2F30" data-colour-name="Black" data-colour-code="00E53"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #26252D" data-colour-name="Grey blue" data-colour-code="5008"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #23282B" data-colour-name="Black grey" data-colour-code="7021"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #282828" data-colour-name="Signal black" data-colour-code="9004"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #25221B" data-colour-name="Olive drab" data-colour-code="6022"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #231A24" data-colour-name="Steel blue" data-colour-code="5011"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-cream-beige-brown"><div style="background-color: #212121" data-colour-name="Black brown" data-colour-code="8022"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #1E1E1E" data-colour-name="Traffic black" data-colour-code="9017"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #1C1C1C" data-colour-name="Graphite black" data-colour-code="9011"></div></li>
-          <li data-filter-colour="gbc-blue gbc-white-grey-black"><div style="background-color: #18171C" data-colour-name="Black blue" data-colour-code="5004"></div></li>
-          <li data-filter-colour="gbc-white-grey-black gbc-popular"><div style="background-color: #0A0A0A" data-colour-name="Jet black" data-colour-code="9005"></div></li>
+        <ul uk-accordion="target: > li; toggle: > div .uk-accordion-title; content: > .uk-accordion-content; multiple: true" uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-small; delay: 100">
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Red</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All reds</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(171,37,36)" data-colour-name="Fire Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3000</div></li>
+              <li><div style="background-color: rgb(160,33,40)" data-colour-name="Signal Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3001</div></li>
+              <li><div style="background-color: rgb(161,35,43)" data-colour-name="Karmin Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3002</div></li>
+              <li><div style="background-color: rgb(141,29,44)" data-colour-name="Ruby Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3003</div></li>
+              <li><div style="background-color: rgb(112,31,41)" data-colour-name="Purple Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3004</div></li>
+              <li><div style="background-color: rgb(94,32,40)" data-colour-name="Wine Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3005</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(64,34,37)" data-colour-name="Black Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3007</div></li>
+                <li><div style="background-color: rgb(112,55,49)" data-colour-name="Oxide Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3009</div></li>
+                <li><div style="background-color: rgb(126,41,44)" data-colour-name="Brown Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3011</div></li>
+                <li><div style="background-color: rgb(156,50,46)" data-colour-name="Tomato Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3013</div></li>
+                <li><div style="background-color: rgb(212,116,121)" data-colour-name="Antique Pink" class="uk-flex uk-flex-center uk-flex-middle">RAL 3014</div></li>
+                <li><div style="background-color: rgb(225,166,173)" data-colour-name="Light Pink" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 3015</div></li>
+                <li><div style="background-color: rgb(172,64,52)" data-colour-name="Coral Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3016</div></li>
+                <li><div style="background-color: rgb(211,84,95)" data-colour-name="Rose" class="uk-flex uk-flex-center uk-flex-middle">RAL 3017</div></li>
+                <li><div style="background-color: rgb(209,65,82)" data-colour-name="Strawberry Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3018</div></li>
+                <li><div style="background-color: rgb(193,18,28)" data-colour-name="Traffic Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3020</div></li>
+                <li><div style="background-color: rgb(213,109,86)" data-colour-name="Salmon Pink" class="uk-flex uk-flex-center uk-flex-middle">RAL 3022</div></li>
+                <li><div style="background-color: rgb(180,32,65)" data-colour-name="Raspberry Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3027</div></li>
+                <li><div style="background-color: rgb(172,50,59)" data-colour-name="Orient Red" class="uk-flex uk-flex-center uk-flex-middle">RAL 3031</div></li>
+                <li><div style="background-color: rgb(118,74,87)" data-colour-name="Plum" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 02C39</div></li>
+                <li><div style="background-color: rgb(87,67,75)" data-colour-name="Loganberry" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 02C40</div></li>
+                <li><div style="background-color: rgb(123,73,69)" data-colour-name="Brick Red" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 04C39</div></li>
+                <li><div style="background-color: rgb(161,81,77)" data-colour-name="Misty Red" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 04D44</div></li>
+                <li><div style="background-color: rgb(135,63,61)" data-colour-name="Monarch Red" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 04D45</div></li>
+                <li><div style="background-color: rgb(227,115,99)" data-colour-name="Salmon Red" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04E51</div></li>
+                <li><div style="background-color: rgb(190,68,59)" data-colour-name="Poppy Red" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 04E53</div></li>
+                <li><div style="background-color: rgb(197,73,55)" data-colour-name="Red" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 04E55</div></li>
+                <li><div style="background-color: rgb(160,72,48)" data-colour-name="Camouflage Desert Sand" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 380</div></li>
+                <li><div style="background-color: rgb(120,56,24)" data-colour-name="Venetian Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 445</div></li>
+                <li><div style="background-color: rgb(112,56,24)" data-colour-name="Red Oxide" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 446</div></li>
+                <li><div style="background-color: rgb(88,40,32)" data-colour-name="Deep Indian Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 448</div></li>
+                <li><div style="background-color: rgb(96,40,40)" data-colour-name="Light Purple Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 449</div></li>
+                <li><div style="background-color: rgb(80,32,40)" data-colour-name="Dark Crimson" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 452</div></li>
+                <li><div style="background-color: rgb(112,32,24)" data-colour-name="Gulf Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 473</div></li>
+                <li><div style="background-color: rgb(216,48,16)" data-colour-name="Signal Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 537</div></li>
+                <li><div style="background-color: rgb(184,16,16)" data-colour-name="Post Office Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 538</div></li>
+                <li><div style="background-color: rgb(200,16,16)" data-colour-name="Currant Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 539</div></li>
+                <li><div style="background-color: rgb(128,16,32)" data-colour-name="Crimson" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 540</div></li>
+                <li><div style="background-color: rgb(216,32,16)" data-colour-name="Bold Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 564</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Oranges</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All oranges</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(221,121,7)" data-colour-name="Yellow Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2000</div></li>
+              <li><div style="background-color: rgb(190,78,36)" data-colour-name="Red Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2001</div></li>
+              <li><div style="background-color: rgb(198,57,39)" data-colour-name="Vermillion" class="uk-flex uk-flex-center uk-flex-middle">RAL 2002</div></li>
+              <li><div style="background-color: rgb(250,132,43)" data-colour-name="Pastel Orange" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 2003</div></li>
+              <li><div style="background-color: rgb(231,91,18)" data-colour-name="Pure Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2004</div></li>
+              <li><div style="background-color: rgb(243,117,44)" data-colour-name="Bright Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2008</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(225,85,1)" data-colour-name="Traffic Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2009</div></li>
+                <li><div style="background-color: rgb(212,101,47)" data-colour-name="Signal Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2010</div></li>
+                <li><div style="background-color: rgb(236,124,37)" data-colour-name="Deep Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2011</div></li>
+                <li><div style="background-color: rgb(219,106,80)" data-colour-name="Salmon Orange" class="uk-flex uk-flex-center uk-flex-middle">RAL 2012</div></li>
+                <li><div style="background-color: rgb(220,164,127)" data-colour-name="Light Orange" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 06C35</div></li>
+                <li><div style="background-color: rgb(250,184,120)" data-colour-name="Apricot" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 06E50</div></li>
+                <li><div style="background-color: rgb(255,155,97)" data-colour-name="Mandarin Orange" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 06E51</div></li>
+                <li><div style="background-color: rgb(181,104,53)" data-colour-name="Nectarine" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 06E56</div></li>
+                <li><div style="background-color: rgb(249,152,20)" data-colour-name="Orange" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08E55</div></li>
+                <li><div style="background-color: rgb(232,120,0)" data-colour-name="Light Orange" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 557</div></li>
+                <li><div style="background-color: rgb(240,152,0)" data-colour-name="Apricot" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 568</div></li>
+                <li><div style="background-color: rgb(216,72,8)" data-colour-name="International Orange" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 592</div></li>
+                <li><div style="background-color: rgb(232,64,8)" data-colour-name="Rail Red" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 593</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Yellows</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All yellows</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(204,197,143)" data-colour-name="Green Beige" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1000</div></li>
+              <li><div style="background-color: rgb(209,188,138)" data-colour-name="Beige" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1001</div></li>
+              <li><div style="background-color: rgb(210,183,115)" data-colour-name="Sand Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1002</div></li>
+              <li><div style="background-color: rgb(247,186,11)" data-colour-name="Signal Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1003</div></li>
+              <li><div style="background-color: rgb(221,159,0)" data-colour-name="Gold Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1004</div></li>
+              <li><div style="background-color: rgb(200,159,4)" data-colour-name="Honey Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1005</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(225,161,0)" data-colour-name="Maize Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1006</div></li>
+                <li><div style="background-color: rgb(231,156,0)" data-colour-name="Chrome Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1007</div></li>
+                <li><div style="background-color: rgb(173,122,79)" data-colour-name="Brown Beige" class="uk-flex uk-flex-center uk-flex-middle">RAL 1011</div></li>
+                <li><div style="background-color: rgb(217,192,34)" data-colour-name="Lemon Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1012</div></li>
+                <li><div style="background-color: rgb(233,229,206)" data-colour-name="Oyster White" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1013</div></li>
+                <li><div style="background-color: rgb(222,208,159)" data-colour-name="Ivory" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1014</div></li>
+                <li><div style="background-color: rgb(234,222,189)" data-colour-name="Light Ivory" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1015</div></li>
+                <li><div style="background-color: rgb(244,182,82)" data-colour-name="Saffron Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1017</div></li>
+                <li><div style="background-color: rgb(243,224,59)" data-colour-name="Zinc Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1018</div></li>
+                <li><div style="background-color: rgb(164,149,125)" data-colour-name="Grey Beige" class="uk-flex uk-flex-center uk-flex-middle">RAL 1019</div></li>
+                <li><div style="background-color: rgb(154,148,100)" data-colour-name="Olive Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1020</div></li>
+                <li><div style="background-color: rgb(238,201,0)" data-colour-name="Kadmium Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1021</div></li>
+                <li><div style="background-color: rgb(240,202,0)" data-colour-name="Traffic Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1023</div></li>
+                <li><div style="background-color: rgb(184,156,80)" data-colour-name="Ochre Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1024</div></li>
+                <li><div style="background-color: rgb(163,140,21)" data-colour-name="Curry Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1027</div></li>
+                <li><div style="background-color: rgb(255,171,0)" data-colour-name="Melon Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1028</div></li>
+                <li><div style="background-color: rgb(221,178,15)" data-colour-name="Ginster Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1032</div></li>
+                <li><div style="background-color: rgb(250,171,33)" data-colour-name="Dahlia Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1033</div></li>
+                <li><div style="background-color: rgb(237,171,86)" data-colour-name="Pastel Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1034</div></li>
+                <li><div style="background-color: rgb(238,162,5)" data-colour-name="Sun Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 1037</div></li>
+                <li><div style="background-color: rgb(226,193,159)" data-colour-name="Peach" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 06C33</div></li>
+                <li><div style="background-color: rgb(242,232,215)" data-colour-name="Magnolia" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08B15</div></li>
+                <li><div style="background-color: rgb(240,224,198)" data-colour-name="Honeysuckle Cream" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08C31</div></li>
+                <li><div style="background-color: rgb(220,192,155)" data-colour-name="Beige" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08C33</div></li>
+                <li><div style="background-color: rgb(235,191,133)" data-colour-name="Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08D41</div></li>
+                <li><div style="background-color: rgb(223,189,40)" data-colour-name="Golden Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08E51</div></li>
+                <li><div style="background-color: rgb(255,252,228)" data-colour-name="Gardenia" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10B15</div></li>
+                <li><div style="background-color: rgb(255,245,208)" data-colour-name="Buttermilk" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10C31</div></li>
+                <li><div style="background-color: rgb(228,210,156)" data-colour-name="Vanilla" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10C33</div></li>
+                <li><div style="background-color: rgb(193,170,105)" data-colour-name="Savannah" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10C35</div></li>
+                <li><div style="background-color: rgb(196,163,54)" data-colour-name="Capricorn" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10D43</div></li>
+                <li><div style="background-color: rgb(232,224,166)" data-colour-name="Jonquil" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10E49</div></li>
+                <li><div style="background-color: rgb(240,209,104)" data-colour-name="Forsythia" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10E50</div></li>
+                <li><div style="background-color: rgb(233,193,0)" data-colour-name="Aztec Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10E53</div></li>
+                <li><div style="background-color: rgb(245,196,24)" data-colour-name="Canary Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10E55</div></li>
+                <li><div style="background-color: rgb(229,229,191)" data-colour-name="Light Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12C31</div></li>
+                <li><div style="background-color: rgb(248,224,0)" data-colour-name="Canary Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 309</div></li>
+                <li><div style="background-color: rgb(248,240,88)" data-colour-name="Primrose" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 310</div></li>
+                <li><div style="background-color: rgb(248,240,96)" data-colour-name="Grapefruit" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 315</div></li>
+                <li><div style="background-color: rgb(240,224,138)" data-colour-name="Pale Cream" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 352</div></li>
+                <li><div style="background-color: rgb(248,232,112)" data-colour-name="Deep Cream" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 353</div></li>
+                <li><div style="background-color: rgb(248,208,0)" data-colour-name="Lemon" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 355</div></li>
+                <li><div style="background-color: rgb(248,192,0)" data-colour-name="Golden Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 356</div></li>
+                <li><div style="background-color: rgb(232,192,104)" data-colour-name="Light Buff" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 358</div></li>
+                <li><div style="background-color: rgb(208,160,64)" data-colour-name="Middle Buff" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 359</div></li>
+                <li><div style="background-color: rgb(248,225,0)" data-colour-name="Bold Yellow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 363</div></li>
+                <li><div style="background-color: rgb(232,224,176)" data-colour-name="Vellum" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 365</div></li>
+                <li><div style="background-color: rgb(232,216,152)" data-colour-name="Light Beige" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 366</div></li>
+                <li><div style="background-color: rgb(248,240,176)" data-colour-name="Manilla" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 367</div></li>
+                <li><div style="background-color: rgb(248,232,160)" data-colour-name="Biscuit" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 369</div></li>
+                <li><div style="background-color: rgb(232,215,152)" data-colour-name="Beige" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 388</div></li>
+                <li><div style="background-color: rgb(224,200,144)" data-colour-name="Camouflage Beige" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 389</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Green</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All greens</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(50,118,98)" data-colour-name="Patina Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6000</div></li>
+              <li><div style="background-color: rgb(40,113,62)" data-colour-name="Bright Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6001</div></li>
+              <li><div style="background-color: rgb(39,98,53)" data-colour-name="Leaf Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6002</div></li>
+              <li><div style="background-color: rgb(75,87,62)" data-colour-name="Olive Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6003</div></li>
+              <li><div style="background-color: rgb(14,66,67)" data-colour-name="Blue Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6004</div></li>
+              <li><div style="background-color: rgb(15,67,54)" data-colour-name="Moss Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6005</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(64,67,59)" data-colour-name="Grey Olive" class="uk-flex uk-flex-center uk-flex-middle">RAL 6006</div></li>
+                <li><div style="background-color: rgb(40,52,36)" data-colour-name="Bottle Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6007</div></li>
+                <li><div style="background-color: rgb(53,56,46)" data-colour-name="Brown Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6008</div></li>
+                <li><div style="background-color: rgb(38,57,47)" data-colour-name="Fir Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6009</div></li>
+                <li><div style="background-color: rgb(62,117,59)" data-colour-name="Grass Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6010</div></li>
+                <li><div style="background-color: rgb(102,130,91)" data-colour-name="Reseda Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6011</div></li>
+                <li><div style="background-color: rgb(49,64,61)" data-colour-name="Black Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6012</div></li>
+                <li><div style="background-color: rgb(121,124,90)" data-colour-name="Reed Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6013</div></li>
+                <li><div style="background-color: rgb(68,67,55)" data-colour-name="Yellow Olive" class="uk-flex uk-flex-center uk-flex-middle">RAL 6014</div></li>
+                <li><div style="background-color: rgb(2,106,82)" data-colour-name="Turquoise Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6016</div></li>
+                <li><div style="background-color: rgb(70,134,65)" data-colour-name="Yellow Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6017</div></li>
+                <li><div style="background-color: rgb(72,164,63)" data-colour-name="May Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6018</div></li>
+                <li><div style="background-color: rgb(183,217,177)" data-colour-name="Pastel Green" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 6019</div></li>
+                <li><div style="background-color: rgb(53,71,51)" data-colour-name="Chrome Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6020</div></li>
+                <li><div style="background-color: rgb(134,164,124)" data-colour-name="Pale Green" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 6021</div></li>
+                <li><div style="background-color: rgb(62,60,50)" data-colour-name="Olive Drab" class="uk-flex uk-flex-center uk-flex-middle">RAL 6022</div></li>
+                <li><div style="background-color: rgb(0,135,84)" data-colour-name="Traffic Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6024</div></li>
+                <li><div style="background-color: rgb(83,117,60)" data-colour-name="Fern Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6025</div></li>
+                <li><div style="background-color: rgb(0,93,82)" data-colour-name="Opal Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6026</div></li>
+                <li><div style="background-color: rgb(129,192,187)" data-colour-name="Light Green" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 6027</div></li>
+                <li><div style="background-color: rgb(45,85,70)" data-colour-name="Pine Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6028</div></li>
+                <li><div style="background-color: rgb(0,114,67)" data-colour-name="Mint Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6029</div></li>
+                <li><div style="background-color: rgb(15,133,88)" data-colour-name="Signal Green" class="uk-flex uk-flex-center uk-flex-middle">RAL 6032</div></li>
+                <li><div style="background-color: rgb(71,138,132)" data-colour-name="Mint Turquoise" class="uk-flex uk-flex-center uk-flex-middle">RAL 6033</div></li>
+                <li><div style="background-color: rgb(127,176,178)" data-colour-name="Pastel Turquoise" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 6034</div></li>
+                <li><div style="background-color: rgb(153,154,128)" data-colour-name="Moorland Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12B21</div></li>
+                <li><div style="background-color: rgb(105,106,89)" data-colour-name="Chive" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12B25</div></li>
+                <li><div style="background-color: rgb(71,72,64)" data-colour-name="Juniper Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12B29</div></li>
+                <li><div style="background-color: rgb(200,202,148)" data-colour-name="Catkin" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12C33</div></li>
+                <li><div style="background-color: rgb(123,128,68)" data-colour-name="Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12C37</div></li>
+                <li><div style="background-color: rgb(84,88,61)" data-colour-name="Orchard Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12C39</div></li>
+                <li><div style="background-color: rgb(203,205,122)" data-colour-name="Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12D41</div></li>
+                <li><div style="background-color: rgb(144,149,62)" data-colour-name="Springleaf Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12D43</div></li>
+                <li><div style="background-color: rgb(106,108,60)" data-colour-name="Sherwood Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 12D45</div></li>
+                <li><div style="background-color: rgb(200,200,62)" data-colour-name="Pale Lime" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12E51</div></li>
+                <li><div style="background-color: rgb(153,176,63)" data-colour-name="Linden Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12E53</div></li>
+                <li><div style="background-color: rgb(123,160,68)" data-colour-name="Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12E55</div></li>
+                <li><div style="background-color: rgb(28,64,38)" data-colour-name="Hollybush Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 14C39</div></li>
+                <li><div style="background-color: rgb(65,74,69)" data-colour-name="Conifer Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 14C40</div></li>
+                <li><div style="background-color: rgb(208,233,214)" data-colour-name="Light Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 14E49</div></li>
+                <li><div style="background-color: rgb(175,215,185)" data-colour-name="Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 14E50</div></li>
+                <li><div style="background-color: rgb(93,173,115)" data-colour-name="Garland Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 14E51</div></li>
+                <li><div style="background-color: rgb(43,147,104)" data-colour-name="Verona Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 14E53</div></li>
+                <li><div style="background-color: rgb(92,137,134)" data-colour-name="Reef Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 16C37</div></li>
+                <li><div style="background-color: rgb(32,97,94)" data-colour-name="Scarab Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 16D45</div></li>
+                <li><div style="background-color: rgb(176,192,152)" data-colour-name="Sky" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 210</div></li>
+                <li><div style="background-color: rgb(176,208,136)" data-colour-name="Eau de Nil" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 216</div></li>
+                <li><div style="background-color: rgb(144,184,96)" data-colour-name="Sea Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 217</div></li>
+                <li><div style="background-color: rgb(96,128,56)" data-colour-name="Grass Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 218</div></li>
+                <li><div style="background-color: rgb(64,80,24)" data-colour-name="Olive Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 220</div></li>
+                <li><div style="background-color: rgb(72,120,48)" data-colour-name="Brilliant Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 221</div></li>
+                <li><div style="background-color: rgb(96,104,24)" data-colour-name="Light Bronze Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 222</div></li>
+                <li><div style="background-color: rgb(64,72,40)" data-colour-name="Middle Bronze Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 223</div></li>
+                <li><div style="background-color: rgb(48,64,32)" data-colour-name="Deep Bronze Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 224</div></li>
+                <li><div style="background-color: rgb(56,104,24)" data-colour-name="Light Brunswick Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 225</div></li>
+                <li><div style="background-color: rgb(32,80,48)" data-colour-name="Mid Brunswick Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 226</div></li>
+                <li><div style="background-color: rgb(24,56,40)" data-colour-name="Deep Brunswick Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 227</div></li>
+                <li><div style="background-color: rgb(56,136,96)" data-colour-name="Emerald Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 228</div></li>
+                <li><div style="background-color: rgb(72,72,56)" data-colour-name="Dark Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 241</div></li>
+                <li><div style="background-color: rgb(56,136,80)" data-colour-name="Bold Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 262</div></li>
+                <li><div style="background-color: rgb(56,96,64)" data-colour-name="Deep Chrome Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 267</div></li>
+                <li><div style="background-color: rgb(136,192,144)" data-colour-name="Opaline Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 275</div></li>
+                <li><div style="background-color: rgb(128,144,80)" data-colour-name="Light Olive Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 278</div></li>
+                <li><div style="background-color: rgb(96,160,112)" data-colour-name="Verdigris Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 280</div></li>
+                <li><div style="background-color: rgb(72,96,72)" data-colour-name="Forest Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 283</div></li>
+                <li><div style="background-color: rgb(120,136,104)" data-colour-name="Aircraft Grey Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 283</div></li>
+                <li><div style="background-color: rgb(96,104,80)" data-colour-name="Spruce Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 284</div></li>
+                <li><div style="background-color: rgb(80,80,64)" data-colour-name="NATO Green" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 285</div></li>
+                <li><div style="background-color: rgb(64,72,32)" data-colour-name="Olive Drab" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 298</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Blues</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All blues</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(56,76,112)" data-colour-name="Violet Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5000</div></li>
+              <li><div style="background-color: rgb(31,71,100)" data-colour-name="Green Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5001</div></li>
+              <li><div style="background-color: rgb(43,44,124)" data-colour-name="Ultramarine Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5002</div></li>
+              <li><div style="background-color: rgb(42,55,86)" data-colour-name="Sapphire Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5003</div></li>
+              <li><div style="background-color: rgb(29,31,42)" data-colour-name="Black Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5004</div></li>
+              <li><div style="background-color: rgb(21,72,137)" data-colour-name="Signal Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5005</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(65,103,141)" data-colour-name="Brilliant Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5007</div></li>
+                <li><div style="background-color: rgb(49,60,72)" data-colour-name="Gray Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5008</div></li>
+                <li><div style="background-color: rgb(46,89,120)" data-colour-name="Azure Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5009</div></li>
+                <li><div style="background-color: rgb(19,68,124)" data-colour-name="Enzian Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5010</div></li>
+                <li><div style="background-color: rgb(35,44,63)" data-colour-name="Steel Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5011</div></li>
+                <li><div style="background-color: rgb(52,129,184)" data-colour-name="Light Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5012</div></li>
+                <li><div style="background-color: rgb(35,45,83)" data-colour-name="Cobalt Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5013</div></li>
+                <li><div style="background-color: rgb(108,124,152)" data-colour-name="Pigeon Blue" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 5014</div></li>
+                <li><div style="background-color: rgb(40,116,178)" data-colour-name="Himmel Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5015</div></li>
+                <li><div style="background-color: rgb(14,81,141)" data-colour-name="Traffic Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5017</div></li>
+                <li><div style="background-color: rgb(33,136,143)" data-colour-name="Turquoise Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5018</div></li>
+                <li><div style="background-color: rgb(26,87,132)" data-colour-name="Capri Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5019</div></li>
+                <li><div style="background-color: rgb(11,65,81)" data-colour-name="Ocean Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5020</div></li>
+                <li><div style="background-color: rgb(7,115,122)" data-colour-name="Water Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5021</div></li>
+                <li><div style="background-color: rgb(47,42,90)" data-colour-name="Night Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5022</div></li>
+                <li><div style="background-color: rgb(77,102,142)" data-colour-name="Distant Blue" class="uk-flex uk-flex-center uk-flex-middle">RAL 5023</div></li>
+                <li><div style="background-color: rgb(106,147,176)" data-colour-name="Pastel Blue" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 5024</div></li>
+                <li><div style="background-color: rgb(181,205,200)" data-colour-name="Duck Egg Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 16C33</div></li>
+                <li><div style="background-color: rgb(158,215,208)" data-colour-name="Turquoise" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 16E50</div></li>
+                <li><div style="background-color: rgb(30,148,143)" data-colour-name="Aquamarine" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 16E53</div></li>
+                <li><div style="background-color: rgb(61,92,105)" data-colour-name="Dolphin" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 18C39</div></li>
+                <li><div style="background-color: rgb(80,138,156)" data-colour-name="Dresden Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 18D43</div></li>
+                <li><div style="background-color: rgb(212,230,226)" data-colour-name="Pinefrost" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 18E49</div></li>
+                <li><div style="background-color: rgb(173,212,218)" data-colour-name="Ribbon Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 18E50</div></li>
+                <li><div style="background-color: rgb(77,166,190)" data-colour-name="Larkspur Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 18E51</div></li>
+                <li><div style="background-color: rgb(0,122,159)" data-colour-name="Cornflower Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 18E53</div></li>
+                <li><div style="background-color: rgb(187,205,219)" data-colour-name="Pompadour" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 20C33</div></li>
+                <li><div style="background-color: rgb(109,135,160)" data-colour-name="Viking Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 20C37</div></li>
+                <li><div style="background-color: rgb(63,95,132)" data-colour-name="Sapphire Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 20D45</div></li>
+                <li><div style="background-color: rgb(108,164,211)" data-colour-name="Summer Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 20E51</div></li>
+                <li><div style="background-color: rgb(56,118,171)" data-colour-name="Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 20E53</div></li>
+                <li><div style="background-color: rgb(38,100,146)" data-colour-name="Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 20E56</div></li>
+                <li><div style="background-color: rgb(144,184,160)" data-colour-name="Sky Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 101</div></li>
+                <li><div style="background-color: rgb(80,136,136)" data-colour-name="Turquoise Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 102</div></li>
+                <li><div style="background-color: rgb(48,96,122)" data-colour-name="Peacock Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 103</div></li>
+                <li><div style="background-color: rgb(32,72,120)" data-colour-name="Azure Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 104</div></li>
+                <li><div style="background-color: rgb(8,32,80)" data-colour-name="Oxford Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 105</div></li>
+                <li><div style="background-color: rgb(24,24,48)" data-colour-name="Royal Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 106</div></li>
+                <li><div style="background-color: rgb(40,104,160)" data-colour-name="Strong Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 107</div></li>
+                <li><div style="background-color: rgb(8,40,112)" data-colour-name="Aircraft Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 108</div></li>
+                <li><div style="background-color: rgb(8,80,120)" data-colour-name="Middle Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 109</div></li>
+                <li><div style="background-color: rgb(24,48,112)" data-colour-name="Roundel Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 110</div></li>
+                <li><div style="background-color: rgb(128,192,184)" data-colour-name="Pale Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 111</div></li>
+                <li><div style="background-color: rgb(112,168,184)" data-colour-name="Arctic Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 112</div></li>
+                <li><div style="background-color: rgb(48,96,112)" data-colour-name="Deep Saxe Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 113</div></li>
+                <li><div style="background-color: rgb(8,64,88)" data-colour-name="Rail Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 114</div></li>
+                <li><div style="background-color: rgb(88,128,184)" data-colour-name="Cobalt Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 115</div></li>
+                <li><div style="background-color: rgb(16,80,168)" data-colour-name="French Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 166</div></li>
+                <li><div style="background-color: rgb(160,184,224)" data-colour-name="Pale Roundel Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 172</div></li>
+                <li><div style="background-color: rgb(88,152,160)" data-colour-name="Oriental Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 174</div></li>
+                <li><div style="background-color: rgb(64,120,192)" data-colour-name="Light French Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 175</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Violets</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All violets</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(138,90,131)" data-colour-name="Red Lilac" class="uk-flex uk-flex-center uk-flex-middle">RAL 4001</div></li>
+              <li><div style="background-color: rgb(147,61,80)" data-colour-name="Red Violet" class="uk-flex uk-flex-center uk-flex-middle">RAL 4002</div></li>
+              <li><div style="background-color: rgb(209,91,143)" data-colour-name="Heather Violet" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 4003</div></li>
+              <li><div style="background-color: rgb(105,22,57)" data-colour-name="Claret Violet" class="uk-flex uk-flex-center uk-flex-middle">RAL 4004</div></li>
+              <li><div style="background-color: rgb(131,99,157)" data-colour-name="Blue Lilac" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 4005</div></li>
+              <li><div style="background-color: rgb(153,37,114)" data-colour-name="Traffic Purple" class="uk-flex uk-flex-center uk-flex-middle">RAL 4006</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(74,32,59)" data-colour-name="Purple Violet" class="uk-flex uk-flex-center uk-flex-middle">RAL 4007</div></li>
+                <li><div style="background-color: rgb(144,70,132)" data-colour-name="Signal Violet" class="uk-flex uk-flex-center uk-flex-middle">RAL 4008</div></li>
+                <li><div style="background-color: rgb(198,54,120)" data-colour-name="Telemagenta" class="uk-flex uk-flex-center uk-flex-middle">RAL 4010</div></li>
+                <li><div style="background-color: rgb(228,192,196)" data-colour-name="Candy Floss" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 02C33</div></li>
+                <li><div style="background-color: rgb(164,113,127)" data-colour-name="Clover Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 02C37</div></li>
+                <li><div style="background-color: rgb(234,221,214)" data-colour-name="Dawn Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04B15</div></li>
+                <li><div style="background-color: rgb(215,196,189)" data-colour-name="Dusty Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04B17</div></li>
+                <li><div style="background-color: rgb(168,147,140)" data-colour-name="Sierra" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04B21</div></li>
+                <li><div style="background-color: rgb(244,231,224)" data-colour-name="Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04C31</div></li>
+                <li><div style="background-color: rgb(231,189,180)" data-colour-name="Orchid Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04C33</div></li>
+                <li><div style="background-color: rgb(245,219,212)" data-colour-name="Rose Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04E49</div></li>
+                <li><div style="background-color: rgb(106,67,72)" data-colour-name="Purple" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 04E58</div></li>
+                <li><div style="background-color: rgb(198,197,203)" data-colour-name="Dove" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 22B17</div></li>
+                <li><div style="background-color: rgb(125,122,155)" data-colour-name="Heather" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 22C37</div></li>
+                <li><div style="background-color: rgb(176,178,212)" data-colour-name="Purple" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 22D41</div></li>
+                <li><div style="background-color: rgb(92,83,133)" data-colour-name="Deep Purple" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 22D45</div></li>
+                <li><div style="background-color: rgb(209,194,205)" data-colour-name="Pale Lilac" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 24C33</div></li>
+                <li><div style="background-color: rgb(106,79,110)" data-colour-name="Regalia" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 24C39</div></li>
+                <li><div style="background-color: rgb(137,95,143)" data-colour-name="Purple" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 24E53</div></li>
+                <li><div style="background-color: rgb(232,168,128)" data-colour-name="Salmon Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 447</div></li>
+                <li><div style="background-color: rgb(240,208,200)" data-colour-name="Shell Pink" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 453</div></li>
+                <li><div style="background-color: rgb(224,152,152)" data-colour-name="Pale Roundel Red" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 454</div></li>
+                <li><div style="background-color: rgb(144,32,80)" data-colour-name="Maroon" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 541</div></li>
+                <li><div style="background-color: rgb(96,56,104)" data-colour-name="Dark Violet" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 796</div></li>
+                <li><div style="background-color: rgb(192,160,200)" data-colour-name="Light Violet" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 797</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Greys</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All greys</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(126,139,146)" data-colour-name="Squirrel Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7000</div></li>
+              <li><div style="background-color: rgb(143,153,159)" data-colour-name="Silver Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7001</div></li>
+              <li><div style="background-color: rgb(129,127,104)" data-colour-name="Olive Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7002</div></li>
+              <li><div style="background-color: rgb(122,123,109)" data-colour-name="Moss Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7003</div></li>
+              <li><div style="background-color: rgb(158,160,161)" data-colour-name="Signal Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7004</div></li>
+              <li><div style="background-color: rgb(107,113,111)" data-colour-name="Mouse Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7005</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(117,111,97)" data-colour-name="Beige Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7006</div></li>
+                <li><div style="background-color: rgb(116,102,67)" data-colour-name="Khaki Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7008</div></li>
+                <li><div style="background-color: rgb(91,98,89)" data-colour-name="Green Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7009</div></li>
+                <li><div style="background-color: rgb(87,93,87)" data-colour-name="Tarpaulin Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7010</div></li>
+                <li><div style="background-color: rgb(85,93,97)" data-colour-name="Iron Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7011</div></li>
+                <li><div style="background-color: rgb(89,97,99)" data-colour-name="Basalt Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7012</div></li>
+                <li><div style="background-color: rgb(85,85,72)" data-colour-name="Brown Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7013</div></li>
+                <li><div style="background-color: rgb(81,86,92)" data-colour-name="Slate Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7015</div></li>
+                <li><div style="background-color: rgb(55,63,67)" data-colour-name="Anthracite Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7016</div></li>
+                <li><div style="background-color: rgb(46,50,52)" data-colour-name="Black Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7021</div></li>
+                <li><div style="background-color: rgb(75,77,70)" data-colour-name="Umbra Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7022</div></li>
+                <li><div style="background-color: rgb(129,132,121)" data-colour-name="Concrete grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7023</div></li>
+                <li><div style="background-color: rgb(71,74,80)" data-colour-name="Graphite Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7024</div></li>
+                <li><div style="background-color: rgb(55,68,71)" data-colour-name="Granite Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7026</div></li>
+                <li><div style="background-color: rgb(147,147,136)" data-colour-name="Stone Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7030</div></li>
+                <li><div style="background-color: rgb(93,105,112)" data-colour-name="Blue Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7031</div></li>
+                <li><div style="background-color: rgb(185,185,168)" data-colour-name="Pebble Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7032</div></li>
+                <li><div style="background-color: rgb(129,137,121)" data-colour-name="Cement Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7033</div></li>
+                <li><div style="background-color: rgb(147,145,118)" data-colour-name="Yellow Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7034</div></li>
+                <li><div style="background-color: rgb(203,208,204)" data-colour-name="Light Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7035</div></li>
+                <li><div style="background-color: rgb(154,150,151)" data-colour-name="Platinum Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7036</div></li>
+                <li><div style="background-color: rgb(124,127,126)" data-colour-name="Dusty Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7037</div></li>
+                <li><div style="background-color: rgb(180,184,176)" data-colour-name="Agate Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7038</div></li>
+                <li><div style="background-color: rgb(107,105,95)" data-colour-name="Quartz Grey" class="uk-flex uk-flex-center uk-flex-middle">RAL 7039</div></li>
+                <li><div style="background-color: rgb(157,163,166)" data-colour-name="Window Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7040</div></li>
+                <li><div style="background-color: rgb(143,150,149)" data-colour-name="Traffic Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7042</div></li>
+                <li><div style="background-color: rgb(78,84,81)" data-colour-name="Traffic Grey 2" class="uk-flex uk-flex-center uk-flex-middle">RAL 7043</div></li>
+                <li><div style="background-color: rgb(189,189,178)" data-colour-name="Silk Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7044</div></li>
+                <li><div style="background-color: rgb(145,150,154)" data-colour-name="Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7045</div></li>
+                <li><div style="background-color: rgb(130,137,142)" data-colour-name="Telegrau 2" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7046</div></li>
+                <li><div style="background-color: rgb(207,208,207)" data-colour-name="Light Grey" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 7047</div></li>
+                <li><div style="background-color: rgb(213,212,206)" data-colour-name="Ash Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 00A01</div></li>
+                <li><div style="background-color: rgb(170,173,170)" data-colour-name="Goosewing Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 00A05</div></li>
+                <li><div style="background-color: rgb(130,131,133)" data-colour-name="Flint Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 00A09</div></li>
+                <li><div style="background-color: rgb(90,90,91)" data-colour-name="Greyfriar Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 00A13</div></li>
+                <li><div style="background-color: rgb(216,201,182)" data-colour-name="Sandstone" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08B17</div></li>
+                <li><div style="background-color: rgb(164,149,135)" data-colour-name="Antelope" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08B21</div></li>
+                <li><div style="background-color: rgb(201,199,191)" data-colour-name="Flake Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10A03</div></li>
+                <li><div style="background-color: rgb(182,180,170)" data-colour-name="Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10A05</div></li>
+                <li><div style="background-color: rgb(155,153,146)" data-colour-name="Woodash" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10A07</div></li>
+                <li><div style="background-color: rgb(107,105,102)" data-colour-name="Rhino" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10A11</div></li>
+                <li><div style="background-color: rgb(209,201,172)" data-colour-name="Hopsack" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10B17</div></li>
+                <li><div style="background-color: rgb(163,154,132)" data-colour-name="Lizard Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10B21</div></li>
+                <li><div style="background-color: rgb(115,108,90)" data-colour-name="Turtle Green" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 10B25</div></li>
+                <li><div style="background-color: rgb(74,71,66)" data-colour-name="Ironstone" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 10B29</div></li>
+                <li><div style="background-color: rgb(229,228,208)" data-colour-name="Sea Foam" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12B15</div></li>
+                <li><div style="background-color: rgb(202,202,172)" data-colour-name="Willow" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 12B17</div></li>
+                <li><div style="background-color: rgb(217,230,215)" data-colour-name="Alpine" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 14C31</div></li>
+                <li><div style="background-color: rgb(160,180,163)" data-colour-name="Braemar Green" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 14C35</div></li>
+                <li><div style="background-color: rgb(197,205,203)" data-colour-name="Heron" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 18B17</div></li>
+                <li><div style="background-color: rgb(148,156,156)" data-colour-name="Squirrel Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 18B21</div></li>
+                <li><div style="background-color: rgb(73,86,84)" data-colour-name="Merlin Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 18B25</div></li>
+                <li><div style="background-color: rgb(67,71,75)" data-colour-name="Raven" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 18B29</div></li>
+                <li><div style="background-color: rgb(228,232,225)" data-colour-name="Ice Blue" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 18C31</div></li>
+                <li><div style="background-color: rgb(153,177,186)" data-colour-name="Pigeon" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 18C35</div></li>
+                <li><div style="background-color: rgb(227,227,223)" data-colour-name="Swansdown" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 22B15</div></li>
+                <li><div style="background-color: rgb(152,168,168)" data-colour-name="Camouflage Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 626</div></li>
+                <li><div style="background-color: rgb(184,184,176)" data-colour-name="Light Aircraft Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 627</div></li>
+                <li><div style="background-color: rgb(112,120,128)" data-colour-name="Dark Camouflage Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 629</div></li>
+                <li><div style="background-color: rgb(152,160,144)" data-colour-name="French Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 630</div></li>
+                <li><div style="background-color: rgb(152,168,152)" data-colour-name="Light Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 631</div></li>
+                <li><div style="background-color: rgb(96,112,112)" data-colour-name="Dark Admiralty Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 632</div></li>
+                <li><div style="background-color: rgb(48,64,72)" data-colour-name="RAF Blue Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 633</div></li>
+                <li><div style="background-color: rgb(96,104,88)" data-colour-name="Slate" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 634</div></li>
+                <li><div style="background-color: rgb(72,80,72)" data-colour-name="Lead" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 635</div></li>
+                <li><div style="background-color: rgb(88,112,120)" data-colour-name="PRU Blue" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 636</div></li>
+                <li><div style="background-color: rgb(128,144,144)" data-colour-name="Medium Sea Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 637</div></li>
+                <li><div style="background-color: rgb(96,104,104)" data-colour-name="Dark Sea Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 638</div></li>
+                <li><div style="background-color: rgb(88,112,88)" data-colour-name="Light Slate Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 639</div></li>
+                <li><div style="background-color: rgb(72,88,88)" data-colour-name="Extra Dark Sea Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 640</div></li>
+                <li><div style="background-color: rgb(16,24,24)" data-colour-name="Night" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 642</div></li>
+                <li><div style="background-color: rgb(72,80,80)" data-colour-name="Middle Graphite" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 671</div></li>
+                <li><div style="background-color: rgb(160,176,176)" data-colour-name="Light Weatherwork Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 676</div></li>
+                <li><div style="background-color: rgb(96,104,112)" data-colour-name="Dark Weatherwork Grey" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 677</div></li>
+                <li><div style="background-color: rgb(120,136,152)" data-colour-name="Smoke Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 692</div></li>
+                <li><div style="background-color: rgb(128,136,136)" data-colour-name="Aircraft Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 693</div></li>
+                <li><div style="background-color: rgb(136,144,136)" data-colour-name="Dove Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 694</div></li>
+                <li><div style="background-color: rgb(176,200,192)" data-colour-name="Light Admiralty Grey" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 697</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Browns</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All browns</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(136,113,66)" data-colour-name="Green Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8000</div></li>
+              <li><div style="background-color: rgb(156,107,48)" data-colour-name="Ochre Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8001</div></li>
+              <li><div style="background-color: rgb(123,81,65)" data-colour-name="Signal Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8002</div></li>
+              <li><div style="background-color: rgb(128,84,47)" data-colour-name="Clay Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8003</div></li>
+              <li><div style="background-color: rgb(143,78,53)" data-colour-name="Copper Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8004</div></li>
+              <li><div style="background-color: rgb(111,74,47)" data-colour-name="Fawn Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8007</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(111,79,40)" data-colour-name="Olive Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8008</div></li>
+                <li><div style="background-color: rgb(90,58,41)" data-colour-name="Nut Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8011</div></li>
+                <li><div style="background-color: rgb(103,56,49)" data-colour-name="Red Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8012</div></li>
+                <li><div style="background-color: rgb(73,57,45)" data-colour-name="Sepia Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8014</div></li>
+                <li><div style="background-color: rgb(99,58,52)" data-colour-name="Chestnut Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8015</div></li>
+                <li><div style="background-color: rgb(76,47,38)" data-colour-name="Mahogany Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8016</div></li>
+                <li><div style="background-color: rgb(68,50,45)" data-colour-name="Chocolate Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8017</div></li>
+                <li><div style="background-color: rgb(63,58,58)" data-colour-name="Grey Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8019</div></li>
+                <li><div style="background-color: rgb(33,31,32)" data-colour-name="Black Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8022</div></li>
+                <li><div style="background-color: rgb(166,94,47)" data-colour-name="Orange Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8023</div></li>
+                <li><div style="background-color: rgb(121,85,60)" data-colour-name="Beige Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8024</div></li>
+                <li><div style="background-color: rgb(117,92,73)" data-colour-name="Pale Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8025</div></li>
+                <li><div style="background-color: rgb(78,59,43)" data-colour-name="Terra Brown" class="uk-flex uk-flex-center uk-flex-middle">RAL 8028</div></li>
+                <li><div style="background-color: rgb(166,111,103)" data-colour-name="Autumn Brown" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 04C37</div></li>
+                <li><div style="background-color: rgb(159,113,89)" data-colour-name="Leather Brown" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 06C37</div></li>
+                <li><div style="background-color: rgb(92,71,66)" data-colour-name="Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 06C40</div></li>
+                <li><div style="background-color: rgb(143,91,63)" data-colour-name="Teak" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 06D45</div></li>
+                <li><div style="background-color: rgb(98,85,62)" data-colour-name="Seaweed" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 10C39</div></li>
+                <li><div style="background-color: rgb(152,140,56)" data-colour-name="French Mustard" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 10D45</div></li>
+                <li><div style="background-color: rgb(106,100,93)" data-colour-name="Beaver Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 08B25</div></li>
+                <li><div style="background-color: rgb(82,73,67)" data-colour-name="Bitter Chocolate Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 08B29</div></li>
+                <li><div style="background-color: rgb(207,166,113)" data-colour-name="Bamboo" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08C35</div></li>
+                <li><div style="background-color: rgb(158,117,69)" data-colour-name="Caramel" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 08C37</div></li>
+                <li><div style="background-color: rgb(98,79,62)" data-colour-name="Bison" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 08C39</div></li>
+                <li><div style="background-color: rgb(152,104,40)" data-colour-name="Light Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 320</div></li>
+                <li><div style="background-color: rgb(64,64,48)" data-colour-name="Very Dark Drab" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 337</div></li>
+                <li><div style="background-color: rgb(112,96,72)" data-colour-name="Dark Earth" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 350</div></li>
+                <li><div style="background-color: rgb(200,176,120)" data-colour-name="Light Stone" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 361</div></li>
+                <li><div style="background-color: rgb(176,152,128)" data-colour-name="Light Straw" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 384</div></li>
+                <li><div style="background-color: rgb(168,160,128)" data-colour-name="Middle Brown" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 411</div></li>
+                <li><div style="background-color: rgb(104,72,24)" data-colour-name="Dark Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 412</div></li>
+                <li><div style="background-color: rgb(153,99,58)" data-colour-name="Golden Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 414</div></li>
+                <li><div style="background-color: rgb(160,96,16)" data-colour-name="Dark Camouflage Desert Sand" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 420</div></li>
+                <li><div style="background-color: rgb(160,136,112)" data-colour-name="Camouflage Red" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 435</div></li>
+                <li><div style="background-color: rgb(120,88,80)" data-colour-name="Dark Camouflage Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 436</div></li>
+                <li><div style="background-color: rgb(72,64,56)" data-colour-name="Terracotta" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 444</div></li>
+                <li><div style="background-color: rgb(184,136,80)" data-colour-name="Deep Buff" class="uk-flex uk-flex-center uk-flex-middle dark">BS 381C 460</div></li>
+                <li><div style="background-color: rgb(128,80,48)" data-colour-name="Leaf Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 489</div></li>
+                <li><div style="background-color: rgb(80,64,48)" data-colour-name="Service Brown" class="uk-flex uk-flex-center uk-flex-middle">BS 381C 499</div></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <div class="uk-width-expand"><h3 class="uk-h3 uk-margin-remove">Blacks/Whites</h3></div>
+              <div class="uk-width-auto"><a class="uk-accordion-title uk-text-uppercase uk-text-small" href="#">All black and whites</a></div>
+            </div>
+            <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+              <li><div style="background-color: rgb(239,235,220)" data-colour-name="Cream" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9001</div></li>
+              <li><div style="background-color: rgb(221,222,212)" data-colour-name="Grey White" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9002</div></li>
+              <li><div style="background-color: rgb(244,248,244)" data-colour-name="Signal White" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9003</div></li>
+              <li><div style="background-color: rgb(46,48,50)" data-colour-name="Signal Black" class="uk-flex uk-flex-center uk-flex-middle">RAL 9004</div></li>
+              <li><div style="background-color: rgb(10,10,13)" data-colour-name="Jet Black" class="uk-flex uk-flex-center uk-flex-middle">RAL 9005</div></li>
+              <li><div style="background-color: rgb(165,168,166)" data-colour-name="Bright Silver" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9006</div></li>
+            </ul>
+            <div class="uk-accordion-content">
+              <ul class="uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small colour-grid" uk-grid>
+                <li><div style="background-color: rgb(143,143,140)" data-colour-name="Grey Aluminium" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9007</div></li>
+                <li><div style="background-color: rgb(247,249,239)" data-colour-name="Pure White" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9010</div></li>
+                <li><div style="background-color: rgb(41,44,47)" data-colour-name="Graphite Black" class="uk-flex uk-flex-center uk-flex-middle">RAL 9011</div></li>
+                <li><div style="background-color: rgb(247,251,245)" data-colour-name="Traffic White" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9016</div></li>
+                <li><div style="background-color: rgb(42,45,47)" data-colour-name="Traffic Black" class="uk-flex uk-flex-center uk-flex-middle">RAL 9017</div></li>
+                <li><div style="background-color: rgb(207,211,205)" data-colour-name="Papyrus White" class="uk-flex uk-flex-center uk-flex-middle dark">RAL 9018</div></li>
+                <li><div style="background-color: rgb(0,0,1)" data-colour-name="Black" class="uk-flex uk-flex-center uk-flex-middle">BS 4800 00E53</div></li>
+                <li><div style="background-color: rgb(255,255,254)" data-colour-name="White" class="uk-flex uk-flex-center uk-flex-middle dark">BS 4800 00E55</div></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
