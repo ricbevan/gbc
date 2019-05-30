@@ -21,12 +21,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   if(window.location.hash) { // open colour modal if hash provided
     Array.from(
-      document.querySelectorAll('.colour-grid li div'))
-        .find(
-          el => el.textContent === window.location.hash.substring(1)
-        )
-      .dispatchEvent(new Event('click')
-    );
+      document.querySelectorAll('.colour-grid li div')
+    ).find(
+      el =>
+        el.textContent.replace('RAL ', '').replace('BS 381C ', '').replace('BS 4800', '')
+        ==
+        window.location.hash.substring(1)
+    ).dispatchEvent(new Event('click'));
   }
 });
 
