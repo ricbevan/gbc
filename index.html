@@ -122,7 +122,7 @@
               </div>
               <div class="uk-width-1-1">
                 <h3 class="uk-margin-remove-adjacent uk-margin-remove-bottom uk-h3">Clean premises</h3>
-                <p>A full time cleaner keeps our premises exceptionally clean, ensuring our finish is as dust free and perfect as possible.</p>
+                <p>A full time cleaner keeps our premises exceptionally clean, ensuring our finish is as dust free and perfect as possible. <a href="#factory-tour-modal" uk-toggle>Take a look round our factory</a>.</p>
               </div>
             </div>
           </div>
@@ -223,6 +223,16 @@
             </div>
           </li>
         </ul>
+        <div class="uk-flex-center uk-margin-medium-top" uk-grid>
+          <div class="uk-box-shadow-bottom uk-padding-remove">
+            <a href="#factory-tour-modal" uk-toggle>
+              <img src="media/images/factory.jpg" alt="Take a look around our factory" class="uk-border-rounded" />
+              <div class="uk-position-center">
+                <span uk-icon="icon: play-circle; ratio: 2"></span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1065,6 +1075,13 @@
         <div class="uk-modal-header uk-flex-none"><h2 class="uk-modal-title"></h2></div>
         <div class="uk-modal-body uk-flex-1"></div>
         <div class="uk-modal-footer uk-flex-none">The colour depicted above is for guidance only. The displayed colour will depend on your monitor and browser and pearl or metallic colours cannot be shown adequately.</div>
+      </div>
+    </div>
+
+    <div id="factory-tour-modal" class="uk-flex-top" uk-modal>
+      <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <video src="media/videos/factory.mp4" controls playsinline uk-video></video>
       </div>
     </div>
 
