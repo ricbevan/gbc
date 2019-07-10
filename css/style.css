@@ -74,6 +74,7 @@
 .highlight {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
+  display: inline-block; /* required for titles that span multiple lines */
 }
 /* rainbow section colours ===================================================== END */
 
