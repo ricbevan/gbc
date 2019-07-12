@@ -108,11 +108,6 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   left: 0; /* IE fix */
 }
 
-#commercial img, #domestic img { /* required to fix scrolling problem with lazy loading images */
-  height: 200px;
-  width: 300px;
-}
-
 #colours .uk-accordion-content { /* fix for different grid/accordion padding */
   margin-top: 15px;
 }
