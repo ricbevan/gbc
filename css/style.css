@@ -191,6 +191,12 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   resize: none;
 }
 
+.uk-lightbox-toolbar { /* make the lightbox description easier to read */
+  background: rgba(0,0,0,.6);
+  color: rgba(255,255,255,.9);
+  font-family: MontserratMedium;
+}
+
 .facebook-icon { color: #3B5998 !important; } /* facebook icon colour */
 .instagram-icon { color: #517FA4 !important; } /* instagram icon colour */
 .twitter-icon { color: #00aced !important; } /* twitter icon colour */
