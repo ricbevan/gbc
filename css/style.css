@@ -8,6 +8,11 @@
   src: url('Montserrat-Medium.ttf');
 }
 
+@keyframes shadow-pulse { /* for the play button in the services section */
+  0% { box-shadow: 0 0 0 0px rgba(255, 152, 6, 1); }
+  100% { box-shadow: 0 0 0 75px rgba(255, 152, 6, 0); }
+}
+
 /* rainbow section colours ===================================================== START */
 
 
@@ -106,6 +111,11 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   background: linear-gradient(transparent, #241E21) left repeat;
   z-index: 1;
   left: 0; /* IE fix */
+}
+
+#services .pulse-shadow {
+  animation: shadow-pulse 1s infinite;
+  border-radius: 20px;
 }
 
 #colours .uk-accordion-content { /* fix for different grid/accordion padding */
