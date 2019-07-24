@@ -95,7 +95,7 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   color: #0e6ecd;
 }
 
-#cover * { /* text in cover */
+#cover .uk-text-lead, #cover .uk-text-lead { /* text in cover */
   color: #ffffff;
   text-shadow: 1px 2px 3px #666;
 }
