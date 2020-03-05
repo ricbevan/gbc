@@ -34,20 +34,20 @@
   border-image: -webkit-linear-gradient(135deg, #FFC10F, #FF5723);
 }
 
-.commercial .highlight {
+.gallery .highlight {
   color: #FFC10F;
   background: -webkit-linear-gradient(135deg, #49AF51, #FFC10F);
 }
-#commercial .uk-divider-small::after {
+#gallery .uk-divider-small::after {
   border-color: #FFC10F;
   border-image: -webkit-linear-gradient(135deg, #49AF51, #FFC10F);
 }
 
-.domestic .highlight {
+.aluminium .highlight {
   color: #009688;
   background: -webkit-linear-gradient(135deg, #00A9F4, #49AF51);
 }
-#domestic .uk-divider-small::after {
+#aluminium .uk-divider-small::after {
   border-color: #009688;
   border-image: -webkit-linear-gradient(135deg, #00A9F4, #49AF51);
 }
@@ -87,7 +87,7 @@ html {
   font-family: MontserratLight;
 }
 
-.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle, .gbc-bold {
   font-family: MontserratMedium;
 }
 
