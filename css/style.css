@@ -111,6 +111,16 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   margin-top: 3px;
 }
 
+.gbc-25-years {
+  font-family: MontserratMedium;
+  color: #ffffff;
+  background: -webkit-linear-gradient(135deg, #9D27B0, #3D51B5, #00A9F4, #49AF51, #FFC10F, #FF5723, #EB1E63);
+  font-size: 1.5rem;
+  line-height: .75; /* shorter height so the background colour fits the text */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  margin-top: 3px;
+}
+
 #cover .uk-text-lead, #cover .uk-text-lead { /* text in cover */
   color: #ffffff;
   text-shadow: 1px 2px 3px #666;
