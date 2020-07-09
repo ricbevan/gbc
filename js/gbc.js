@@ -22,6 +22,13 @@ var gbc = (function () {
     return this;
   };
 
+  Constructor.prototype.attr = function (attr, val) {
+    this.each(function (item) {
+      item.setAttribute(attr, val);
+    });
+    return this;
+  };
+
   Constructor.prototype.css = function (type, style) {
     this.each(function (item) {
       item.style[type] = style;
