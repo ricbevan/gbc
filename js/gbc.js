@@ -89,6 +89,10 @@ var gbc = (function () {
   };
 
   Constructor.prototype.val = function (val) {
+    if (val === undefined) {
+      return this.elems[0].value;
+    }
+
     this.each(function (item) {
       item.value = val;
     });
