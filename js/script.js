@@ -38,7 +38,7 @@ function displayColourModal(colour) {
   var colourHex = colour.style.backgroundColor;
 
   var colourTitle = colourName + " (" + colourCode + ")";
-  var colourUrl = 'https://gbc.uk/#' + removeColourType(colourCode);
+  var colourUrl = 'https://gbc.uk#' + removeColourType(colourCode);
 
   gbc('#colour-modal .uk-modal-body').css('backgroundColor', colourHex);
   gbc('#colour-modal .uk-modal-title').text(colourTitle);
