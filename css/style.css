@@ -139,11 +139,11 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   left: 0; /* IE fix */
 }
 
-#history-modal .uk-modal-header {
+#story-modal .uk-modal-header {
   border-bottom: 0px;
 }
 
-#history-modal > div > div > ul::before { /* the vertical line in the history modal */
+#story-modal > div > div > ul::before { /* the vertical line in the story modal */
   position: fixed;
   top: 0;
   height: 100%;
@@ -154,12 +154,12 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
 }
 
 @media (min-width: 1200px) {
-  #history-modal > div > div > ul::before {
+  #story-modal > div > div > ul::before {
     padding-left: calc(60px + 20%);
   }
 }
 
-#history-modal ul .marker {
+#story-modal ul .marker {
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -167,18 +167,18 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   min-height: 40px;
 }
 
-#history-modal ul .marker span {
+#story-modal ul .marker span {
   padding: 6px;
 }
 
-#history-modal ul .marker span svg {
+#story-modal ul .marker span svg {
   color: #ffffff;
 }
 
-#history-modal ul .marker.location { background-color: #5AB5F7; }
-#history-modal ul .marker.staff { background-color: #FFD357; }
-#history-modal ul .marker.equipment { background-color: #F97B73; }
-#history-modal ul .marker.accreditation { background-color: #4CB5AB; }
+#story-modal ul .marker.location { background-color: #5AB5F7; }
+#story-modal ul .marker.staff { background-color: #FFD357; }
+#story-modal ul .marker.equipment { background-color: #F97B73; }
+#story-modal ul .marker.accreditation { background-color: #4CB5AB; }
 
 #services .pulse-shadow {
   animation: shadow-pulse 1s infinite;
