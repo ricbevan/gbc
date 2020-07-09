@@ -1284,7 +1284,13 @@
         <div class="uk-modal-body uk-flex-1"></div>
         <div class="uk-modal-footer uk-flex-none">
           <p>The colour depicted above is for guidance only. The displayed colour will depend on your monitor and browser and pearl or metallic colours cannot be shown adequately.</p>
-          <p>Share: <a href="#nogo" target="_blank" rel="noopener" id="colour-modal-share"></a></p>
+          <div>
+            <div class="uk-inline uk-width-1-1">
+              <button class="uk-form-icon uk-form-icon-flip" uk-icon="icon: copy" uk-tooltip="Copy link" id="copy-colour-link"></button>
+              <div uk-tooltip="Copied!" id="copied-message"></div>
+              <input class="uk-input" type="textarea" id="colour-modal-share">
+            </div>
+          </div>
         </div>
       </div>
     </div>
