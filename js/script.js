@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.querySelectorAll('.colour-grid li div')
     ).find(
       el =>
-        el.textContent.replace('RAL ', '').replace('BS 381C ', '').replace('BS 4800', '')
+        removeColourType(el.textContent)
         ==
         window.location.hash.substring(1)
     ).dispatchEvent(new Event('click'));
@@ -38,9 +38,11 @@ function displayColourModal(colour) {
   var colourHex = colour.style.backgroundColor;
 
   var colourTitle = colourName + " (" + colourCode + ")";
+  var colourUrl = 'https://gbc.uk/#' + removeColourType(colourCode);
 
   gbc('#colour-modal .uk-modal-body').css('backgroundColor', colourHex);
   gbc('#colour-modal .uk-modal-title').text(colourTitle);
+  gbc('#colour-modal-share').text(colourUrl).url(colourUrl);
 
   UIkit.modal('#colour-modal').show();
 
@@ -88,4 +90,8 @@ function highlightOpeningTimes() {
   else
     gbc('#sat-sun-opening-times').addClass('uk-text-bold');
 
+}
+
+function removeColourType(colourName) {
+  return colourName.replace('RAL ', '').replace('BS 381C ', '').replace('BS 4800', '');
 }

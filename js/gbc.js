@@ -74,6 +74,13 @@ var gbc = (function () {
     return this;
   };
 
+  Constructor.prototype.url = function (url) {
+    this.each(function (item) {
+      item.href = url;
+    });
+    return this;
+  };
+
   Constructor.prototype.val = function (val) {
     this.each(function (item) {
       item.value = val;
