@@ -56,10 +56,12 @@
           <div class="uk-flex-center uk-text-center" uk-grid>
             <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-text-uppercase">
               <hr class="uk-divider-icon">
-              <div class="gbc-25-white">Celebrating</div>
-              <div class="gbc-25 highlight">25</div>
-              <div class="gbc-25-white">Years in business</div>
-              <div class="gbc-25-years highlight">1995 - 2020</div>
+              <a href="#history-modal" class="uk-link-reset" uk-toggle>
+                <div class="gbc-25-white">Celebrating</div>
+                <div class="gbc-25 highlight">25</div>
+                <div class="gbc-25-white">Years in business</div>
+                <div class="gbc-25-years highlight">1995 - 2020</div>
+              </a>
             </div>
           </div>
         </div>
@@ -1264,7 +1266,9 @@
       <div class="uk-container">
         <div class="uk-flex uk-flex-middle uk-flex-between uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
           <div class="">
-            <p>&copy; Garie Bevan Coatings Ltd.<span id="year"></span></p>
+            <p>
+              <a href="#history-modal" class="uk-link-reset" uk-toggle>&copy; Garie Bevan Coatings Ltd.<span id="year"></span></a>
+            </p>
           </div>
           <div class="uk-text-right@m">
             <ul class="uk-list">
@@ -1298,6 +1302,153 @@
       <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <video src="media/videos/factory.mp4" controls playsinline uk-video></video>
+      </div>
+    </div>
+
+    <div id="history-modal" uk-modal>
+      <div class="uk-modal-dialog uk-margin-auto-vertical uk-flex uk-flex-column uk-background-secondary" uk-height-viewport="offset-bottom: 20">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header uk-flex-none uk-background-secondary uk-light"><h2 class="uk-modal-title">History</h2></div>
+        <div class="uk-modal-body uk-flex-1 uk-light uk-padding-remove">
+          <ul class="uk-list">
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">1995</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker location uk-margin-small-right">
+                    <span uk-icon="icon: location; ratio: 1.5"></span>
+                  </div>
+                  <div>Established in Buxworth, High Peak.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker staff uk-margin-small-right">
+                    <span uk-icon="icon: users; ratio: 1.5"></span>
+                  </div>
+                  <div>Initially Garie with 3 members of staff.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>Started with a single powder coating line.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>Sand/grit blasting added.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>In-house transport offered.</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">2001</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker location uk-margin-small-right">
+                    <span uk-icon="icon: location; ratio: 1.5"></span>
+                  </div>
+                  <div>Moved to Tunstead Milton, High Peak.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>Second powder coating line added.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker staff uk-margin-small-right">
+                    <span uk-icon="icon: users; ratio: 1.5"></span>
+                  </div>
+                  <div>Night shift introduced.</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">2009</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker location uk-margin-small-right">
+                    <span uk-icon="icon: location; ratio: 1.5"></span>
+                  </div>
+                  <div>Moved to Glossop, Manchester.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>Third powder coating line and separate sand/grit blasting booths added.</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">2015</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker accreditation uk-margin-small-right">
+                    <span uk-icon="icon: check; ratio: 1.5"></span>
+                  </div>
+                  <div>ISO 9001:2015 accreditation.</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">2017</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>Aluminium pre-treatment added.</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">2018</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker location uk-margin-small-right">
+                    <span uk-icon="icon: location; ratio: 1.5"></span>
+                  </div>
+                  <div>Second site in Glossop, Manchester.</div>
+                </li>
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker equipment uk-margin-small-right">
+                    <span uk-icon="icon: cog; ratio: 1.5"></span>
+                  </div>
+                  <div>Fourth powder line added (at second site).</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">2019</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker accreditation uk-margin-small-right">
+                    <span uk-icon="icon: check; ratio: 1.5"></span>
+                  </div>
+                  <div>AkzoNobel Service First accreditation.</div>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-flex uk-flex-middle uk-padding">
+              <span class="uk-text-lead uk-width-1-5 uk-text-center">Now</span>
+              <ul class="uk-width-4-5 uk-list uk-padding-remove">
+                <li class="uk-flex uk-flex-middle uk-padding-small">
+                  <div class="marker staff uk-margin-small-right">
+                    <span uk-icon="icon: users; ratio: 1.5"></span>
+                  </div>
+                  <div>We now employ 23 members of staff across 2 sites working 24 hours a day.</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 

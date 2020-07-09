@@ -139,6 +139,47 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   left: 0; /* IE fix */
 }
 
+#history-modal .uk-modal-header {
+  border-bottom: 0px;
+}
+
+#history-modal > div > div > ul::before { /* the vertical line in the history modal */
+  position: fixed;
+  top: 0;
+  height: 100%;
+  border-right: 3px solid #e5e5e5;
+  content: "";
+  padding-left: calc(54px + 20%);
+  z-index: -1;
+}
+
+@media (min-width: 1200px) {
+  #history-modal > div > div > ul::before {
+    padding-left: calc(60px + 20%);
+  }
+}
+
+#history-modal ul .marker {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+#history-modal ul .marker span {
+  padding: 6px;
+}
+
+#history-modal ul .marker span svg {
+  color: #ffffff;
+}
+
+#history-modal ul .marker.location { background-color: #5AB5F7; }
+#history-modal ul .marker.staff { background-color: #FFD357; }
+#history-modal ul .marker.equipment { background-color: #F97B73; }
+#history-modal ul .marker.accreditation { background-color: #4CB5AB; }
+
 #services .pulse-shadow {
   animation: shadow-pulse 1s infinite;
   border-radius: 20px;
