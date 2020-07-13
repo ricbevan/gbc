@@ -101,7 +101,7 @@ function highlightOpeningTimes() {
 }
 
 function removeColourType(colourName) {
-  return colourName.replace('RAL ', '').replace('BS 381C ', '').replace('BS 4800', '');
+  return colourName.replace('RAL ', '').replace('BS 381C ', '').replace('BS 4800 ', '');
 }
 
 function copyToClipboard(copyValue) {
