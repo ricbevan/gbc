@@ -39,7 +39,18 @@ var gbc = (function () {
   Constructor.prototype.hide = function () {
     this.each(function (item) {
       item.setAttribute('hidden', 'hidden');
-      item.style.visibility = 'hidden';;
+      item.style.visibility = 'hidden';
+    });
+    return this;
+  };
+
+  Constructor.prototype.html = function (html) {
+    if (html === undefined) {
+      return this.elems[0].innerHTML;
+    }
+
+    this.each(function (item) {
+      item.innerHTML = html;
     });
     return this;
   };
@@ -68,6 +79,10 @@ var gbc = (function () {
   };
 
   Constructor.prototype.text = function (text) {
+    if (text === undefined) {
+      return this.elems[0].innerText;
+    }
+
     this.each(function (item) {
       item.innerText = text;
     });
