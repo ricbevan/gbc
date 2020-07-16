@@ -285,7 +285,7 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   font-family: MontserratMedium;
 }
 
-.facebook-icon { color: #3B5998 !important; } /* facebook icon colour */
-.instagram-icon { color: #517FA4 !important; } /* instagram icon colour */
-.twitter-icon { color: #00aced !important; } /* twitter icon colour */
-.google-icon { color: #DD4B39 !important; } /* google plus icon colour */
+.gbc-facebook-icon { color: #3B5998 !important; } /* facebook icon colour */
+.gbc-instagram-icon { color: #517FA4 !important; } /* instagram icon colour */
+.gbc-twitter-icon { color: #00aced !important; } /* twitter icon colour */
+.gbc-google-icon { color: #DD4B39 !important; } /* google plus icon colour */
