@@ -13,7 +13,7 @@
   100% { box-shadow: 0 0 0 75px rgba(255, 152, 6, 0); }
 }
 
-/* rainbow section colours ===================================================== START */ 
+/* rainbow section colours ===================================================== START */
 
 
 .why-us .highlight {
@@ -189,7 +189,7 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   margin-top: 15px;
 }
 
-#colours .colour-grid li div { /* styling for colour thumbnails */
+#colours .colour-grid li div, #colours .special-colour-grid li div { /* styling for colour thumbnails */
   cursor: pointer;
   height: 75px;
   color: rgba(255, 255, 255, 0.5);
@@ -199,6 +199,17 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
 
 #colours .colour-grid li div:hover { /* styling for colour thumbnails text hover */
   color: rgba(255, 255, 255, 0.9);
+}
+
+#colours .special-colour-grid li span { /* style for special colour text */
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease-in;
+  text-shadow: 2px 2px 5px #000;
+  pointer-events: none; /* without this modal wouldn't open when clicked on */
+}
+
+#colours .special-colour-grid li:hover span { /* style for special colour text hove */
+  color: rgba(255, 255, 255, 1.0);
 }
 
 #colours .colour-grid li div.dark { /* styling for colour thumbnails dark text */
