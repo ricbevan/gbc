@@ -285,6 +285,7 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   font-family: MontserratMedium;
 }
 
+.gbc-review-icon-button { width: 70px; height: 70px;  }
 .gbc-facebook-icon { color: #3B5998 !important; } /* facebook icon colour */
 .gbc-instagram-icon { color: #517FA4 !important; } /* instagram icon colour */
 .gbc-twitter-icon { color: #00aced !important; } /* twitter icon colour */
