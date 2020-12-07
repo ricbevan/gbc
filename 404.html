@@ -61,15 +61,9 @@
     <script src="js/gbc.js"></script>
     <script src="js/script.js"></script>
 
-    <script>
-      (function (w,d,s,o,f,js,fjs) {
-      w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-      js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-      js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-      }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
-
-      plausible('page')
-    </script>
+    <script async defer data-domain="gbc.uk" src="https://stats.gbc.uk/js/index.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script>plausible("404",{ props: { path: document.location.pathname } });</script>
 
   </body>
 </html>
