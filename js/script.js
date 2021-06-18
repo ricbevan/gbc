@@ -45,6 +45,8 @@ function displayColourModal(colour) {
   var colourCode = colour.innerHTML;
   var colourHex = colour.style.backgroundColor;
 
+  pa.track({name: 'Colour viewed', value: colourCode})
+
   var colourTitle = colourName + " (" + colourCode + ")";
   var colourUrl = 'https://gbc.uk#' + removeColourType(colourCode);
 
