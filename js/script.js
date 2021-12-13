@@ -68,24 +68,28 @@ function highlightOpeningTimes() {
   today = dd + '/' + mm + '/' + yyyy;
 
   var bankHolidays = [
-    // 2020
-    '1/1/2020', // new year
-    '10/4/2020', // good friday
-    '13/4/2020', // easter monday
-    '8/5/2020', // may day
-    '25/5/2020', // late may
-    '31/8/2020', // august
-    '25/12/2020', // christmas
-    '28/12/2020', // boxing day
     // 2021
-    '1/1/2021', // new year
-    '2/4/2021', // good friday
-    '5/4/2021', // easter monday
-    '3/5/2021', // may day
-    '31/5/2021', // late may
-    '30/8/2021', // august
     '27/12/2021', // christmas
     '28/12/2021' // boxing day
+    // 2022
+    '3/1/2022', // new year
+    '15/4/2022', // good friday
+    '18/4/2022', // easter monday
+    '2/5/2022', // early may
+    '2/6/2022', // spring
+    '3/6/2022', // jubilee
+    '29/8/2022', // summer
+    '26/12/2022', // boxing day
+    '27/12/2022', // christmas
+    // 2023
+    '2/1/2023', // new year
+    '7/4/2023', // good friday
+    '10/4/2023', // easter monday
+    '1/5/2023', // early may
+    '29/5/2023', // spring
+    '28/8/2023', // summer
+    '25/12/2023', // boxing day
+    '26/12/2023', // christmas
   ];
 
   if (bankHolidays.indexOf(today) >= 0)
