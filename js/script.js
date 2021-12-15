@@ -89,7 +89,7 @@ function highlightOpeningTimes() {
     '29/5/2023', // spring
     '28/8/2023', // summer
     '25/12/2023', // boxing day
-    '26/12/2023', // christmas
+    '26/12/2023' // christmas
   ];
 
   if (bankHolidays.indexOf(today) >= 0)
