@@ -70,7 +70,7 @@ function highlightOpeningTimes() {
   var bankHolidays = [
     // 2021
     '27/12/2021', // christmas
-    '28/12/2021' // boxing day
+    '28/12/2021', // boxing day
     // 2022
     '3/1/2022', // new year
     '15/4/2022', // good friday
