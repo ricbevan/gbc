@@ -155,7 +155,7 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
 
 @media (min-width: 1200px) {
   #story-modal > div > div > ul::before {
-    padding-left: calc(60px + 20%);
+    padding-left: calc(58px + 20%);
   }
 }
 
