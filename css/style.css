@@ -240,6 +240,8 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
 
 .uk-accordion-title::before, .uk-open > .uk-accordion-title::before { /* hide +/- from acordian */
   background-image: none;
+  width: 0px;
+  height: 0px;
 }
 
 .uk-background-default { /* when a white background has a dark parent background it inherits white text without this */
