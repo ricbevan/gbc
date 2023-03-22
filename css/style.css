@@ -261,6 +261,14 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   font-size: 1.5rem !important;
 }
 
+.uk-navbar-nav { /* fix highlighted nav padding */
+  gap: 0px;
+}
+
+.uk-navbar li a { /* fix highlighted nav padding */
+  padding: 0px 15px;
+}
+
 .uk-navbar-nav li { /* active navigation button background animation */
   transition: all 0.3s ease-in;
 }
