@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
   // show colour modal
-  gbc('.colour-grid > li > div').on('click', function(colourBox) {
+  gbc('.gbc-colour').on('click', function(colourBox) {
     displayColourModal(colourBox.target);
   });
 
@@ -28,14 +28,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   highlightOpeningTimes();
 
   if(window.location.hash) { // open colour modal if hash provided
-    Array.from(
+    let colourBox = Array.from(
       document.querySelectorAll('.colour-grid li div')
     ).find(
       el =>
         removeColourType(el.textContent)
         ==
         window.location.hash.substring(1)
-    ).dispatchEvent(new Event('click'));
+    )
+    
+    if (colourBox != undefined) {
+      colourBox.dispatchEvent(new Event('click'));
+    }
   }
 });
 
@@ -68,28 +72,34 @@ function highlightOpeningTimes() {
   today = dd + '/' + mm + '/' + yyyy;
 
   var bankHolidays = [
-    // 2021
-    '27/12/2021', // christmas
-    '28/12/2021', // boxing day
-    // 2022
-    '3/1/2022', // new year
-    '15/4/2022', // good friday
-    '18/4/2022', // easter monday
-    '2/5/2022', // early may
-    '2/6/2022', // spring
-    '3/6/2022', // jubilee
-    '29/8/2022', // summer
-    '26/12/2022', // boxing day
-    '27/12/2022', // christmas
     // 2023
     '2/1/2023', // new year
     '7/4/2023', // good friday
     '10/4/2023', // easter monday
     '1/5/2023', // early may
+    '8/5/2023', // coronation
     '29/5/2023', // spring
     '28/8/2023', // summer
     '25/12/2023', // boxing day
-    '26/12/2023' // christmas
+    '26/12/2023', // christmas
+    // 2024
+    '1/1/2024', // new year
+    '29/3/2024', // good friday
+    '1/4/2024', // easter monday
+    '6/5/2024', // early may
+    '27/5/2024', // spring
+    '26/8/2024', // summer
+    '25/12/2024', // boxing day
+    '26/12/2024', // christmas
+    // 2025
+    '1/1/2025', // new year
+    '18/4/2025', // good friday
+    '21/4/2025', // easter monday
+    '5/5/2025', // early may
+    '26/5/2025', // spring
+    '25/8/2025', // summer
+    '25/12/2025', // boxing day
+    '26/12/2025' // christmas
   ];
 
   if (bankHolidays.indexOf(today) >= 0)
