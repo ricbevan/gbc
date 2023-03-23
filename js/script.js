@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
   // show colour modal
-  gbc('.gbc-colour').on('click', function(colourBox) {
+  gbc('#colours .colour-expand li:not(.tag-not-colour) div').on('click', function(colourBox) {
     displayColourModal(colourBox.target);
   });
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   if(window.location.hash) { // open colour modal if hash provided
     let colourBox = Array.from(
-      document.querySelectorAll('.colour-grid li div')
+      document.querySelectorAll('#colours .colour-expand li:not(.tag-not-colour) div')
     ).find(
       el =>
         removeColourType(el.textContent)

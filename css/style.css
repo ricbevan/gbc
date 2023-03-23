@@ -195,6 +195,9 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease-in;
   font-family: MontserratMedium; /* make text a little bolder */
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 #colours .colour-grid li div:hover { /* styling for colour thumbnails text hover */
