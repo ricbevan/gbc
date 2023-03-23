@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // copy colour link to clipboard on button click
   gbc('#copy-colour-link').on('click', function() {
-    copyToClipboard(gbc('#colour-modal-share').val());
+    navigator.clipboard.writeText(gbc('#colour-modal-share').val());
     UIkit.tooltip('#copy-colour-link').hide();
     UIkit.tooltip('#copied-message').show();
     setTimeout(function () { UIkit.tooltip('#copied-message').hide(); }, 1000);
@@ -116,13 +116,4 @@ function highlightOpeningTimes() {
 
 function removeColourType(colourName) {
   return colourName.replace('RAL ', '').replace('BS 381C ', '').replace('BS 4800 ', '');
-}
-
-function copyToClipboard(copyValue) {
-  const tb = document.createElement('textarea');
-  tb.value = copyValue;
-  document.body.appendChild(tb);
-  tb.select();
-  document.execCommand('copy');
-  document.body.removeChild(tb);
 }
