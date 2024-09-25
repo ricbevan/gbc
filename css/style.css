@@ -223,6 +223,10 @@ a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darke
   color: rgba(0, 0, 0, 0.9);
 }
 
+#colours .colour-grid li div.luminous:after, #colours .colour-grid li div.metallic:after, #colours .colour-grid li div.pearlescent:after {
+  content: "*";
+}
+
 #contact .uk-icon-image { /* send icon in contact form */
   float: right;
   margin-top: 8px;
