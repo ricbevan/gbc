@@ -15,7 +15,6 @@
 
 /* rainbow section colours ===================================================== START */
 
-
 .why-us .highlight {
   color: #F64337;
   background: -webkit-linear-gradient(135deg, #FF5723, #EB1E63);
@@ -81,6 +80,7 @@
   -webkit-text-fill-color: transparent;
   display: inline-block; /* required for titles that span multiple lines */
 }
+
 /* rainbow section colours ===================================================== END */
 
 html {
@@ -93,6 +93,10 @@ html {
 
 a, .uk-text-meta a, .uk-text-meta a:hover { /* made anchor colour slightly darker to meet accessibility recommendations */
   color: #0e6ecd;
+}
+
+.gbc-logo { /* gbc logo shadow around transparent png */
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .gbc-25-white {
